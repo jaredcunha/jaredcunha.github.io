@@ -12,4 +12,4 @@ github_username:  jaredcunha
 markdown: kramdown
 sass:
     sass_dir: /_assets/stylesheets/
-exclude:      [/node_modules/]
+exclude:      [/node_modules/, gulpfile.js, Gemfile, Gemfile.lock, npm-debug.log]

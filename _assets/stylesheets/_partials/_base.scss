@@ -1,0 +1,151 @@
+@import "bourbon/bourbon";
+@import "_modules/all";
+
+/*=============================================================================
+STRUCTURAL ITEMS
+========================================================================== */
+.wrap {
+	@include rem_units(padding, 0, 1.5);
+	@include rem_units(max-width, 128);
+	@include clearfix;
+	margin:0 auto;
+	text-align:left;
+	position:relative;
+	@include respond-to(expansionA) {
+		@include rem_units(padding, 0, 4);
+	}
+	@include respond-to(expansionB) {
+		@include rem_units(padding, 0, 6);
+	}
+	@include respond-to(expansionB) {
+		@include rem_units(padding, 0, 7);
+	}
+	@include respond-to(expansionD) {
+		@include rem_units(padding, 0, 8);
+	}
+}
+
+/*=============================================================================
+  RESUABLE
+========================================================================== */
+.masthead {
+	position:relative;
+	overflow:hidden;
+}
+
+.assistive-text {
+	@include hidden;
+	font-size:0;
+	line-height:0;
+	visibility:hidden;
+}
+
+/* Clearfix */
+.clearfix {
+  @include clearfix;
+}
+
+/*Social Media*/
+.social-links {
+  text-align:center;
+  li {
+    display:inline-block;
+    font-size: 2em;
+    @include respond-to(expansionA) {
+      font-size: 2.5em;
+    }
+    @include respond-to(expansionB) {
+      font-size: 3em;
+    }
+    @include respond-to(expansionC) {
+      font-size: 3.5em;
+    }
+    a {
+      @include transition (all 0.2s ease-in-out);
+      display:block;
+      width:1em;
+      height:1em;
+      margin: 5px;
+      color: $teal;
+      text-align: center;
+    }
+    a:hover {
+      color: $blue;
+    }
+  }
+}
+
+/*=============================================================================
+SECTION BLOCKS
+========================================================================== */
+body > section {
+	padding:2.88em 0; 
+	text-shadow: 0 1px 0 rgba(255,255,255,.52);
+	@include respond-to(expansionA) {
+		padding:4.24em 0; 
+	} 
+	@include respond-to(expansionB) {
+		padding:6.88em 0; 
+	}
+	@include respond-to(expansionC) {
+		padding:8.88em 0; 
+	}
+}
+
+/*Blog section block*/
+body > section.section-blog {
+ 	background-color: $tealBG;
+}
+
+/*Section Headings*/
+.section-heading {
+	@include altTypefaceBold;
+	@include rem_units(font-size, 1.6);
+	text-align: center;
+	border-bottom: 1px solid #d2d8d5;
+	width: 80%;
+	margin: 0 auto 2em;
+	position: relative;
+	padding-bottom: .7em;
+	letter-spacing: .07em;
+	@include respond-to(expansionA) {
+		margin-bottom: 2.63em;
+	} 
+	@include respond-to(expansionB) {
+		width: 65%;
+	}
+	@include respond-to(expansionC) {
+		width: 75%;
+	}
+	&:after {
+		content: "";
+		font-size: 0;
+		background: #d2d8d5;
+		display: block;
+		position: absolute;
+		bottom: 2px;
+		height: 1px;
+		width: 100%;
+	}
+	h2 {
+		font-size: 2em;
+		text-transform:uppercase; 
+		color:#222222;
+		font-weight:600;
+		line-height:1;
+		@include respond-to(expanionB) {
+			font-size: 2.5em;
+		}
+		@include respond-to(expansionC) {
+			font-size: 3.25em;
+		}
+	}
+	p {
+		color: #8b9999;
+		font-size: 1em;
+		font-weight: 400;
+		@include respond-to(expansionB) {
+			font-size: 1.3em;
+		}
+	}
+}
