@@ -20,41 +20,25 @@ var jshint = require('gulp-jshint'),
 var paths = {
   imagesSrc: ['_assets/images/**/*'],
   imagesDest: '_site/assets/images',
-  scripts: ['_assets/javascripts/**/*.js', '!_assets/javascripts/vendor**/*.js'],
+  scripts: ['_assets/javascripts/**/*.js', '!_assets/javascripts/vendor**/*.js', '!_assets/javascripts/libs/**/*.js', '!_assets/javascripts/polyfills/**/*.js'],
   sass: '/_assets/stylesheets/global.scss',
   sassFiles: '_assets/stylesheets/**/*.scss',
   assets: 'assets',
   jekyll: ['**/*.html', '_posts/**/*.md', '!_site/**/*.html']
 }
 
-// Compile Our Sass
-// gulp.task('sass', function() {
-//   browserSync.notify('<span style="color: grey">Running:</span> Sass compiling');
-//   return gulp.src(paths.sass)
-//     .pipe(sass({
-//       bundleExec: true,
-//       style: 'compressed',
-//       onError: browserSync.notify
-//     }))
-//     .pipe(prefix("last 2 versions", "> 1%"))
-//     .pipe(minifycss())
-//     .pipe(gulp.dest('_site/assets/css'))
-//     .pipe(gulp.dest(paths.assets))
-//     .pipe(browserSync.reload({stream:true}));;
-// });
-
 // compile all your Sass
-    gulp.task('sass', function (){
-        gulp.src(['_assets/stylesheets/global.scss'])
-            .pipe(sass({
-                errLogToConsole: true,
-                includePaths: ['_site/assets/dev/css'],
-                outputStyle: 'expanded'
-            }))
-            .pipe(gulp.dest('_site/assets/dev/css'))
-            .pipe(minifycss())
-            .pipe(gulp.dest('_site/assets/css'));
-    });
+gulp.task('sass', function (){
+    gulp.src(['_assets/stylesheets/global.scss'])
+        .pipe(sass({
+            errLogToConsole: true,
+            includePaths: ['_site/assets/dev/css'],
+            outputStyle: 'expanded'
+        }))
+        .pipe(gulp.dest('_site/assets/dev/css'))
+        .pipe(minifycss())
+        .pipe(gulp.dest('_site/assets/css'));
+});
 
 // Copy all static images
 gulp.task('images', function() {
@@ -67,11 +51,26 @@ gulp.task('images', function() {
     .pipe(gulp.dest(paths.imagesDest));
 });
 
+gulp.task('scripts', function() {
+  gulp.src(['_assets/javascripts/libs/*.js', '_assets/javascripts/vendor/*.js', '_assets/javascripts/scripts/*.js'])
+    .pipe(concat('global.js'))
+    .pipe(gulp.dest('_site/assets/dev/js'))
+    .pipe(uglify('comments:false'))
+    .pipe(gulp.dest('_site/assets/js'))
+});
+
 // Lint Task
 gulp.task('lint', function() {
   return gulp.src(paths.scripts)
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
+});
+
+gulp.task('move', function(){
+  gulp.src('_assets/javascripts/polyfills/*.*')
+    .pipe(gulp.dest('_site/assets/js'));
+  gulp.src('assets/svg/*')
+    .pipe(gulp.dest('_assets/images/svg'));
 });
 
 // gzip all our fonts.
@@ -129,7 +128,7 @@ gulp.task('browserSync', function () {
 
 // Build Task
 gulp.task('build', function() {
-  runSequence('jekyll-build', ['lint', 'sass', 'images']
+  runSequence('jekyll-build', ['lint', 'sass', 'scripts', 'move', 'images']
     
   );
 });
@@ -137,7 +136,7 @@ gulp.task('build', function() {
 gulp.task('default', ['build']);
 
 gulp.task('server', function() {
-  runSequence('jekyll-dev', ['lint', 'images', 'sass'],
+  runSequence('jekyll-dev', ['lint', 'images', 'sass', 'scripts', 'move'],
     ['browserSync', 'watch']
   );
 });
