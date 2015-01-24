@@ -1,83 +1,150 @@
-// Gulp
-    var gulp = require('gulp'),
+var gulp = require('gulp');
 
-    // JavaScript
-    uglify = require('gulp-uglify'),
+// Include Our Plugins
+var jshint = require('gulp-jshint'),
+    sass = require('gulp-sass'),
+    minifyCSS = require('gulp-minify-css'),
+    prefix = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
-    rename = require("gulp-rename"),
-    jshint = require('gulp-jshint'),
-    clean = require('gulp-clean'),
-
-    // Images,
-    svgmin = require('gulp-svgmin'),
+    uglify = require('gulp-uglify'),
+    stripDebug = require('gulp-strip-debug'),
+    rename = require('gulp-rename'),
     imagemin = require('gulp-imagemin'),
-    svgSprite = require("gulp-svg-sprites"),
-    filter    = require('gulp-filter'),
-    svg2png   = require('gulp-svg2png'),
+    minifycss = require('gulp-minify-css'),
+    changed = require('gulp-changed'),
+    gzip = require('gulp-gzip'),
+    browserSync = require('browser-sync'),
+    cp = require('child_process'),
+    runSequence = require('run-sequence');
 
-    // Stats and Things
-    size = require('gulp-size');
+var paths = {
+  imagesSrc: ['_assets/images/*.*'],
+  imagesDest: '_assets/images/optimized',
+  scripts: ['_assets/javascripts/**/*.js', '!_assets/javascripts/vendor**/*.js', '!_assets/javascripts/libs/**/*.js', '!_assets/javascripts/polyfills/**/*.js'],
+  sass: '/_assets/stylesheets/global.scss',
+  sassFiles: '_assets/stylesheets/**/*.scss',
+  assets: 'assets',
+  fonts: '_assets/fonts/*.*',
+  jekyll: ['**/*.html', '_posts/**/*.md', '!_site/**/*.html']
+}
 
-    // Scripts
-    gulp.task('scripts', function() {
-      gulp.src(['_assets/javascripts/libs/*.js', '_assets/javascripts/plugins/*.js', '_assets/javascripts/scripts/*.js'])
-        .pipe(concat('global.js'))
-        .pipe(gulp.dest('_site/assets/dev/js'))
-        .pipe(uglify('comments:false'))
-        .pipe(gulp.dest('_site/prod/js'))
-    });
+// compile all your Sass
+gulp.task('sass', function (){
+    gulp.src(['_assets/stylesheets/global.scss'])
+        .pipe(sass({
+            errLogToConsole: true,
+            includePaths: ['_site/assets/dev/css'],
+            outputStyle: 'expanded'
+        }))
+        .pipe(gulp.dest('_site/assets/dev/css'))
+        .pipe(minifycss())
+        .pipe(gulp.dest('_site/assets/css'));
+});
 
-    gulp.task('lint', function() {
-      return gulp.src('_assets/javascripts/scripts/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-    });
+// Copy all static images
+gulp.task('images', function() {
+ return gulp.src(paths.imagesSrc)
+    // Only grab the images that have changed.
+    .pipe(changed(paths.imagesDest))
+    // Optimize all the images.
+    .pipe(imagemin({optimizationLevel: 5}))
+    // Put them in the images directory.
+    .pipe(gulp.dest(paths.imagesDest));
+});
 
-    gulp.task('move', function(){
-      gulp.src('_assets/javascripts/polyfills/*.*')
-      .pipe(gulp.dest('_site/assets/prod/js'));
-      gulp.src('_assets/images/svg/*')
-      .pipe(gulp.dest('_site/assets/prod/svg'));
-    });
+gulp.task('scripts', function() {
+  gulp.src(['_assets/javascripts/libs/*.js', '_assets/javascripts/vendor/*.js', '_assets/javascripts/scripts/*.js'])
+    .pipe(concat('global.js'))
+    .pipe(gulp.dest('_site/assets/dev/js'))
+    .pipe(uglify('comments:false'))
+    .pipe(gulp.dest('_site/assets/js'))
+});
 
-    // Images
-    gulp.task('svgmin', function() {
-        gulp.src('images/*.svg')
-        .pipe(svgmin())
-        .pipe(gulp.dest('dist/dev/images/svg'))
-        .pipe(gulp.dest('dist/prod/images/svg'));
-    });
+// Lint Task
+gulp.task('lint', function() {
+  return gulp.src(paths.scripts)
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
 
-    gulp.task('sprites', function () {
-        return gulp.src('images/icons/*.svg')
-            .pipe(svgSprite({
-                 cssFile: "scss/_sprite.scss",
-                 padding: 4
-             }))
-            .pipe(gulp.dest("assets"))
-            .pipe(filter("**/*.svg"))
-            .pipe(svg2png())
-            .pipe(gulp.dest("assets"));
-    });
+gulp.task('move', function(){
+  gulp.src('_assets/javascripts/polyfills/*.*')
+    .pipe(gulp.dest('_site/assets/js'));
+  gulp.src('assets/svg/*')
+    .pipe(gulp.dest('_assets/images/svg'));
+  gulp.src('_assets/fonts/*.*')
+    .pipe(gulp.dest('_site/assets/fonts'));
+    gulp.src('_assets/images/optimized/*.*')
+    .pipe(gulp.dest('_site/assets/images'));
+});
 
-    gulp.task('imagemin', function () {
-        gulp.src('./dev/img/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./dev/img'))
-        .pipe(gulp.dest('./prod/img'));
-    });
+// gzip all our fonts.
+gulp.task('fonts', function() {
+  return gulp.src(paths.fonts)
+    .pipe(gzip())
+    .pipe(gulp.dest('_site/assets/fonts'));
+})
 
-    // Stats and Things
-    gulp.task('stats', function () {
-        gulp.src('./prod/**/*')
-        .pipe(size())
-        .pipe(gulp.dest('./prod'));
-    });
 
-//
+// Our 'build' tasks for jekyll server.
+gulp.task('jekyll-build', function (done) {
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
+    .on('close', done);
+});
 
-    gulp.task('watch', function(){
-        gulp.watch(["_assets/javascripts/**/*.js", "!js/build/**/*.js", "!js/build/*.js"], ['scripts', 'lint', 'move']);
-    });
+// Our 'dev' tasks for jekyll server, note: it builds the files, but uses extra configuration.
+gulp.task('jekyll-dev', function (done) {
+  browserSync.notify('<span style="color: grey">Running:</span> $ jekyll build');
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=_config.yml,_config.yml'], {stdio: 'inherit'})
+    .on('close', done);
+});
 
-    gulp.task('default', ['watch', 'move'])
+gulp.task('jekyll-rebuild', function() {
+  runSequence(['jekyll-dev'], ['lint', 'sass', 'scripts', 'move'], function () {
+      browserSync.reload();
+  });
+});
+
+// Watch Files For Changes
+gulp.task('watch', function() {
+  gulp.watch(paths.scripts, ['lint', 'jekyll-rebuild']);
+  gulp.watch(paths.sassFiles, ['sass']);
+  gulp.watch(paths.imagesSrc, function() {
+    runSequence(['images'], ['jekyll-dev'])
+  });
+  gulp.watch(paths.jekyll, ['jekyll-rebuild']);
+});
+
+//////////////////////////////
+// BrowserSync Task
+//////////////////////////////
+gulp.task('browserSync', function () {
+  browserSync.init([
+    '_site/' + paths.assets +  '/**/*.css',
+    '_site/' + paths.assets + '/**/*.js',
+    '_site/**/*.html',
+  ], {
+    server: {
+      baseDir: '_site'
+    },
+    host: "localhost",
+    port: "4545"
+  });
+});
+
+// Build Task
+gulp.task('build', function() {
+  runSequence('jekyll-build', ['lint', 'sass', 'scripts', 'move']
+    
+  );
+});
+
+gulp.task('default', ['build']);
+
+gulp.task('server', function() {
+  runSequence('jekyll-dev', ['lint', 'images', 'sass', 'scripts', 'move'],
+    ['browserSync', 'watch']
+  );
+});
+
+gulp.task('serve', ['server']);
