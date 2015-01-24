@@ -4,6 +4,7 @@ title:  "The Waiting Game"
 date:   2013-07-09 19:13:00
 categories: UX
 permalink: /the-waiting-game
+excerpt: "Flight cancellations are bad. Without a human-centered approach to service design, airline companies exacerbate the situation."
 ---
 
 <div class="body-copy wrap">

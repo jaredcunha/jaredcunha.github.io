@@ -4,6 +4,7 @@ title:  "It’s So Simpl"
 date:   2013-04-04 19:13:00
 categories: development
 permalink: /its-so-simpl
+excerpt: "About two weeks ago, I created a small SASS-powered CSS Framework called SMPL. This post explains the thinking behind it"
 ---
 
 <div class="body-copy wrap">

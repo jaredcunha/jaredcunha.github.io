@@ -4,6 +4,7 @@ title:  "Macawesome"
 date:   2013-07-25 11:00:00
 categories: design
 permalink: /macawesome
+excerpt: "There's a new design tool in town. These are my initial thoughts."
 ---
 
 <div class="body-copy wrap">

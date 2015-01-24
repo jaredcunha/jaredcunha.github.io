@@ -4,6 +4,7 @@ title:  "I Have Website!"
 date:   2012-09-17 13:45:42
 categories: personal
 permalink: /i-have-website
+excerpt: "Here I am, about 6 or 7 years into my career and I’m writing the introductory post of the website under my own domain. How can this be? Allow me to explain. "
 ---
 
 <div class="body-copy wrap">

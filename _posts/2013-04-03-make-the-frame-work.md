@@ -4,6 +4,7 @@ title:  "Make the Frame Work"
 date:   2013-04-03 14:30:00
 categories: development
 permalink: /make-the-frame-work
+excerpt: "When it comes to CSS frameworks, the best one is always your own."
 ---
 
 <div class="body-copy wrap">
