@@ -18,12 +18,13 @@ var jshint = require('gulp-jshint'),
     runSequence = require('run-sequence');
 
 var paths = {
-  imagesSrc: ['_assets/images/**/*'],
-  imagesDest: '_site/assets/images',
+  imagesSrc: ['_assets/images/*.*'],
+  imagesDest: '_assets/images/optimized',
   scripts: ['_assets/javascripts/**/*.js', '!_assets/javascripts/vendor**/*.js', '!_assets/javascripts/libs/**/*.js', '!_assets/javascripts/polyfills/**/*.js'],
   sass: '/_assets/stylesheets/global.scss',
   sassFiles: '_assets/stylesheets/**/*.scss',
   assets: 'assets',
+  fonts: '_assets/fonts/*.*',
   jekyll: ['**/*.html', '_posts/**/*.md', '!_site/**/*.html']
 }
 
@@ -71,13 +72,17 @@ gulp.task('move', function(){
     .pipe(gulp.dest('_site/assets/js'));
   gulp.src('assets/svg/*')
     .pipe(gulp.dest('_assets/images/svg'));
+  gulp.src('_assets/fonts/*.*')
+    .pipe(gulp.dest('_site/assets/fonts'));
+    gulp.src('_assets/images/optimized/*.*')
+    .pipe(gulp.dest('_site/assets/images'));
 });
 
 // gzip all our fonts.
 gulp.task('fonts', function() {
   return gulp.src(paths.fonts)
     .pipe(gzip())
-    .pipe(gulp.dest('fonts'));
+    .pipe(gulp.dest('_site/assets/fonts'));
 })
 
 
@@ -95,7 +100,7 @@ gulp.task('jekyll-dev', function (done) {
 });
 
 gulp.task('jekyll-rebuild', function() {
-  runSequence(['jekyll-dev'], function () {
+  runSequence(['jekyll-dev'], ['lint', 'sass', 'scripts', 'move'], function () {
       browserSync.reload();
   });
 });
@@ -122,13 +127,14 @@ gulp.task('browserSync', function () {
     server: {
       baseDir: '_site'
     },
-    host: "localhost"
+    host: "localhost",
+    port: "4545"
   });
 });
 
 // Build Task
 gulp.task('build', function() {
-  runSequence('jekyll-build', ['lint', 'sass', 'scripts', 'move', 'images']
+  runSequence('jekyll-build', ['lint', 'sass', 'scripts', 'move']
     
   );
 });
