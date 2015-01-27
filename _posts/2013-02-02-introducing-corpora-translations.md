@@ -12,7 +12,7 @@ excerpt: "Corpora Translations is a small, two-person translation company based 
 </div>
 
 
-<img src="http://www.jaredcunha.com/wp-content/uploads/2013/02/corpora-full.jpg" alt="corpora-translations screenshot" class="fullbleed-img"/>
+<img src="/assets/images/corpora-full.jpg" alt="corpora-translations screenshot" class="fullbleed-img"/>
 
 
 <div class="body-copy wrap">

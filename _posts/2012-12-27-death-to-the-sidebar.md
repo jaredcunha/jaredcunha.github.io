@@ -17,7 +17,7 @@ excerpt: "The sidebar is a distracting bucket of useless bric-a-brac. Let's expl
 <p>If responsive design has done one thing remarkably well, it has forced us into structuring our websites the way they are supposed to be structured; aligning the priorities of both visual display and markup. With that in mind, the sidebar is no longer a viable option because it cannot deliver on that need. But let’s also address the likelihood that the sidebar is mostly a wasteland of random and often redundant link lists, useless twitter feeds, social link tiles, and political real estate that nobody outside the company cares about. Each of these items slows the site’s performance, requires maintenance, and creates a visual distraction from the content.</p>
 
 <figure>
-<img src="http://www.jaredcunha.com/wp-content/uploads/2012/12/politico.jpg" alt="POLITICO"  />
+<img src="/assets/images/politico.jpg" alt="POLITICO"  />
 <figcaption>Throwing myself under the bus here. I am calling attention to things I always wanted to fix, but wasn't unable to.</figcaption>
 </figure>
 
@@ -28,19 +28,19 @@ excerpt: "The sidebar is a distracting bucket of useless bric-a-brac. Let's expl
 <p>Let’s look at some examples.</p>
 
 <figure>
-<img src="http://www.jaredcunha.com/wp-content/uploads/2012/12/Screen-Shot-2012-12-27-at-4.22.44-PM.png" alt="Monocle"  />
+<img src="/assets/images/Screen-Shot-2012-12-27-at-4.22.44-PM.png" alt="Monocle"  />
 </figure>
 
 <p><a href="http://monocle.com/">Monocole</a> uses content modules of equal height, mixing promos and articles. The modules allow for a healthy amount of teaser text, compelling images, flags, tags, and categories. Let’s say they can be arranged into any number of rows and columns. This setup can be flexible enough to adapt to the ebbs and flows of a given news cycle. Did the NY Times just write a profile on your star reporter? Then you can easily bump his newsletter signup module up on the page while satisfying needs of desktop down to mobile. </p>
 
 <figure>
-<img src="http://www.jaredcunha.com/wp-content/uploads/2012/12/Screen-Shot-2012-12-27-at-4.23.19-PM.png" alt="Boston Globe"  />
+<img src="/assets/images/Screen-Shot-2012-12-27-at-4.23.19-PM.png" alt="Boston Globe"  />
 </figure>
 
 <p>The <a href="http://bostonglobe.com">Boston Globe</a> was the first major news organization to go responsive. Rather than use a single row of main content + sidebar, they’ve broken it up into multiple rows. Like Monocle, this could be something arranged into any combination or rows and columns, but requires a bit more labor to maintain balance. While the layout has existed well before responsive design was a thing, it is still popular with news sites trying to mimic a more print-like experience on the web. Not only does it break the monotony as you scroll down the page, but it also provides modularity and helps keep content prioritization for mobile. </p>
 
 <figure>
-<img src="http://www.jaredcunha.com/wp-content/uploads/2012/12/mashable.png" alt="Mashable"  />
+<img src="/assets/images/mashable.png" alt="Mashable"  />
 </figure>
 
 <p><a href="http://mashable.com">Mashable</a> has done something quite remarkable with their article pages. As you scroll down to the bottom past the comments, it’s as if the homepage <em>starts over</em> and the infinite scroll continues onward. To the right of article there are still some links to other stories, but they’ve done it acceptably without going too far. News sites will often add sidebar widgets that act as a mini bucket for a content section.  Mashable has eliminated any need for that through functionality rather than structure.</p>

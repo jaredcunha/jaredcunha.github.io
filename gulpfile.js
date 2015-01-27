@@ -19,9 +19,9 @@ var jshint = require('gulp-jshint'),
 
 var paths = {
   imagesSrc: ['_assets/images/*.*'],
-  imagesDest: '_assets/images/optimized',
+  imagesDest: 'assets/images/',
   scripts: ['_assets/javascripts/**/*.js', '!_assets/javascripts/vendor**/*.js', '!_assets/javascripts/libs/**/*.js', '!_assets/javascripts/polyfills/**/*.js'],
-  sass: '/_assets/stylesheets/global.scss',
+  sass: '_assets/stylesheets/global.scss',
   sassFiles: '_assets/stylesheets/**/*.scss',
   assets: 'assets',
   fonts: '_assets/fonts/*.*',
@@ -33,12 +33,12 @@ gulp.task('sass', function (){
     gulp.src(['_assets/stylesheets/global.scss'])
         .pipe(sass({
             errLogToConsole: true,
-            includePaths: ['_site/assets/dev/css'],
+            includePaths: ['/assets/dev/css'],
             outputStyle: 'expanded'
         }))
-        .pipe(gulp.dest('_site/assets/dev/css'))
+        .pipe(gulp.dest('assets/dev/css'))
         .pipe(minifycss())
-        .pipe(gulp.dest('_site/assets/css'));
+        .pipe(gulp.dest('assets/css'));
 });
 
 // Copy all static images
@@ -55,9 +55,9 @@ gulp.task('images', function() {
 gulp.task('scripts', function() {
   gulp.src(['_assets/javascripts/libs/*.js', '_assets/javascripts/vendor/*.js', '_assets/javascripts/scripts/*.js'])
     .pipe(concat('global.js'))
-    .pipe(gulp.dest('_site/assets/dev/js'))
+    .pipe(gulp.dest('assets/dev/js'))
     .pipe(uglify('comments:false'))
-    .pipe(gulp.dest('_site/assets/js'))
+    .pipe(gulp.dest('assets/js'))
 });
 
 // Lint Task
@@ -69,82 +69,26 @@ gulp.task('lint', function() {
 
 gulp.task('move', function(){
   gulp.src('_assets/javascripts/polyfills/*.*')
-    .pipe(gulp.dest('_site/assets/js'));
+    .pipe(gulp.dest('assets/js'));
   gulp.src('assets/svg/*')
     .pipe(gulp.dest('_assets/images/svg'));
   gulp.src('_assets/fonts/*.*')
-    .pipe(gulp.dest('_site/assets/fonts'));
-    gulp.src('_assets/images/optimized/*.*')
-    .pipe(gulp.dest('_site/assets/images'));
+    .pipe(gulp.dest('assets/fonts'));
 });
 
 // gzip all our fonts.
 gulp.task('fonts', function() {
   return gulp.src(paths.fonts)
     .pipe(gzip())
-    .pipe(gulp.dest('_site/assets/fonts'));
-})
-
-
-// Our 'build' tasks for jekyll server.
-gulp.task('jekyll-build', function (done) {
-  return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
-    .on('close', done);
+    .pipe(gulp.dest('assets/fonts'));
 });
 
-// Our 'dev' tasks for jekyll server, note: it builds the files, but uses extra configuration.
-gulp.task('jekyll-dev', function (done) {
-  browserSync.notify('<span style="color: grey">Running:</span> $ jekyll build');
-  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=_config.yml,_config.yml'], {stdio: 'inherit'})
-    .on('close', done);
+
+
+
+gulp.task('watch', function(){
+    gulp.watch('_assets/stylesheets/**/*.scss', ['sass']);
+    gulp.watch('_assets/javascripts/**/*.js', ['scripts', 'lint', 'move']);
 });
 
-gulp.task('jekyll-rebuild', function() {
-  runSequence(['jekyll-dev'], ['lint', 'sass', 'scripts', 'move'], function () {
-      browserSync.reload();
-  });
-});
-
-// Watch Files For Changes
-gulp.task('watch', function() {
-  gulp.watch(paths.scripts, ['lint', 'jekyll-rebuild']);
-  gulp.watch(paths.sassFiles, ['sass']);
-  gulp.watch(paths.imagesSrc, function() {
-    runSequence(['images'], ['jekyll-dev'])
-  });
-  gulp.watch(paths.jekyll, ['jekyll-rebuild']);
-});
-
-//////////////////////////////
-// BrowserSync Task
-//////////////////////////////
-gulp.task('browserSync', function () {
-  browserSync.init([
-    '_site/' + paths.assets +  '/**/*.css',
-    '_site/' + paths.assets + '/**/*.js',
-    '_site/**/*.html',
-  ], {
-    server: {
-      baseDir: '_site'
-    },
-    host: "localhost",
-    port: "4545"
-  });
-});
-
-// Build Task
-gulp.task('build', function() {
-  runSequence('jekyll-build', ['lint', 'sass', 'scripts', 'move']
-    
-  );
-});
-
-gulp.task('default', ['build']);
-
-gulp.task('server', function() {
-  runSequence('jekyll-dev', ['lint', 'images', 'sass', 'scripts', 'move'],
-    ['browserSync', 'watch']
-  );
-});
-
-gulp.task('serve', ['server']);
+gulp.task('default', ['watch'])
