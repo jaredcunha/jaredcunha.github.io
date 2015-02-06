@@ -1,6 +1,13 @@
 @import "bourbon/bourbon";
 @import "_modules/all";
 
+p code {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 2px 5px;
+}
+
 /*=============================================================================
 STRUCTURAL ITEMS
 ========================================================================== */
