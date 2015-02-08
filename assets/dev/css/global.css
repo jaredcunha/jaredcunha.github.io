@@ -1117,6 +1117,20 @@ body > section.section-blog {
   font-style: italic;
   padding-top: 2em; }
 
+/*=============================================================================
+   COMMENTS
+========================================================================== */
+.comments {
+  padding-bottom: 100px; }
+  @media only screen and (min-width: 680px) {
+    .comments .wrap {
+      padding-left: 8.59649%;
+      padding-right: 8.59649%; } }
+  @media only screen and (min-width: 975px) {
+    .comments .wrap {
+      padding-left: 17.19298%;
+      padding-right: 17.19298%; } }
+
 /* Colors */
 /* ==========================================================================
    VARS

@@ -196,3 +196,20 @@
 	font-style: italic;
 	padding-top: 2em;
 }
+
+/*=============================================================================
+   COMMENTS
+========================================================================== */
+.comments {
+	padding-bottom: 100px;
+	.wrap {
+		@include respond-to(expansionA) {
+			padding-left: $grid_1of12cols + $gutterWidth;
+			padding-right: $grid_1of12cols + $gutterWidth;
+		}
+		@include respond-to(expansionC) {
+			padding-left: $grid_2of12cols + $gutterWidth;
+			padding-right: $grid_2of12cols + $gutterWidth;
+		}
+	}
+}
