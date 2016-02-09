@@ -3,7 +3,6 @@ layout: post
 title:  "Now Using Jekyll"
 date:   2015-01-29 21:00:00˝
 categories: Development
-permalink: /now-using-jekyll
 excerpt: "Moving from Wordpress to Jekyll. "
 ---
 

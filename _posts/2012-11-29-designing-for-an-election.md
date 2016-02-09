@@ -3,7 +3,6 @@ layout: post
 title:  "Designing for an Election"
 date:   2012-11-29 17:08:00
 categories: work
-permalink: /designing-for-an-election
 excerpt: "The 2012 election was my third election working at POLITICO. I'd like to describe some of the process that goes into creating our election material."
 ---
 

@@ -3,7 +3,6 @@ layout: post
 title:  "The New POLITICO pro"
 date:   2012-09-21 18:10:42
 categories: work
-permalink: /the-new-politico-pro
 excerpt: "A lengthy post outlining the process of redesigning POLITICO from conception to completion."
 ---
 

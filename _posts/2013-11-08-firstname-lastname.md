@@ -3,7 +3,6 @@ layout: post
 title:  "Firstname Lastname"
 date:   2013-11-08 15:10:00
 categories: UX
-permalink: /firstname-lastname
 excerpt: "There’s one aspect in form design that often goes overlooked: our names."
 ---
 

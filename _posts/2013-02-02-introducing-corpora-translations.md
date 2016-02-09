@@ -3,7 +3,6 @@ layout: post
 title:  "Introducing Corpora Translations"
 date:   2013-02-02 13:50:00
 categories: personal
-permalink: /introducing-corpora-translations
 excerpt: "Corpora Translations is a small, two-person translation company based both in Brazil and in the U.S. Announcing their new site!"
 ---
 
