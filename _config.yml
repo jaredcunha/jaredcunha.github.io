@@ -11,7 +11,7 @@ permalink: /blog/:year/:month/:title
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 sass:
     sass_dir: /_assets/stylesheets/
 exclude:      [/node_modules/, gulpfile.js, Gemfile, Gemfile.lock, npm-debug.log]
