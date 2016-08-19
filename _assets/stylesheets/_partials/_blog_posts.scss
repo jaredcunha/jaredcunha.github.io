@@ -27,7 +27,7 @@
 	margin:0 auto;
 	@include rem_units(margin-bottom, 6);
 	position:relative;
-	letter-spacing:.07em; 
+	letter-spacing:.07em;
 	@include respond-to(expansionA) {
 		@include rem_units(font-size, 4.2);
 	}
@@ -150,6 +150,9 @@
 			text-align: center;
 			padding-top: .5em;
 		}
+	}
+	figure.border img {
+		border: 1px solid #cecece;
 	}
 	iframe {
 	    margin: 0 auto .5em !important;
