@@ -23,6 +23,10 @@
     "@11ty/eleventy": "^0.10.0",
     "gulp": "^4.0.2",
     "gulp-flatten": "^0.4.0",
-    "gulp-imagemin": "^7.1.0"
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.13.1",
+    "rfs": "^9.0.2"
   }
 }

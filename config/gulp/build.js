@@ -5,9 +5,9 @@ gulp.task('build',
   //gulp.series(
     gulp.series(
        //'fonts',
-      'images'
+      'images',
       //'javascript',
-      //'css'
+      'sass'
     )
 //  )
 );

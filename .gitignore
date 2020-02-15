@@ -3,3 +3,5 @@ _site
 .DS_Store
 /node_modules
 _src/images
+_src/css
+_src/js

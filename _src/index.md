@@ -1,7 +1,15 @@
+---
+layout: landing
+---
+
 ## hi {{ site.title }}
 
-<div style="width:50%" markdown="1">
-![alt text](images/airline-app.png)
+<div style="width:50%" markdown="true">
+![alt text](/images/airline-app.png)
 </div>
 
-hey there
+hey `there`
+
+```
+$ npm whatever
+```

@@ -1,6 +1,20 @@
 module.exports = function(eleventyConfig) {
 
+  // Pass throughs
   eleventyConfig.addPassthroughCopy("_src/images");
+  eleventyConfig.addPassthroughCopy("_src/css");
+
+  //Layouts
+  eleventyConfig.addLayoutAlias('landing', 'layouts/landing.njk');
+
+  let markdownIt = require("markdown-it");
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true
+  };
+
+  eleventyConfig.setLibrary("md", markdownIt(options));
 
   return {
     dir: {
