@@ -1,0 +1,28 @@
+$grid-columns: 12 !default;
+
+$breakpoints: ();
+
+
+
+/*
+===========================================
+Z-indexes
+===========================================
+*/
+
+
+
+/*
+===========================================
+Base unit
+===========================================
+This grid is based on the 8pt grid which helps us
+ensure consistent horizontal and vertical rhythm.
+We are using pixels rather than relative units to ensure
+consistent spacing in the event that the root font size
+is not equal 10.
+More info: https://spec.fm/specifics/8-pt-grid
+*/
+
+// Base unit
+$base-unit: 8px;

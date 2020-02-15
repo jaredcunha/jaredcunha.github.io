@@ -1,4 +1,13 @@
+// Some vendor mixins and whatnot
 @import "../../../node_modules/rfs/scss";
 
+// Variables
+@import "./settings/variables";
+
+// Mixins
+// Variables
+@import "./mixins/**/*.scss";
+
+// Base styles
 @import "./base/reset";
 @import "./base/base";

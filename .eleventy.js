@@ -1,8 +1,13 @@
 module.exports = function(eleventyConfig) {
 
+  // Watch targets
+  eleventyConfig.addWatchTarget("_src/css");
+
   // Pass throughs
   eleventyConfig.addPassthroughCopy("_src/images");
   eleventyConfig.addPassthroughCopy("_src/css");
+
+
 
   //Layouts
   eleventyConfig.addLayoutAlias('landing', 'layouts/landing.njk');

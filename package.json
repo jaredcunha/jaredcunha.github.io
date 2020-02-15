@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build && npx @11ty/eleventy",
-    "start": "gulp build && npx @11ty/eleventy --serve"
+    "start2": "gulp build && concurrently --kill-others \"npx @11ty/eleventy --serve\" \"gulp watch\" \"npx @11ty/eleventy --watch\"",
+    "start": "gulp build && concurrently --kill-others \"npx @11ty/eleventy --serve\" \"gulp watch\" \"npx @11ty/eleventy --watch\""
   },
   "repository": {
     "type": "git",
@@ -21,10 +22,12 @@
   "homepage": "https://github.com/jaredcunha/jaredcunha.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "concurrently": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-flatten": "^0.4.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.13.1",
     "rfs": "^9.0.2"
