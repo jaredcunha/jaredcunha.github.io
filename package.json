@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build && npx @11ty/eleventy",
-    "start2": "gulp build && concurrently --kill-others \"npx @11ty/eleventy --serve\" \"gulp watch\" \"npx @11ty/eleventy --watch\"",
     "start": "gulp build && concurrently --kill-others \"npx @11ty/eleventy --serve\" \"gulp watch\" \"npx @11ty/eleventy --watch\""
   },
   "repository": {
