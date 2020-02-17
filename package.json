@@ -31,7 +31,6 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.13.1",
-    "rfs": "^9.0.2",
     "stylelint": "^13.2.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.14.2"

@@ -1,0 +1,40 @@
+/*
+===========================================
+Font sizes
+Two font sizes given for responsive type settings
+in _fluidtype.scss mixin.
+===========================================
+*/
+
+@mixin font-sizes($el) {
+  @if $el == 'base' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $base_sm, $base_lg);
+  }
+  @else if $el == 'h1' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h1_sm, $h1_lg);
+  }
+  @else if $el == 'h2' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h2_sm, $h2_lg);
+  }
+  @else if $el == 'h3' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h3_sm, $h3_lg);
+  }
+  @else if $el == 'h4' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h4_sm, $h4_lg);
+  }
+  @else if $el == 'h5' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h5_sm, $h5_lg);
+  }
+  @else if $el == 'h6' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h6_sm, $h6_lg);
+  }
+  @else if $el == 'small' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $small_sm, $small_lg);
+  }
+
+  @if not map-has-key($font-sizes, $el) {
+    @error '`#{$el}` is not a valid spacing unit token. '
+      + 'Valid spacing unit tokens: '
+      + '#{map-keys($font-sizes)}';
+  }
+}

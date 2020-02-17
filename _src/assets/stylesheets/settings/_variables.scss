@@ -17,9 +17,42 @@ $breakpoints: ();
 
 /*
 ===========================================
-Z-indexes
+Font sizes
+Two font sizes given for responsive type settings
+in _fluidtype.scss mixin.
 ===========================================
 */
+$fluid_min: 320px;
+$fluid_max: 1366px;
+
+$base_sm: 16px;
+$h1_sm: 48.83px;
+$h2_sm: 39.06px;
+$h3_sm: 31.25px;
+$h4_sm: 25px;
+$h5_sm: 20px;
+$h6_sm: 16px;
+$small_sm: 12.8px;
+
+$base_lg: 20px;
+$h1_lg: 61.04px;
+$h2_lg: 48.83px;
+$h3_lg: 39.06px;
+$h4_lg: 31.25px;
+$h5_lg: 25px;
+$h6_lg: 20px;
+$small_lg: 12.8px;
+
+$font-sizes: (
+  base:  'base',
+  h1:    'h1',
+  h2:    'h2',
+  h3:    'h3',
+  h4:    'h4',
+  h5:    'h5',
+  h6:    'h6',
+  small: 'small',
+);
 
 /*
 ===========================================

@@ -4,7 +4,9 @@
     "stylelint-scss"
   ],
   "rules": {
+    "at-rule-empty-line-before": null,
     "at-rule-no-unknown": null,
+    "declaration-empty-line-before": null,
     "scss/at-rule-no-unknown": true
   }
 }
