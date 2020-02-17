@@ -1,3 +1,5 @@
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 module.exports = function(eleventyConfig) {
 
   // Watch targets
@@ -7,10 +9,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_src/images");
   eleventyConfig.addPassthroughCopy("_src/css");
 
-
-
   //Layouts
   eleventyConfig.addLayoutAlias('landing', 'layouts/landing.njk');
+
+  // Syntax highlighting
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   let markdownIt = require("markdown-it");
   let options = {
