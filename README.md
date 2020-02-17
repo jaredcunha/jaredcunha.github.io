@@ -9,7 +9,8 @@ Built with [Eleventy](https://www.11ty.dev/)
 `$ npm install`
 `$ npm run serve`
 
-### Images
-Whenever new images are added, must run `gulp images`.
+## Testing
+`$ npm run stylelint`
+
 
 ### Update this to be better.
