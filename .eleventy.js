@@ -3,6 +3,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 module.exports = function(eleventyConfig) {
 
   // Watch targets
+  eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget("_src/css");
 
   // Pass throughs
