@@ -1,16 +1,18 @@
-# My Blog
+# jaredcunha.com
 
-Built with [Eleventy](https://www.11ty.dev/)
+This is my personal, built with [Eleventy](https://www.11ty.dev/).
 
-## Build
-`$ npm run build`
 
-## Run locally
+
+## Installation
 `$ npm install`
 `$ npm run serve`
+
+Generated code will be written to the `_site` directory.
 
 ## Testing
 `$ npm run stylelint`
 
+## Build
+`$ npm run build`
 
-### Update this to be better.
