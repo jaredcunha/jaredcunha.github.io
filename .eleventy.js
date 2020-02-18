@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_src/css");
 
   //Layouts
-  eleventyConfig.addLayoutAlias('default', 'layouts/efault.njk');
+  eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
   eleventyConfig.addLayoutAlias('landing', 'layouts/landing.njk');
 
   // Syntax highlighting
