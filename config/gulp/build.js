@@ -4,7 +4,7 @@ const gulp = require('gulp');
 gulp.task('build',
   //gulp.series(
     gulp.series(
-       //'fonts',
+       'fonts',
       'images',
       //'javascript',
       'sass'

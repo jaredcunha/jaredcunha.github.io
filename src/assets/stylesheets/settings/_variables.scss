@@ -17,6 +17,18 @@ $breakpoints: ();
 
 /*
 ===========================================
+Fonts
+===========================================
+*/
+$font-sans: 'Raleway', sans-serif;
+$font-serif: 'Playfair Display', serif;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+/*
+===========================================
 Font sizes
 Two font sizes given for responsive type settings
 in _fluidtype.scss mixin.

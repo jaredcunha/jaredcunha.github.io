@@ -4,7 +4,6 @@ layout: default
 title:  "Responsive HTML Tables"
 date: "2012-09-29T06:00-06:00"
 categories: development
-permalink: /responsive-html-tables
 excerpt: "Data tables are notoriously pesky elements to wrestle down into a narrow viewport. Here's another solution that I'm throwing into the mix."
 ---
 

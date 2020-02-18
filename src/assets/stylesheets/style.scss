@@ -1,5 +1,6 @@
 // Variables
 @import "./settings/variables";
+@import "./settings/font-faces";
 
 // Mixins
 // Variables
@@ -11,3 +12,6 @@
 
 // Vendor styles
 @import "./vendor/prism";
+
+// Components
+@import "./components/**/*.scss";

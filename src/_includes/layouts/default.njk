@@ -4,7 +4,9 @@
   {% include "head.html" %}
 </head>
 <body>
-  <main role="main">
+  <a class="skipnav" href="#main-content">Skip to main content</a>
+  <main role="main" id="main-content">
+    <h1>{{ title }}</h1>
     {{ content | safe }}
   </main>
 </body>
