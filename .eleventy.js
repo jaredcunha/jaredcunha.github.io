@@ -4,11 +4,11 @@ module.exports = function(eleventyConfig) {
 
   // Watch targets
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.addWatchTarget("_src/css");
+  eleventyConfig.addWatchTarget("src/css");
 
   // Pass throughs
-  eleventyConfig.addPassthroughCopy("_src/images");
-  eleventyConfig.addPassthroughCopy("_src/css");
+  eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/css");
 
   //Layouts
   eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
@@ -29,7 +29,7 @@ module.exports = function(eleventyConfig) {
 
   return {
     dir: {
-      input: "./_src",      // Equivalent to Jekyll's source property
+      input: "./src",      // Equivalent to Jekyll's source property
       output: "./_site" // Equivalent to Jekyll's destination property
     }
   };

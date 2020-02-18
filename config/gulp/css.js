@@ -7,14 +7,14 @@ sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
  console.log("\nBuilding CSS");
- return gulp.src('./_src/assets/stylesheets/**/*.scss')
+ return gulp.src('./src/assets/stylesheets/**/*.scss')
    .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(sourcemaps.write('maps'))
-   .pipe(gulp.dest('./_src/css'));
+   .pipe(gulp.dest('./src/css'));
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./_src/assets/stylesheets/**/*.scss', ['sass']);
+  gulp.watch('./src/assets/stylesheets/**/*.scss', ['sass']);
 });

@@ -5,10 +5,10 @@ const flatten = require('gulp-flatten');
 
 gulp.task('images', function (done) {
   console.log("\nOptimizing images and moving into './images'");
-  const stream = gulp.src('./_src/assets/images/**/*.*')
+  const stream = gulp.src('./src/assets/images/**/*.*')
     .pipe(flatten())
     .pipe(imagemin())
-    .pipe(gulp.dest('./_src/images/'));
+    .pipe(gulp.dest('./src/images/'));
   return stream;
 });
 

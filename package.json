@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build && npx @11ty/eleventy",
-    "stylelint": "npx stylelint '_src/**/*.scss' || echo \"lint faild for some file(s).\"",
+    "stylelint": "npx stylelint 'src/**/*.scss' || echo \"lint faild for some file(s).\"",
     "start": "gulp build && concurrently --kill-others \"npx @11ty/eleventy --serve\" \"gulp watch\" \"npx @11ty/eleventy --watch\""
   },
   "repository": {

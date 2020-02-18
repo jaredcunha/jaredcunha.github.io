@@ -2,6 +2,6 @@ _site
 .sass-cache
 .DS_Store
 /node_modules
-_src/images
-_src/css
-_src/js
+src/images
+src/css
+src/js
