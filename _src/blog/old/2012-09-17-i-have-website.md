@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "I Have Website!"
 date: "2012-09-17T06:00-06:00"
@@ -28,13 +29,13 @@ excerpt: "Here I am, about 6 or 7 years into my career and I’m writing the int
 
 <p>I think it’s fun to look back on some of the designs that didn’t make the cut. Keep in mind, these go back quite a few years. </p>
 
-<figure class="narrow"><img src="/assets/images/home2008-2.jpg" alt=""/><figcaption>(2008) First attempt at a homepage, from way back in 2008. In hindsight, the photo probably wasn't a wise choice.</figcaption></figure>
+<figure class="narrow"><img src="/images/home2008-2.jpg" alt=""/><figcaption>(2008) First attempt at a homepage, from way back in 2008. In hindsight, the photo probably wasn't a wise choice.</figcaption></figure>
 
-<figure class="narrow"><img src="/assets/images/home-2008.jpg" alt=""/><figcaption>(2008) Confession: I was living in northern Virginia at the time I designed this, so the whole thing is basically a lie.</figcaption></figure>
+<figure class="narrow"><img src="/images/home-2008.jpg" alt=""/><figcaption>(2008) Confession: I was living in northern Virginia at the time I designed this, so the whole thing is basically a lie.</figcaption></figure>
 
-<figure class="narrow"><img src="/assets/images/home2009-3.jpg" alt=""/><figcaption>(2009) I used to own the domain: blackslatemedia.com. I went back and forth between using that URL and reserving jaredcunha.com. </figcaption></figure>
+<figure class="narrow"><img src="/images/home2009-3.jpg" alt=""/><figcaption>(2009) I used to own the domain: blackslatemedia.com. I went back and forth between using that URL and reserving jaredcunha.com. </figcaption></figure>
 
-<figure class="narrow"><img src="/assets/images/home2009-2.jpg" alt=""/><figcaption>(2009) Perhaps I was undergoing some dark times when I came up with one. Either way, I'm glad I got over it.</figcaption></figure>
+<figure class="narrow"><img src="/images/home2009-2.jpg" alt=""/><figcaption>(2009) Perhaps I was undergoing some dark times when I came up with one. Either way, I'm glad I got over it.</figcaption></figure>
 
-<figure class="narrow"><img src="/assets/images/home-2010.jpg" alt=""/><figcaption>(2010) This one was meant to be responsive. I liked it almost enough to finish it.</figcaption></figure>
+<figure class="narrow"><img src="/images/home-2010.jpg" alt=""/><figcaption>(2010) This one was meant to be responsive. I liked it almost enough to finish it.</figcaption></figure>
 </div>

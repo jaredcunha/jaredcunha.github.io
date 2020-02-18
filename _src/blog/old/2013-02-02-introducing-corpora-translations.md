@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "Introducing Corpora Translations"
 date: "2013-02-02T06:00-06:00"
@@ -11,7 +12,7 @@ excerpt: "Corpora Translations is a small, two-person translation company based 
 </div>
 
 
-<img src="/assets/images/corpora-full.jpg" alt="corpora-translations screenshot" class="fullbleed-img"/>
+<img src="/images/corpora-full.jpg" alt="corpora-translations screenshot" class="fullbleed-img"/>
 
 
 <div class="body-copy wrap">

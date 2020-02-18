@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "Macawesome"
 date: "2013-07-25T06:00-06:00"

@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "Now Using Jekyll"
 date: "2015-01-29T06:00-06:00"
@@ -8,7 +9,7 @@ excerpt: "Moving from Wordpress to Jekyll. "
 
 <div class="body-copy wrap" markdown="1">
 <figure class="narrow">
-  <img src="/assets/images/jekyll-logo.png" alt="Jekyll logo" />
+  <img src="/images/jekyll-logo.png" alt="Jekyll logo" />
 </figure>
 
 When I created this site, my goal was to write more consistency and put the design through constant iteration, establishing a design playground of sorts for myself. Clearly, I have fallen short. I’ve performed maybe one two design tweaks and published less than a handful of posts. I can go over the myriad of reasons why: renovating a house, laziness, but I the fact is I really started to hate Wordpress.

@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "Make the Frame Work"
 date: "2013-04-03T06:00-06:00"

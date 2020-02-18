@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "Android and Localhost"
 date: "2016-02-08T06:00-06:00"

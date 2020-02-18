@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "Changing Course"
 date: "2016-03-21T06:00-06:00"

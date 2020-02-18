@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "Designing for an Election"
 date: "2012-11-29T06:00-06:00"
@@ -20,7 +21,7 @@ excerpt: "The 2012 election was my third election working at POLITICO. I'd like 
 <p>I’m not sure a traffic spike like that is normal, even on the Super Bowl of news days. So what happened? And why? Well, I’m not sure I have a complete answer to that. What really worked in our favor was that our election map was extremely search-friendly. Because of Mitch Schuler’s wizardry, our map was the top Google search result for “election results.” That did us very well. We also built separate pages for each state, making it easy to search for election results for, say, Florida days after Barack Obama was declared winner. As elementary as it sounds, this was a first for us and a big priority. On top of search traffic, we made sure that our content was easy to share. Our homepage had buttons for users to tweet the results of any battleground state at any particular moment. I wrote a small script to glean the results from the state and publish them to a tweet using <a href="https://dev.twitter.com/docs/intents">web intents</a>. </p>
 
 <figure class="narrow">
-<img src="/assets/images/hp-results.jpg" alt="homepage" />
+<img src="/images/hp-results.jpg" alt="homepage" />
 <figcaption>Tweet results directly from the homepage.</figcaption>
 </figure>
 
@@ -33,14 +34,14 @@ excerpt: "The 2012 election was my third election working at POLITICO. I'd like 
 <p>Simply having the information on the page won’t necessarily cut it. It must be organized! There has to be a well-defined architecture, navigation has to be easy, and text must properly guide the user. This is where redundancy can do a little good. We’re tracking the Presidential race in every county in every state along with electoral votes, Senate races in 33 states, House races in 435 districts, Gubernatorial races in 11 states, ballot measures, seating shifts, historical comparisons, marking incumbents, highlighting battleground races, and the list goes on.</p>
 
 <figure class="narrow">
-<img src="/assets/images/state-page.jpg" alt="state page" />
+<img src="/images/state-page.jpg" alt="state page" />
 <figcaption>Screen shot of the Florida results page. <a href="http://www.politico.com/2012-election/results/president/florida/">Link</a></figcaption>
 </figure>
 
 <p>2012 was the first year in which we were able to free ourselves from Flash. The same can be said by all other news organizations. I’m afraid to ask <a href="http://www.qnotemedia.com">Chris</a> how many hours he spent building the maps, but I’d imagine they were many. <a href="http://www.politico.com/2012-election/map/">Our map</a> was built with <a href="http://raphaeljs.com">raphael.js</a>. While the Flash maps performed well for their time, it’s no longer proper technology to use today. For one, a flash movie forces you into using fixed height and widths. Because of sheer number of items we’re tracking, we used to have to cram everything into a series of rollovers and flyout boxes, which really isn’t ideal. It's annoying to find something on a map, click a weird shape, and then scroll through hundreds of boxes of visually-repetitive information. As I mentioned before, we built separate pages for each state (<a href="http://www.politico.com/2012-election/results/president/florida/">example</a>).  While the information within them is reflected on the main map, these were both search-friendly and targeted. They provided very granular-level details about each race. We wanted to make things really easy for users to get to what they want, and be able to dig around from there.</p>
 
 <figure class="narrow">
-<img src="/assets/images/big-map.jpg" alt="The Big Map" />
+<img src="/images/big-map.jpg" alt="The Big Map" />
 <figcaption>The big map. <a href="http://www.politico.com/2012-election/map/">Link</a></figcaption>
 </figure>
 

@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "It’s So Simpl"
 date: "2013-02-04T06:00-06:00"

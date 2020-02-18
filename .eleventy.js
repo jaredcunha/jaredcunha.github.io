@@ -17,6 +17,7 @@ module.exports = function(eleventyConfig) {
   // Syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);
 
+
   let markdownIt = require("markdown-it");
   let options = {
     html: true,
@@ -33,3 +34,4 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
+

@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "Firstname Lastname"
 date: "2013-11-08T06:00-06:00"

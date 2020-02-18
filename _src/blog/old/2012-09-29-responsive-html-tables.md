@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "Responsive HTML Tables"
 date: "2012-09-29T06:00-06:00"

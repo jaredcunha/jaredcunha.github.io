@@ -1,4 +1,5 @@
 ---
+tags: post
 layout: default
 title:  "Accessible Modal Windows"
 date: "2016-05-25T06:00-06:00"
