@@ -11,7 +11,7 @@ permalink: "/blog/2016/08/recipe-a-styleguide/index.html"
 <img src="/images/recipe-front.png" alt="Screenshot of Recipe"/>
 <figcaption>It's just a screenshot. The button doesn’t actually work.</figcaption>
 </figure>
-<div class="body-copy wrap" markdown="1">
+
 At LivingSocial, we’ve been diligently working on a new experience for [Restaurants Plus](http://r.livingsoci.al/qd9njwn/04) over the past several months. The process has been encouraging for several reasons. Regarding the product, we can see that consumers have been enthusiastic. As an organization, it is our first responsive site and not hindered by legacy systems. My role has been as front-end developer.
 
 In addition to building out the site itself, I’ve been quietly working on a styleguide behind the scenes that I’ve named _[Recipe](https://www.livingsocial.com/restaurants-plus-rewards/styleguide)_. More on that later. But first, a little context.
@@ -38,4 +38,3 @@ When designing the styleguide, contribution and maintenance should be as frictio
 I wish I can write about any lasting impacts, but I will not be at the company much longer and only time will tell. [Restaurants Plus](http://r.livingsoci.al/qd9njwn/04) is a great product and I love using it.
 
 As inside any professional kitchen, the chef cannot be the gatekeeper. The restaurant relies on a team of dedicated individuals and specialists to consistently deliver excellent meals to customers no matter who is working that day. I’m not saying I’m _the chef_ in this the analogy, but I’m saying that is precisely why we follow a _Recipe_.
-</div>

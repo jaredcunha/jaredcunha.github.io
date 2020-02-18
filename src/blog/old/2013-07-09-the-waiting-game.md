@@ -7,7 +7,7 @@ categories: UX
 excerpt: "Flight cancellations are bad. Without a human-centered approach to service design, airline companies exacerbate the situation."
 ---
 
-<div class="body-copy wrap">
+
 <p>Earlier this month as I was returning home from my honeymoon, I experienced the dreaded predicament that so many travelers eventually face: flight cancellation. I travel by air a few times a year and I’ve been handed every combination of delays, missed connections, luggage issues, and unhelpful customer service, but this was the first time that I had a cancelled flight. United Airlines worsened the situation by failing to provide basic recourse that I could manage on my own, which left my fellow passengers and me waiting for a substantial amount of time. Of course this is a <em>design</em> problem!</p>
 
 <p>Flying is already stressful, expensive, and time-consuming. When you have an unexpected problem or setback – and you will – not knowing what to do triggers unnecessary anxiety, helplessness, desperation, and self doubt, all leading to explosive frustration affecting everyone around you.</p>
@@ -59,22 +59,3 @@ excerpt: "Flight cancellations are bad. Without a human-centered approach to ser
 <p>Increasingly within the past decade or so, our devices have ditched the instruction manual. Likewise with our software. That is because design has played a crucial role in empowering us with the confidence to do the things we need to do on our own. In my experience with United Airlines, I feel like I had to ask for the instruction manual.</p>
 
 <p>While there a number of technical and organizational considerations to be made in order to implement the things I am exploring, I don’t think they are out of reach for a multi-billion-dollar company. The airline industry’s reputation is in the gutter, worse than Congress. A little innovation to improve customer experience can reduce administrative costs and cultivate loyal customers. Things go wrong, that’s inevitable. How well you manage the situation counts, and <em>that</em> is designed.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

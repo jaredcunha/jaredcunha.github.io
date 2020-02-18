@@ -7,7 +7,7 @@ categories: design
 excerpt: "The sidebar is a distracting bucket of useless bric-a-brac. Let's explore ways to not use it."
 ---
 
-<div class="body-copy wrap">
+
 <p>You know the layout I’m talking about – the two column layout with the main content on side and large stack of widgets in the sidebar. Yeah, that sidebar! The distracting bucket of useless bric-a-brac! It has often seemed as obligatory as the main navigation bar or the footer because that’s where you put all that other stuff. I’m not writing this post as a blanket condemnation, but I believe its days as a standard for news sites (at least) might be numbered.  We’ll likely see a number of sites redesign in 2013. Many will adopt a responsive design strategy that I hope will move designers away from instinctively using this convention as a default.</p>
 
 <p>Topmost items in those sidebars may have some value. If there’s a box ad at top, we can assume that the advertiser paid a little extra for the prominence. There might even be a widget or two that garners a heavy amount of click-through and does have real priority over some items in the main content area. But this only holds true when the viewport is capable of displaying the two columns side-by-side. That prioritization is lost on mobile devices where the sidebar collapses underneath the main content, and the ancillary material within it. </p>
@@ -46,4 +46,3 @@ excerpt: "The sidebar is a distracting bucket of useless bric-a-brac. Let's expl
 <p><a href="http://mashable.com">Mashable</a> has done something quite remarkable with their article pages. As you scroll down to the bottom past the comments, it’s as if the homepage <em>starts over</em> and the infinite scroll continues onward. To the right of article there are still some links to other stories, but they’ve done it acceptably without going too far. News sites will often add sidebar widgets that act as a mini bucket for a content section.  Mashable has eliminated any need for that through functionality rather than structure.</p>
 
 <p>As you can see, there are plenty of ways at our disposal to help avoid the sidebar and widget abuse we’ve heaped upon our readers. There are other, and often better, ways to generate revenue than display ads. There are better ways to organize the content you couldn’t fit in the nav bar. There are betters ways to achieve what the sidebar was supposed to achieve, and user experience must be at the heart of it, not internal politicking.</p>
-</div>

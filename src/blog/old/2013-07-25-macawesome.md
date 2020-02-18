@@ -7,7 +7,7 @@ categories: design
 excerpt: "There's a new design tool in town. These are my initial thoughts."
 ---
 
-<div class="body-copy wrap">
+
 <p>If you are moderately-experienced web designer or developer, you might look down upon WSIWYG editors with the same degree of scorn that a chef might view single-use, gimmicky cookware – a crutch for the amateur that still under-delivers on the one task it was designed to do. On Tuesday we got a <a href="http://macaw.co/peek/">sneak peek</a> of <a href="http://macaw.co/">MACAW</a>, and it was exciting to see something that could shatter those preconceptions. What was even more encouraging was the positive reactions from many leaders within our industry. </p>
 
 <blockquote class="twitter-tweet"><p>Macaw might be the web design app I’ve been hoping for all along. Seems to actually handle code like a champ too: <a href="http://t.co/MBJocXyles">http://t.co/MBJocXyles</a></p>&mdash; Jason Santa Maria (@jasonsantamaria) <a href="https://twitter.com/jasonsantamaria/statuses/359682167879647232">July 23, 2013</a></blockquote>
@@ -33,7 +33,7 @@ excerpt: "There's a new design tool in town. These are my initial thoughts."
 
 <p>MACAW will certainly enjoy lots of success.  Even it doesn’t generate production-ready code, it is going to be positive for our industry. We desperately need an alternative to Adobe products. While I don’t know its co-creator, Tom Giannattasio (<a href="https://twitter.com/attasi">@attasi</a>) personally, I do know of his work. To put it bluntly, it’s <a href="http://attasi.com/experiments/">fucking impressive</a>. So I feel confident that no corners will be cut. Things are about to get MACAWESOME.
 </p>
-</div>
+
 
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

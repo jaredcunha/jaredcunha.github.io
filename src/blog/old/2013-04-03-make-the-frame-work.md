@@ -7,7 +7,7 @@ categories: development
 excerpt: "When it comes to CSS frameworks, the best one is always your own."
 ---
 
-<div class="body-copy wrap">
+
 <p>CSS Frameworks is probably one of the most written-about and debated topics amongst web designers. And there are <a href="http://usablica.github.com/front-end-frameworks/compare.html?v=2.0">a lot</a>. From when <a href="http://www.blueprintcss.org/">blueprint.css</a> (I think that was first) was created to best practices in responsive web design, debate has been ongoing and often passionate. Are generic grids appropriate for new projects or adequate enough to get to move concepts into code? Are they a crutch or do they improve workflow? Are they too bloated or do they provide some groundwork for the years ahead? I’ve been on and off the fence a handful of times trying to determine if frameworks are friend or foe. </p>
 
 <p>For the better part of my career, I’ve been more or less opposed to using them. Well, let me rephrase that. I’ve been opposed to taking them out of the box, slapping them on the ass, and shuffling them out into the world without much consideration for their impact throughout the lifetime of a site. In addition, frameworks are built to serve every combination. I suppose that’s been my issue. It is extremely important that each aspect is the result of careful consideration.  Yes, frameworks can improve the learning curve for burgeoning designers, but they shouldn’t have a place in production. There is one, however, that can stand up to the task: <em>your own</em>.</p>
@@ -40,4 +40,3 @@ excerpt: "When it comes to CSS frameworks, the best one is always your own."
 <p>Minor pages are those that never receive as much design attention as the other pages on a site. Think terms and conditions pages or the privacy policy. If basic typography is included in your framework, these pages can be created attractively with minimal effort.</p>
 
 <p>There’s a lot to consider when building your framework. You’ll want to keep the long-term in mind without building more than you need. With the proper elements in place, you’ll be able to add sections and build pages with relative ease and speed without reinventing the wheel every time.</p>
-</div>

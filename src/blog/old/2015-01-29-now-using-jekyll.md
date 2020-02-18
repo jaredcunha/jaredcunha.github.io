@@ -7,7 +7,7 @@ categories: Development
 excerpt: "Moving from Wordpress to Jekyll. "
 ---
 
-<div class="body-copy wrap" markdown="1">
+
 <figure class="narrow">
   <img src="/images/jekyll-logo.png" alt="Jekyll logo" />
 </figure>
@@ -35,14 +35,3 @@ Another contributing factor to my switching over to Jekyll was that my hosting s
 I am now hosting from my [GitHub Repo](https://github.com/jaredcunha/jaredcunha.github.io). My site is a user page, so the repository is named `jaredcunha.github.io` and I didn’t use a `gh-pages` branch. The [GitHub Pages Primer](https://pages.github.com/) has all the information that you’ll need.
 
 All in all, the process went pretty well. I didn’t feel the need to do a [blog migration](http://jekyllrb.com/docs/migrations/) due to so little content on the site. I’m excited with the new setup and ready to move forward.
-
-
-
-
-
-
-
-
-
-
-</div>

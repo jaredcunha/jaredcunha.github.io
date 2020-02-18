@@ -7,7 +7,7 @@ categories: UX
 excerpt: "There’s one aspect in form design that often goes overlooked: our names."
 ---
 
-<div class="body-copy wrap">
+
 <p>Creating a form is something every web designer will have to do at some point during his or her career. Most are relatively simple, requiring only a few data points while others are behemoths of gargantuan complexity. We strive our best to reduce that complexity, utilizing an array of design principles to improve usability and guide users toward completing the forms and submitting them successfully. But there’s one aspect in form design that often goes overlooked: our names. </p>
 
 <p>It’s pretty common to see separate fields for first name and last name, like the printed paper forms we’ve used in almost every aspect of our lives. However, the first name followed by last name convention is not used in every part of the world. I’ve never really thought about until I met my wife. She’s from Brazil and has two last names, inherited from both her mother and father. Some Brazilians have up to four last names. You can have prepositions and characters. In Asian cultures, you might see the family name appear before the given name.</p>
@@ -29,4 +29,3 @@ excerpt: "There’s one aspect in form design that often goes overlooked: our na
 </ul>
 
 <p>The article is really worth your time if you haven’t read it already. As designers, it is our job to understand our audiences, our clients’ audiences, and have an intent with everything we put to the page. When we are well-informed, we create better products. No matter how mundane something may seem, we can always dig a little deeper, learn, and bring that to our work.</p>
-</div>

@@ -7,7 +7,7 @@ categories: development
 excerpt: "Data tables are notoriously pesky elements to wrestle down into a narrow viewport. Here's another solution that I'm throwing into the mix."
 ---
 
-<div class="wrap">
+
 <p>Data tables are notoriously pesky elements to wrestle down into a narrow viewport. They can have a large number of columns or rows. Cells may contain simple data or entire paragraphs. Let’s say for the sake of the article that it’s all appropriate, or if anything, that such a table could possibly show up on your website.  How do we proceed? Well, that really depends.</p>
 
 <p>There are plenty of solutions already in the wild. Some are good, some are not so good. Personally, I have an aversion to anything that would irretrievably remove content from view or forgo the table element altogether. These options either exhibit bad practices in responsive design or skirt the issue entirely. </p>
@@ -23,7 +23,7 @@ excerpt: "Data tables are notoriously pesky elements to wrestle down into a narr
 [gist id=3804292]
 
 <p>So for the table below, the web producer only needs properly formatted HTML with a <code>&lt;thead&gt;</code> and a <code>&lt;tbody&gt;</code>. Even though mine is hooked with a class name (for my own purposes), it isn’t required. For CSS and all other information, please refer back to the original <a href="http://css-tricks.com/responsive-data-tables/">post</a> on CSS  Tricks.</p>
-</div>
+
 
 <table class="vert-collapse">
                   <thead>
@@ -88,6 +88,5 @@ excerpt: "Data tables are notoriously pesky elements to wrestle down into a narr
                     </tbody>
                 </table>
 
-<div class="wrap">
+
 <p>Keep in mind that tables tend to vary. This might be a bit much for a small table, but inadequate for a complex table with colspans or rowspans. </p>
-</div>

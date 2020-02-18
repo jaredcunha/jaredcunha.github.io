@@ -1,0 +1,28 @@
+.post {
+  display: grid;
+  grid-template-columns:
+    minmax(1.2rem, 1fr)
+    minmax(auto, 57ch)
+    minmax(1.2rem, 1fr);
+
+  > p,
+  > ul,
+  > ol,
+  > blockquote,
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > figure,
+  > table {
+    grid-column: 2;
+  }
+
+  > h1 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    text-align: center;
+  }
+}

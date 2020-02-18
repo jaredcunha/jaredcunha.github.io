@@ -7,7 +7,7 @@ categories: personal
 excerpt: "Corpora Translations is a small, two-person translation company based both in Brazil and in the U.S. Announcing their new site!"
 ---
 
-<div class="body-copy wrap">
+
 <p><a href="http://www.corporatranslations.com/">Corpora Translations</a> is a small, two-person translation company based both in Brazil and in the U.S. They specialize in providing language services to international organizations, government institutions, law offices, and any other sectors that would require precise translation and interpretation.  In other words, they do what translation “chop shops” and Google Translate cannot: carry over voice and tone, while accounting for colloquialisms and regional dialects.</p>
 </div>
 
@@ -23,4 +23,3 @@ excerpt: "Corpora Translations is a small, two-person translation company based 
 <p>For me, this project was a lot of fun. It was the first freelance site that I’ve taken in years and it’s been a nice departure from working in the constraints of my day job.  I suppose that I should disclose that Mirna is my lovely girlfriend. </p>
 
 <p>View the site: <a href="http://www.corporatranslations.com/">English</a> | <a href="http://www.corporatraducoes.com.br/">Portuguese</a></p>
-</div>

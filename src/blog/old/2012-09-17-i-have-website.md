@@ -8,7 +8,7 @@ categories: personal
 excerpt: "Here I am, about 6 or 7 years into my career and I’m writing the introductory post of the website under my own domain. How can this be? Allow me to explain. "
 ---
 
-<div class="body-copy wrap">
+
 <p class="intro">Here I am, about 6 or 7 years into my career and I’m writing the introductory post of the website under my own domain. How can this be? Allow me to explain. </p>
 
 <p>Being a web designer without a website has been, well, awkward. Upon meeting someone, the conversation always goes as follows: <q>“So what do you do?” “I’m a web designer.”</q> <q>“Ah cool! What’s your website.”</q> <q>“I don’t have one.”</q> <q>“Oh…”</q> I do want to point out that in D.C. it is customary to discuss work as early as possible in a personal introduction. </p>
@@ -38,4 +38,3 @@ excerpt: "Here I am, about 6 or 7 years into my career and I’m writing the int
 <figure class="narrow"><img src="/images/home2009-2.jpg" alt=""/><figcaption>(2009) Perhaps I was undergoing some dark times when I came up with one. Either way, I'm glad I got over it.</figcaption></figure>
 
 <figure class="narrow"><img src="/images/home-2010.jpg" alt=""/><figcaption>(2010) This one was meant to be responsive. I liked it almost enough to finish it.</figcaption></figure>
-</div>

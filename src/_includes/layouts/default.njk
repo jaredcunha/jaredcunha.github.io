@@ -6,8 +6,10 @@
 <body>
   <a class="skipnav" href="#main-content">Skip to main content</a>
   <main role="main" id="main-content">
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
+    <div class="post">
+      <h1>{{ title }}</h1>
+      {{ content | safe }}
+    </div>
   </main>
 </body>
 </html>

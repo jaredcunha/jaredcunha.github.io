@@ -7,7 +7,7 @@ categories: work
 excerpt: "The 2012 election was my third election working at POLITICO. I'd like to describe some of the process that goes into creating our election material."
 ---
 
-<div class="body-copy wrap">
+
 <p>This year, 2012, has been my third election with POLITICO (if you count the midterms). Elections are one of my favorite parts of the job and one of the contributing factors to why I came here in the first place. But this time around, I sat out on leading the design effort to focus on relaunching POLITICO Pro. Though I did contribute to our homepage wireframes, overall concepts, and front-end dev for the mobile app and our homepage, I want to talk about what my team did as a whole. First, I suppose I should mention that the real design credit should go to <a href="https://twitter.com/redhandeddesign">Michael Marcialis</a>, <a href="https://twitter.com/cbud">Chris Buddie</a>, and <a href="http://qnotemedia.com">Chris Guirreri</a>. </p>
 
 <p>As with many news organizations, elections tend to be a make-or-break ordeal. They are the end-result of the combined efforts put forth by multiple teams: designers, developers, editorial, reporters, sysadmins, project managers, team managers, product managers, web producers, video producers (if applicable), etc. To quote Joe Biden, it’s “a big fuckin’ deal.” Our election night was exactly that—a big fuckin’ deal—and I’ll explain why it was, by all accounts,  a hugely successful night.</p>
@@ -46,4 +46,3 @@ excerpt: "The 2012 election was my third election working at POLITICO. I'd like 
 </figure>
 
 <p>Overall, we were very proud of what we done. We had a talented team of people who really put their all into making our election results everything they were: Chris Buddie, Michael Marcialis, Chris Guirerri, Jen Dreyer, Ryan Mannion, Liz Kaplan, Kris Jones, Mike Devich, Megan Chan, Hemal Jhaveri, Danielle Jones, Charles Mahtesian, Chris Behm, Paul Frederiksen, Mitch Schuler, Mark Gerl, and anyone I forgot, great work!</p>
-</div>

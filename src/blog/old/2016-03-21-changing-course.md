@@ -7,7 +7,7 @@ categories: Personal
 excerpt: "My journey from working on a design team to engineering."
 ---
 
-<div class="body-copy wrap" markdown="1">
+
 Well, this post isn’t exactly _news_, I elected to switch teams back in November of last year. But now that I’ve had a chance to settle into my new role, I have gained some perspective on how the reality measured up to my expectations. Though I’ve contributed a lot of code in my role as designer, leaving our immensely talented, and close-knit design team was not an easy decision to make.
 
 Getting my hands dirty with implementation is equally as fun as exploring product design and mapping out user experience. These are distinct facets, but equally vital. The opportunity came as this: We have a real need for design and development to work together more effectively; we don't need to be adversarial; take what I know about front-end development to bring our design and the way we implement it to places worth exploring.

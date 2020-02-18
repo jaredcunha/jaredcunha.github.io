@@ -7,7 +7,7 @@ categories: work
 excerpt: "A lengthy post outlining the process of redesigning POLITICO from conception to completion."
 ---
 
-<div class="body-copy wrap">
+
 <figure class="full">
 <img src="/images/politicopro.jpg" alt="Screen shots of POLITICO Pro" />
 </figure>
@@ -105,4 +105,3 @@ excerpt: "A lengthy post outlining the process of redesigning POLITICO from conc
 <p>As far as inhouse environments go, decision-making can often be from the top down. If someone from upper management has a preference for something, that person will probably get his or her way no matter how arbitrary that is. Designers tend to be viewed as ones who take directives and make them as visually pleasing as possible, and are not heavily involved in constructing requirements. I think with Pro, we did experience a bit of that - but not to a large extent. Through meeting daily and working iteratively, we had a chance to communicate why we made the decisions we did with managers and editors in ways that we couldn’t in the past. They were able to gain a much deeper understanding of what goes into building a website: what’s easy, what’s difficult, what’s impossible, and how we can work better together through complicated problems. End result: designers play the role they should.</p>
 
 <p>Over the next few months, we’ll be adding tons of new features to PRO. I’m excited about how this will continue to grow and evolve.</p>
-</div>

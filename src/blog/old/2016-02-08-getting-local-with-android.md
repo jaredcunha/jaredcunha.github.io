@@ -7,15 +7,15 @@ categories: Development
 excerpt: "Running localhost on Android isn’t easy, but there is a way with Charles proxy."
 ---
 
-<div class="body-copy wrap" markdown="1">
+
 Browser testing is tedious, not even registering a blip on the web design fun-o-meter. On one hand, it is but much less frustrating today since more browsers auto-update and we’ve been able to ease back on supporting legacy versions of IE (remember the [png fix](https://24ways.org/2007/supersleight-transparent-png-in-ie6)?). But on the other hand, there is now a vast landscape of mobile devices and operating systems—and production is a terrible place to discover bugs.
 
 Testing web pages on `localhost` is fairly straightforward with iOS. There is a simulator packaged with Xcode as a developer tool which allows for testing every Apple device with each operating system. However, Android—though a simulator is available—is a totally different beast. A beast that doesn't play nice with `localhost`.
 
-### Charles Proxy
+## Charles Proxy
 If you work for a company with a development server, this post is probably moot. But if not, [Charles Proxy](https://www.charlesproxy.com/) is a lifesaver. Setting it up is deceptively simple. In addition to the Charles app, you’re going to need the [Charles Proxy Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/charles-proxy/).
 
-### Setting up your devices
+## Setting up your devices
 Open your System Preferences and make sure that Wi-Fi is connected and selected. Underneath the status on the right side, there will be a sentence with something like, “Wifi is connected to [NETWORK] and has the IP address of XXX.X.X.XX.” That is your LAN IP. Write it down or commit it to memory, we’ll be using it soon.
 
 With Charles and Firefox running and all of your devices connected to the same network, you will just need to make a few modifications to your proxy settings. On **Android**, long press on network name, select _modify network_, then _advanced proxy settings_, and change _none_ to _manual_. On **iOS**, click the “i” icon on the wireless network and scroll to the _HTTP PROXY_ section at the bottom.
@@ -37,6 +37,3 @@ If you are using MAMP, you might need to change your port to something other tha
 With the device connected to your computer via USB, you can go to `chome://inspect` on your computer to run the web inspector as you typically would.
 
 I hope this helps. Happy testing!
-
-
-</div>

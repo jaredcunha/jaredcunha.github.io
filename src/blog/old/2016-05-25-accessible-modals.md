@@ -6,7 +6,7 @@ date: "2016-05-25T06:00-06:00"
 categories: Development, Accessibility
 excerpt: "Modal windows can pose many accessbility challenges. Here is how to adress them."
 ---
-<div class="body-copy wrap" markdown="1">
+
 Love them or hate them, modal windows are an established pattern employed by nearly every website today. It is true that they are easier to abuse than the office candy jar. For example, do you want to block a user from finishing a task to show an interstitial ad? Use a modal! Need to make your website a little more app-like just because? Use a modal! Desperate to go viral? Use a… well, you get the point. But for all their misuse, modals do have legitimate utility.
 
 There are a variety of reasons why we would opt to use modal windows, and for the sake of controversy, we can discuss in another post. What they all share in common is that they are excellent for contextualizing a subtask while retaining the user within their current place on the page. When triggered, the modal window appears, usually accompanied by a darker or lighter backdrop beneath it to highlight its content front and center for immediate interaction. But how do we achieve this effect—which is overly visual—in an accessible way?
@@ -52,8 +52,3 @@ Then in the close function, we return <code>:focus</code> to the original trigge
 
 ## Wrapping things up
 Modals present a unique challenge for accessibility, and design alternatives should be considered if any complexity is introduced. As we can see, building them correctly isn’t simply a matter of opening and closing them. As with the rest of front-end development, there is much more than meets the eye, or meets the mouse. This is our job.
-</div>
-
-
-
-
