@@ -13,7 +13,7 @@ excerpt: "The 2012 election was my third election working at POLITICO. I'd like 
 <p>As with many news organizations, elections tend to be a make-or-break ordeal. They are the end-result of the combined efforts put forth by multiple teams: designers, developers, editorial, reporters, sysadmins, project managers, team managers, product managers, web producers, video producers (if applicable), etc. To quote Joe Biden, it’s “a big fuckin’ deal.” Our election night was exactly that—a big fuckin’ deal—and I’ll explain why it was, by all accounts,  a hugely successful night.</p>
 
 <figure class="narrow">
-<a href="http://instagram.com/p/Rtwqa7BmJU/"><img src="http://distilleryimage8.s3.amazonaws.com/0a2577c2289411e2a73522000a1faf50_7.jpg" alt="Our traffic spike"/></a>
+<img src="/images/0a2577c2289411e2a73522000a1faf50_7.jpg" alt="Our traffic spike"/>
 <figcaption>This was our traffic today as of 11:30 PM. The bar directly to the left of it was our previous all-time record.</figcaption>
 </figure>
 <p>Take everyone’s favorite metric, the pageview: The day before, we set our all-time record at 8.1M, smashing our previous record by about 1M pageviews. On November 6th, we did 54M pageviews. That’s a 2,100% jump in normal daily traffic. There was even one hour when we did 8.2M pageviews. We beat our daily record in an hour!  For uniques, we had 9.4M on November, beating our previous record of 2.1M. That was 1,500% over normal. We peaked our concurrent visitors at 725,00 when our previous record was 35,000. It was big night. Check out this <a href="http://vimeo.com/53360859">video</a> from the nice folks at <a href="http://chartbeat.com">Chartbeat</a>.</p>
