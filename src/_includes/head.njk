@@ -1,0 +1,13 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+  {%- if title -%}
+    {{ renderData.title or title or metadata.title }} • {{ site.title }}
+  {%- else -%}
+    {{ site.title }}
+  {%- endif -%}
+</title>
+
+<link rel="stylesheet" media="all" href="/css/style.css"></link>
