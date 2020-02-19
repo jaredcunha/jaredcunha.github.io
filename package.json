@@ -1,6 +1,6 @@
 {
   "name": "jaredcunha.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Jared Cunha's blog",
   "main": "index.js",
   "scripts": {
