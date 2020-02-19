@@ -5,13 +5,12 @@
 </head>
 <body>
   <a class="skipnav" href="#main-content">Skip to main content</a>
-  <div class="redesign-banner">
-    <span>This page is being redesigned in the open. <a href="/blog/2020/02/18/redesigning-in-the-open/">Learn more</a>.</span>
-  </div>
+  {% include "redesign-banner.njk" %}
   <main role="main" id="main-content">
     <article class="post">
       {{ content | safe }}
     </article>
   </main>
+  {% include "footer.njk" %}
 </body>
 </html>

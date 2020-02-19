@@ -5,14 +5,14 @@
 </head>
 <body>
   <a class="skipnav" href="#main-content">Skip to main content</a>
-  <div class="redesign-banner">
-    <span>This page is being redesigned in the open. <a href="/blog/2020/02/18/redesigning-in-the-open/">Learn more</a>.</span>
-  </div>
+  {% include "redesign-banner.njk" %}
   <main role="main" id="main-content">
     <div class="post">
       <h1>{{ title }}</h1>
+      <p>{{ page.date.toDateString().split(' ').slice(1).join(' ') }}</p>
       {{ content | safe }}
     </div>
   </main>
+  {% include "footer.njk" %}
 </body>
 </html>
