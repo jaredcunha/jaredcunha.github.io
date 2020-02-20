@@ -16,7 +16,8 @@
   > h5,
   > h6,
   > figure,
-  > table {
+  > table,
+  > hr {
     grid-column: 2;
   }
 
@@ -24,5 +25,12 @@
     margin-top: 6rem;
     margin-bottom: 6rem;
     text-align: center;
+  }
+
+  > hr {
+    border-color: #dfede3;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
   }
 }

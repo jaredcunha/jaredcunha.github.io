@@ -13,6 +13,16 @@ This will be more than a redesign. I’ve been wanting to rearchitect the entire
 
 I will post updates here to document notable updates as I move forward.
 
+---
+## February 20, 2020
+
+**Spacing units!!**
+
+Today I have added my [spacing unit function](https://github.com/jaredcunha/jaredcunha.github.io/blob/master/src/assets/stylesheets/functions/_spacing-units.scss). This function is used in place of hardcoded margins and padding to enforce a consistent horizontal and vertical rhythm with a multiple of 8. At some point, I’m going to refactor that function so that the `$units` [Sass map](https://github.com/jaredcunha/jaredcunha.github.io/blob/master/src/assets/stylesheets/settings/_variables.scss) isn’t such a mess. But it’s snippet I’ve used in other projects and it works.
+
+Back to the spacing units. Why multiples of 8? There are many reasons, but I’d recommend reading the [8-pt Grid](https://spec.fm/specifics/8-pt-grid) for the entire rationale.
+
+---
 ## February 19, 2020
 
 This is the first push I’ve made on this. Generally, the goal here was to get everything out of Jekyll, scrap the old design, and put it into Eleventy without breaking URLs for any of the old posts. What I've done so far includes:
