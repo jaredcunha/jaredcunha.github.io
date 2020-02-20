@@ -1,7 +1,8 @@
 .skipnav {
+  @include font-sizes('small')
   background: transparent;
   left: 0;
-  padding: 8px 16px;
+  padding: units(1) units(2);
   position: absolute;
   top: -3.8rem; // skipnav link height
   transition: all 0.2s ease-in-out;

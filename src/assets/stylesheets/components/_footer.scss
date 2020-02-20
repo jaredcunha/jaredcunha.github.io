@@ -6,7 +6,7 @@
     minmax(auto, 57ch)
     minmax(1.2rem, 1fr);
   margin-top: 200px;
-  padding: 8px 0;
+  padding: units(1) 0;
 
   p {
     @include font-sizes('small');
