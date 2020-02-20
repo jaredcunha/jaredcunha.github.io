@@ -7,11 +7,11 @@
   <a class="skipnav" href="#main-content">Skip to main content</a>
   {% include "redesign-banner.njk" %}
   <main role="main" id="main-content">
-    <div class="post">
+    <artcile class="post">
       <h1>{{ title }}</h1>
       <p>{{ page.date.toDateString().split(' ').slice(1).join(' ') }}</p>
       {{ content | safe }}
-    </div>
+    </artcile>
   </main>
   {% include "footer.njk" %}
 </body>
