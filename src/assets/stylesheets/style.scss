@@ -2,8 +2,10 @@
 @import "./settings/variables";
 @import "./settings/font-faces";
 
+// Functions
+@import "./functions/**/*.scss";
+
 // Mixins
-// Variables
 @import "./mixins/**/*.scss";
 
 // Base styles

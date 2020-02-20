@@ -1,12 +1,12 @@
 .footer {
-  background-color: #aaB6ad;
+  background-color: #aab6ad;
   display: grid;
   grid-template-columns:
     minmax(1.2rem, 1fr)
     minmax(auto, 57ch)
     minmax(1.2rem, 1fr);
   margin-top: 200px;
-  padding: 8px 0;
+  padding: units(1) 0;
 
   p {
     @include font-sizes('small');
