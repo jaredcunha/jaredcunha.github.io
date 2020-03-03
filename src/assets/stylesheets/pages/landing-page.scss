@@ -1,5 +1,5 @@
 .landing-page {
-  background: url('#{$image-path}/site-home-bg.jpg') no-repeat left top;
+  background: image('/site-home-bg.jpg') no-repeat left top;
   background-size: contain;
   min-height: 300vh;
 }

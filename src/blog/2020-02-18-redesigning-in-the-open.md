@@ -14,6 +14,11 @@ This will be more than a redesign. I’ve been wanting to rearchitect the entire
 I will post updates here to document notable updates as I move forward.
 
 ---
+## March 3, 2020
+
+- Refactored asset paths to use a [simple function](https://css-tricks.com/snippets/sass/simple-asset-helper-functions/) instead. It's much more elegant solution than the variables I had written.
+
+---
 ## February 20, 2020
 
 **Spacing units!!**

@@ -5,8 +5,8 @@
   font-weight: 400;
   src:
     local(''),
-    url('#{$font-path}/playfair-display-v20-latin-regular.woff2') format('woff2'),
-    url('#{$font-path}/playfair-display-v20-latin-regular.woff') format('woff');
+    font('playfair-display-v20-latin-regular.woff2') format('woff2'),
+    font('playfair-display-v20-latin-regular.woff') format('woff');
 }
 
 /* playfair-display-700 - latin */
@@ -16,8 +16,8 @@
   font-weight: 700;
   src:
     local(''),
-    url('#{$font-path}/playfair-display-v20-latin-700.woff2') format('woff2'),
-    url('#{$font-path}/playfair-display-v20-latin-700.woff') format('woff');
+    font('playfair-display-v20-latin-700.woff2') format('woff2'),
+    font('playfair-display-v20-latin-700.woff') format('woff');
 }
 
 /* playfair-display-900 - latin */
@@ -27,8 +27,8 @@
   font-weight: 900;
   src:
     local(''),
-    url('#{$font-path}/playfair-display-v20-latin-900.woff2') format('woff2'),
-    url('#{$font-path}/playfair-display-v20-latin-900.woff') format('woff');
+    font('playfair-display-v20-latin-900.woff2') format('woff2'),
+    font('playfair-display-v20-latin-900.woff') format('woff');
 }
 
 /* raleway-regular - latin */
@@ -39,8 +39,8 @@
   src:
     local('Raleway'),
     local('Raleway-Regular'),
-    url('#{$font-path}/raleway-v14-latin-regular.woff2') format('woff2'),
-    url('#{$font-path}/raleway-v14-latin-regular.woff') format('woff');
+    font('raleway-v14-latin-regular.woff2') format('woff2'),
+    font('raleway-v14-latin-regular.woff') format('woff');
 }
 
 /* raleway-700 - latin */
@@ -51,6 +51,6 @@
   src:
     local('Raleway Bold'),
     local('Raleway-Bold'),
-    url('#{$font-path}/raleway-v14-latin-700.woff2') format('woff2'),
-    url('#{$font-path}/raleway-v14-latin-700.woff') format('woff');
+    font('raleway-v14-latin-700.woff2') format('woff2'),
+    font('raleway-v14-latin-700.woff') format('woff');
 }

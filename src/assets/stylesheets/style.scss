@@ -1,6 +1,5 @@
 // Variables
 @import "./settings/variables";
-@import "./settings/font-faces";
 
 // Functions
 @import "./functions/**/*.scss";
@@ -10,6 +9,7 @@
 
 // Base styles
 @import "./base/reset";
+@import "./base/font-faces";
 @import "./base/base";
 
 // Vendor styles
