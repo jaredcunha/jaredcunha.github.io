@@ -1,0 +1,18 @@
+.hero {
+  margin: units(10) 0;
+  text-align: center;
+}
+
+.hero__heading {
+  color: $color-olive-light;
+  font-size: 10vw;
+  opacity: .73;
+  text-transform: uppercase;
+}
+
+.hero__heading__tagline {
+  @include font-sizes('h3');
+  color: $color-vino-light;
+  display: block;
+  text-transform: none;
+}

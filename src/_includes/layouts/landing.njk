@@ -6,11 +6,24 @@
 <body>
   <a class="skipnav" href="#main-content">Skip to main content</a>
   {% include "redesign-banner.njk" %}
-  <main role="main" id="main-content">
-    <article class="post">
-      {{ content | safe }}
-    </article>
-  </main>
+  <div class="landing-page">
+    {% include "nav.njk" %}
+    <main role="main" id="main-content">
+      <article>
+        <div class="hero">
+          <h1 class="hero__heading">
+            <span class="hero__heading__tagline">Hello, I’m</span>
+            Jared Cunha
+          </h1>
+        </div>
+        <div class="post">
+          {{ content | safe }}
+        </div>
+
+      </article>
+    </main>
+  </div>
+
   {% include "footer.njk" %}
 </body>
 </html>
