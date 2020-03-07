@@ -1,5 +1,41 @@
 .landing-page {
-  background: image('/site-home-bg.jpg') no-repeat left top;
+  background: image('/site-home-bg.jpg') no-repeat center top;
   background-size: contain;
-  min-height: 300vh;
+  border: units(1) solid white;
+  min-height: 120vh;
+
+  @include media('landscape') {
+    background: image('/site-home-bg--landscape.jpg') no-repeat center top;
+    background-size: contain;
+
+    @include media('>=tablet') {
+      border-width: units(1.5);
+    }
+
+    @include media('>=desktop') {
+      min-height: 300vh;
+    }
+
+  }
+
+  @include media('portrait') {
+    @include media('>=tablet') {
+      background-position: center -200px;
+      background-size: contain;
+      border-width: units(1.5);
+      min-height: 300vh;
+    }
+
+    @include media('>=desktop') {
+      background-position: center -500px;
+      background-size: cover;
+      border-width: units(3);
+      min-height: 300vh;
+    }
+  }
+
+
+
+
+  footer {margin-top:1500px}
 }

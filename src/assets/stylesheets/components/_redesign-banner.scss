@@ -1,15 +1,9 @@
 .redesign-banner {
   background-color: #aab6ad;
-  display: grid;
-  grid-template-columns:
-    minmax(1.2rem, 1fr)
-    minmax(auto, 57ch)
-    minmax(1.2rem, 1fr);
-  padding: units(1) 0;
+  padding: units(1) units(2);
 
   span {
     @include font-sizes('small');
-    grid-column: 2;
   }
 
   a,

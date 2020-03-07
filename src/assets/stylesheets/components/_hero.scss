@@ -1,5 +1,4 @@
 .hero {
-  margin: units(10) 0;
   text-align: center;
 }
 
@@ -11,8 +10,11 @@
 }
 
 .hero__heading__tagline {
-  @include font-sizes('h3');
+  @include font-sizes('base');
   color: $color-vino-light;
   display: block;
   text-transform: none;
+  @include media('>=tablet') {
+    @include font-sizes('h3');
+  }
 }
