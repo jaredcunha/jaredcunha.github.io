@@ -4,19 +4,17 @@ const gulp = require('gulp');
 gulp.task('build',
   //gulp.series(
     gulp.series(
-       'fonts',
+      'fonts',
       'images',
-      //'javascript',
+      'scripts',
       'sass'
     )
 //  )
 );
 
-
-
 gulp.task('watch', function() {
   console.log('Running gulp watch');
   gulp.watch('./src/assets/stylesheets/**/*.scss', gulp.series('sass'));
-  //gulp.watch('app/js/*.js', gulp.series('scripts'));
+  gulp.watch('./src/assets/javascripts/**/*.js', gulp.series('scripts'));
   //gulp.watch('app/img/*', gulp.series('images'));
 });

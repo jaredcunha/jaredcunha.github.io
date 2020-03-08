@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
   // Pass throughs
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/js");
 
   //Layouts
   eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
@@ -34,4 +35,3 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
-
