@@ -15,27 +15,17 @@
     @include media('>=desktop') {
       min-height: 300vh;
     }
-
   }
 
   @include media('portrait') {
+
     @include media('>=tablet') {
       background-position: center -200px;
       background-size: contain;
       border-width: units(1.5);
       min-height: 300vh;
     }
-
-    @include media('>=desktop') {
-      background-position: center -500px;
-      background-size: cover;
-      border-width: units(3);
-      min-height: 300vh;
-    }
   }
-
-
-
 
   footer {margin-top:1500px}
 }

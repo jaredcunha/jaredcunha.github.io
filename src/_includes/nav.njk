@@ -3,16 +3,50 @@
     <a href="/" class="nav__home-link" title="Home">
       {% include "logo.njk" %}
     </a>
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a class="nav__link" href="/about">About</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="/blog">Blog</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="/blog">Contact</a>
-      </li>
-    </ul>
+    <button type="button" id="open-nav-menu" class="nav__btn nav__btn--open">Menu</button>
+    <div class="nav__flyout" id="nav-flyout">
+      <button type="button" id="close-nav-menu" class="nav__btn nav__btn--close">Close</button>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="/about">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/blog">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/blog">Contact</a>
+        </li>
+      </ul>
+    </div>
+
   </nav>
 </header>
+
+
+<script>
+
+const OPEN_NAV_BUTTON = document.getElementById('open-nav-menu'),
+      CLOSE_NAV_BUTTON = document.getElementById('close-nav-menu'),
+      NAV_MENU = document.getElementById('nav-flyout'),
+      OPEN_CLASS = "nav__flyout--is-open",
+      VISIBLE_CLASS= "nav__flyout--is-visible";
+
+
+CLOSE_NAV_BUTTON.addEventListener("click", function(e) {
+  //document.body.classList.remove(nav_open_class);
+  NAV_MENU.classList.remove(OPEN_CLASS);
+  OPEN_NAV_BUTTON.focus();
+});
+
+OPEN_NAV_BUTTON.addEventListener("click", function(e) {
+  //document.body.classList.add(nav_open_class);
+  NAV_MENU.classList.add(OPEN_CLASS);
+  CLOSE_NAV_BUTTON.focus();
+
+  setTimeout(function(){
+    //overlay.classList.add(visible_class);
+  }, 100);
+
+})
+
+</script>

@@ -1,5 +1,15 @@
 .hero {
   text-align: center;
+
+  @include media('landscape') {
+    @include media('>=tablet') {
+      padding-top: units(4);
+    }
+
+    @include media('>=tablet') {
+      padding-top: units(10);
+    }
+  }
 }
 
 .hero__heading {
@@ -7,12 +17,16 @@
   font-size: 10vw;
   opacity: .73;
   text-transform: uppercase;
+  font-family: kazimir, sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .hero__heading__tagline {
   @include font-sizes('base');
   color: $color-vino-light;
   display: block;
+  font-weight: 700;
   text-transform: none;
   @include media('>=tablet') {
     @include font-sizes('h3');
