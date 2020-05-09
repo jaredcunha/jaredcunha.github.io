@@ -15,11 +15,12 @@
 .hero__heading {
   color: $color-olive-light;
   font-size: 10vw;
-  opacity: .73;
-  text-transform: uppercase;
   font-family: kazimir, sans-serif;
   font-weight: 900;
   font-style: italic;
+  margin-bottom: 0;
+  opacity: .73;
+  text-transform: uppercase;
 }
 
 .hero__heading__tagline {
@@ -31,4 +32,28 @@
   @include media('>=tablet') {
     @include font-sizes('h3');
   }
+}
+
+.hero__intro {
+  margin: 0 auto;
+  max-width: 66ch;
+}
+
+.hero__feature {
+  margin: units(4) auto;
+  max-width: 200px;
+  @include media('>=nav') {
+    margin: units(6) auto;
+    max-width: 250px;
+  }
+
+  @include media('>=desktop') {
+    margin: units(9) auto;
+    max-width: 400px;
+  }
+}
+
+.hero__img {
+  display: block;
+  width: 100%;
 }

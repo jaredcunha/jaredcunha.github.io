@@ -1,16 +1,20 @@
 {% extends "../templates/_template.njk" %}
 
 {% block main %}
-<article>
-  <div class="hero">
-    <h1 class="hero__heading">
-      <span class="hero__heading__tagline">Hello, I’m</span>
-      Jared Cunha
-    </h1>
-  </div>
-  <div class="post">
-    {{ content | safe }}
-  </div>
+  <article>
+    <div class="hero">
+      <h1 class="hero__heading">
+        <span class="hero__heading__tagline">Hello, I’m</span>
+        Jared Cunha
+      </h1>
+      <p class="hero__intro">I’m a designer and engineer who loves working on ethical technology&nbsp;projects.</p>
+      <div class="hero__feature">
+        <img class="hero__img" src="/images/me.png" alt="Screen shots of POLITICO Pro" />
+      </div>
+    </div>
 
-</article>
+    <div class="post">
+      {{ content | safe }}
+    </div>
+  </article>
 {% endblock %}

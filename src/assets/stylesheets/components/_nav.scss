@@ -5,6 +5,9 @@
   padding: units(2) units(2);
 
   @include media('>=tablet') {
+    padding: units(3) units(3);
+  }
+  @include media('>=desktop') {
     padding: units(4) units(4);
   }
 }
@@ -35,9 +38,29 @@
 }
 
 .nav__btn {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: $color-olive-dark;
+  cursor: pointer;
+  height: units(5);
+  padding: units(1);
+  width: units(5);
+
   @include media('>=nav') {
     display: none;
   }
+
+  svg {
+    color: $color-olive-dark;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.nav__btn--close {
+  margin-left: auto;
 }
 
 .nav__flyout {
@@ -56,6 +79,15 @@
     top: 0;
     width: 100vw;
     z-index: $z-index-flyout;
+  }
+}
+
+.nav_flyout-actions {
+  display: flex;
+  padding: units(3) units(4);
+
+  @include media('>=nav') {
+    display: none;
   }
 }
 

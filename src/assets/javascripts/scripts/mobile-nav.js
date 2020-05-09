@@ -8,11 +8,13 @@ const OPEN_NAV_BUTTON = document.getElementById('open-nav-menu'),
 CLOSE_NAV_BUTTON.addEventListener("click", function(e) {
   //document.body.classList.remove(nav_open_class);
   NAV_MENU.classList.remove(OPEN_CLASS);
+  OPEN_NAV_BUTTON.removeAttribute("hidden");
   OPEN_NAV_BUTTON.focus();
 });
 
 OPEN_NAV_BUTTON.addEventListener("click", function(e) {
   //document.body.classList.add(nav_open_class);
+  this.setAttribute("hidden", "");
   NAV_MENU.classList.add(OPEN_CLASS);
   CLOSE_NAV_BUTTON.focus();
 
