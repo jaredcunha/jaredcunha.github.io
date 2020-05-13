@@ -12,11 +12,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
 
   //Layouts
+  eleventyConfig.addLayoutAlias('blog-index', 'layouts/blog-index.njk');
   eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
   eleventyConfig.addLayoutAlias('landing', 'layouts/landing.njk');
 
   // Syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  // Console things
+  eleventyConfig.setQuietMode(true);
 
 
   let markdownIt = require("markdown-it");

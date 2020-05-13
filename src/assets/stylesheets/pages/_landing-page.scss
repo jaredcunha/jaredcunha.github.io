@@ -13,7 +13,7 @@
     }
 
     @include media('>=desktop') {
-      min-height: 300vh;
+      //min-height: 300vh;
     }
   }
 
@@ -23,9 +23,8 @@
       background-position: center -200px;
       background-size: contain;
       border-width: units(1.5);
-      min-height: 300vh;
+      //min-height: 300vh;
     }
   }
 
-  footer {margin-top:1500px}
 }

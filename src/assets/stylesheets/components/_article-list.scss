@@ -1,0 +1,35 @@
+.article-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.article-list__item {
+  border-bottom: 1px solid $color-olive-light;
+  margin: units(5) 0;
+  padding: units(5) 0;
+}
+
+.article-list__heading {
+  margin: 0;
+}
+
+.article-list__link,
+.article-list__link:visited {
+  color: $color-base;
+  text-decoration: none;
+}
+
+.article-list__link:hover,
+.article-list__link:focus {
+  color: $color-link-hover;
+}
+
+.article-list__excerpt {
+  margin-bottom: 0;
+}
+
+.article-list__date {
+  color: $color-base-muted;
+  font-size: $base_sm;
+}
