@@ -3,6 +3,7 @@ layout: default
 tags: post
 title: "I am not tracking you"
 categories: personal
+excerpt: "Our privacy is more important than ever. Technology companies have proven to be cavalier with how our personal data is collected, used, and secured. I’m not giving them your data."
 ---
 
 I am not tracking you on my site. I am not using cookies, third party scripts, or any other service that collects your data.

@@ -9,13 +9,18 @@ module.exports = function(eleventyConfig) {
   // Pass throughs
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/js");
 
   //Layouts
+  eleventyConfig.addLayoutAlias('blog-index', 'layouts/blog-index.njk');
   eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
   eleventyConfig.addLayoutAlias('landing', 'layouts/landing.njk');
 
   // Syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  // Console things
+  eleventyConfig.setQuietMode(true);
 
 
   let markdownIt = require("markdown-it");
@@ -34,4 +39,3 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
-

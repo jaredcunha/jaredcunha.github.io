@@ -1,6 +1,8 @@
+// Node packages
+@import "../../../node_modules/include-media/dist/_include-media.scss";
+
 // Variables
 @import "./settings/variables";
-@import "./settings/font-faces";
 
 // Functions
 @import "./functions/**/*.scss";
@@ -10,6 +12,7 @@
 
 // Base styles
 @import "./base/reset";
+@import "./base/font-faces";
 @import "./base/base";
 
 // Vendor styles
@@ -17,3 +20,6 @@
 
 // Components
 @import "./components/**/*.scss";
+
+// Pages
+@import "./pages/**/*.scss";

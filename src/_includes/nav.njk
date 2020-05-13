@@ -1,0 +1,32 @@
+{% import "macros/icon.njk" as icons %}
+
+<header>
+  <nav class="nav" role="navigation">
+    <a href="/" class="nav__home-link" title="Home">
+      {% include "logo.njk" %}
+    </a>
+    <button type="button" id="open-nav-menu" class="nav__btn nav__btn--open" aria-label="open navigation menu">
+      {{ icons.icon('bars') }}
+    </button>
+
+    <div class="nav__flyout" id="nav-flyout">
+      <div class="nav_flyout-actions">
+        <button type="button" id="close-nav-menu" class="nav__btn nav__btn--close">
+          {{ icons.icon('times') }}
+        </button>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="/about">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/blog">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/blog">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+</header>

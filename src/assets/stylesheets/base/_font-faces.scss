@@ -1,0 +1,56 @@
+/* playfair-display-regular - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local(''),
+    font('playfair-display-v20-latin-regular.woff2') format('woff2'),
+    font('playfair-display-v20-latin-regular.woff') format('woff');
+}
+
+/* playfair-display-700 - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local(''),
+    font('playfair-display-v20-latin-700.woff2') format('woff2'),
+    font('playfair-display-v20-latin-700.woff') format('woff');
+}
+
+/* playfair-display-900 - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local(''),
+    font('playfair-display-v20-latin-900.woff2') format('woff2'),
+    font('playfair-display-v20-latin-900.woff') format('woff');
+}
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Raleway'),
+    local('Raleway-Regular'),
+    font('raleway-v14-latin-regular.woff2') format('woff2'),
+    font('raleway-v14-latin-regular.woff') format('woff');
+}
+
+/* raleway-700 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Raleway Bold'),
+    local('Raleway-Bold'),
+    font('raleway-v14-latin-700.woff2') format('woff2'),
+    font('raleway-v14-latin-700.woff') format('woff');
+}
