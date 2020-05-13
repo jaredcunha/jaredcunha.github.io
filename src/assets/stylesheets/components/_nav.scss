@@ -1,0 +1,120 @@
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: units(2) units(2);
+
+  @include media('>=tablet') {
+    padding: units(3) units(3);
+  }
+  @include media('>=desktop') {
+    padding: units(4) units(4);
+  }
+}
+
+.nav__home-link,
+.nav__home-link:visited {
+  color: $color-olive-dark;
+  cursor: pointer;
+  display: block;
+  min-width: 3.2rem;
+  width: 4.4rem;
+
+  svg,
+  svg g {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+}
+
+.nav__home-link:hover,
+.nav__home-link:focus {
+  color: $color-olive-light;
+}
+
+.nav__logo {
+  cursor: pointer
+}
+
+.nav__btn {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: $color-olive-dark;
+  cursor: pointer;
+  height: units(5);
+  padding: units(1);
+  width: units(5);
+
+  @include media('>=nav') {
+    display: none;
+  }
+
+  svg {
+    color: $color-olive-dark;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.nav__btn--close {
+  margin-left: auto;
+}
+
+.nav__flyout {
+  @include media('<nav') {
+    display: none;
+  }
+}
+
+.nav__flyout--is-open {
+  @include media('<nav') {
+    background-color: rgba($color-haze, .9);
+    display: block;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: $z-index-flyout;
+  }
+}
+
+.nav_flyout-actions {
+  display: flex;
+  padding: units(3) units(4);
+
+  @include media('>=nav') {
+    display: none;
+  }
+}
+
+.nav__list {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  padding: units(5) 0 0;
+
+  @include media('>=nav') {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.nav__link,
+.nav__link:visited {
+  @include font-sizes('h3');
+  color: $color-olive-dark;
+  display: block;
+  font-weight: $font-weight-bold;
+  padding: units(1)units(2);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include media('>=nav') {
+    @include font-sizes('small');
+  }
+}

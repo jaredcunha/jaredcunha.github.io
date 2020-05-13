@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% include "head.njk" %}
+</head>
+<body class="{{ body_classes }}">
+
+  <a class="skipnav" href="#main-content">Skip to main content</a>
+    {% include "nav.njk" %}
+    <main role="main" id="main-content">
+      {% block main %}
+      {% endblock %}
+    </main>
+
+  {% include "footer.njk" %}
+</body>
+</html>

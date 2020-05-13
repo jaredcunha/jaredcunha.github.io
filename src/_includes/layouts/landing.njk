@@ -1,16 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-  {% include "head.njk" %}
-</head>
-<body>
-  <a class="skipnav" href="#main-content">Skip to main content</a>
-  {% include "redesign-banner.njk" %}
-  <main role="main" id="main-content">
-    <article class="post">
+{% extends "../templates/_template.njk" %}
+
+{% block main %}
+  <article>
+    <div class="hero">
+      <h1 class="hero__heading">
+        <span class="hero__heading__tagline">Hello, I’m</span>
+        Jared Cunha
+      </h1>
+      <p class="hero__intro">I’m a designer and engineer who loves working on ethical technology&nbsp;projects.</p>
+      <div class="hero__feature">
+        <img class="hero__img" src="/images/me.png" alt="Screen shots of POLITICO Pro" />
+      </div>
+    </div>
+
+    <div>
+      <div class="test-banner">
+        <div class="post">
+          <h2>This site is being redesigned in the open. </h2>
+          <p><a href="/blog/2020/02/18/redesigning-in-the-open/">Learn more</a> about the process.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="post">
       {{ content | safe }}
-    </article>
-  </main>
-  {% include "footer.njk" %}
-</body>
-</html>
+    </div>
+  </article>
+{% endblock %}

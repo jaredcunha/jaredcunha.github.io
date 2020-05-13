@@ -3,6 +3,7 @@ layout: default
 tags: post
 title: "Redesigning in the open"
 categories: personal
+excerpt: "Here, I am documenting the steps I am taking as I go through redesigning and refactoring my site. This post will be updated regularly until the design is done."
 ---
 
 I’ve noticed a recent trend on a few designers’ personal sites where most of the work is being done out in the open. In the beginning, a site will appear mostly unstyled or somewhat broken. Over time, you will see increasing levels of fidelity until a finalized product takes shape.
@@ -12,6 +13,20 @@ Some examples of this are [Rob Weychert](https://v7.robweychert.com/) and [Frank
 This will be more than a redesign. I’ve been wanting to rearchitect the entire thing, moving from Jekyll to [Eleventy](https://www.11ty.dev/), updating the build and deployment process, and so on. You can see the work being done in the [GitHub repo for this site](https://github.com/jaredcunha/jaredcunha.github.io).
 
 I will post updates here to document notable updates as I move forward.
+---
+## May 12, 2020
+
+Okay, that was a long break. I blame COVID.
+
+- Putting some initial design work into the homepage
+- Decided to switch my beloved **Raleway** typeface for an even more beloved **Kazimir**. It has just the personality I’m looking for in a typeface.
+- Honestly, it’s been too long and really cannot remember. I’m sorry. I’m better than this. I’ll do better next, I promise.
+
+---
+## March 3, 2020
+
+- Refactored asset path handling to use a [simple function](https://css-tricks.com/snippets/sass/simple-asset-helper-functions/) instead. It's much more elegant solution than the variables I had written.
+- Using [include-media](https://eduardoboucas.github.io/include-media) for handling breakpoints in Sass. I was just going to write my own function, but I like its flexibility and how it handles styles that are only applied between two breakpoints. As part of this adjustment, thought it was probably not necessary, I have switched my compiler to [Dart Sass](https://sass-lang.com/dart-sass).
 
 ---
 ## February 20, 2020

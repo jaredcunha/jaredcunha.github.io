@@ -1,0 +1,15 @@
+.banner {
+  background-color: $color-olive-dark;
+  color: white;
+  margin-bottom: units(4);
+  padding: units(4) 0;
+}
+
+.banner__heading {
+  color: $color-olive-light;
+}
+
+.test-banner {
+  background-color: rgba(255,255,255,.55);
+  padding: units(5);
+}
