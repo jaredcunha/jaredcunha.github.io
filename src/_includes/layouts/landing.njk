@@ -13,17 +13,22 @@
       </div>
     </div>
 
-    <div>
-      <div class="test-banner">
-        <div class="post">
-          <h2>This site is being redesigned in the open. </h2>
-          <p><a href="/blog/2020/02/18/redesigning-in-the-open/">Learn more</a> about the process.</p>
-        </div>
-      </div>
-    </div>
+    <section class="recent-posts site-wrap site-wrap--contain">
+      <h2 class="landing__section-header">Recent blog posts</h2>
+      <ul class="article-list article-list--grid">
+      {%- for post in collections.post | reverse -%}
+        {% if loop.index0 < 4 %}
+        <li class="article-list__item">
+          <h3 class="article-list__heading">
+            <a href="{{ post.url }}" class="article-list__link">{{ post.data.title }}</a>
+          </h3>
+          <p class="article-list__excerpt">{{ post.data.excerpt }}</p>
+          <p class="article-list__date">Posted on {{ post.date.toDateString().split(' ').slice(1).join(' ') }}</p>
+        </li>
+        {% endif %}
+      {%- endfor -%}
+      </ul>
+    </section>
 
-    <div class="post">
-      {{ content | safe }}
-    </div>
   </article>
 {% endblock %}

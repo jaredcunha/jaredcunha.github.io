@@ -13,6 +13,12 @@ Some examples of this are [Rob Weychert](https://v7.robweychert.com/) and [Frank
 This will be more than a redesign. I’ve been wanting to rearchitect the entire thing, moving from Jekyll to [Eleventy](https://www.11ty.dev/), updating the build and deployment process, and so on. You can see the work being done in the [GitHub repo for this site](https://github.com/jaredcunha/jaredcunha.github.io).
 
 I will post updates here to document notable updates as I move forward.
+
+---
+## May 13, 2020
+
+The landing page will feature my four most recent posts. I’m well aware that only two could even be considered “recent.” This is where I’m starting to think more about my CSS architecture. The list of posts on the homepage is a variant of what appears on the blog index. I’m still not 100% certain how this is all going to fit together yet and that is completely fine. I tend to do a lot of my design work inside the browser so the code, like the design, is very much a rough sketch what is to be.  But after stepping away and letting the dust settle—so to speak—how to apply fidelity, in both design and code, will materialize. I like where this is going. The aesthetic is sort of a throwback to the type of design I enjoyed doing much earlier in my career, with a mix of photography and paint textures. 
+
 ---
 ## May 12, 2020
 

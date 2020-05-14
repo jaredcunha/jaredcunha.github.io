@@ -70,3 +70,12 @@ a:focus {
 a:visited {
   color: $color-link-visited;
 }
+
+.site-wrap {
+  margin: 0 auto;
+  padding: 0 units(3);
+}
+
+.site-wrap--contain {
+  max-width: 1200px;
+}

@@ -1,20 +1,13 @@
 .footer {
-  background-color: #aab6ad;
-  display: grid;
-  grid-template-columns:
-    minmax(1.2rem, 1fr)
-    minmax(auto, 57ch)
-    minmax(1.2rem, 1fr);
   margin-top: 200px;
-  padding: units(1) 0;
+  text-align: center;
 
   p {
     @include font-sizes('small');
-    grid-column: 2;
   }
 
   a,
   a:visited {
-    color: #0000ed;
+    color: $color-link;
   }
 }

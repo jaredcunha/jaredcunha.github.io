@@ -33,3 +33,16 @@
   color: $color-base-muted;
   font-size: $base_sm;
 }
+
+/*=========================
+Variants
+===========================*/
+.article-list--grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: units(5);
+
+  @include media('>=tablet') {
+    grid-template-columns: 1fr 1fr;
+  }
+}
