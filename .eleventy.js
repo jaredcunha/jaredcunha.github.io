@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('blog-index', 'layouts/blog-index.njk');
   eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
   eleventyConfig.addLayoutAlias('landing', 'layouts/landing.njk');
+    eleventyConfig.addLayoutAlias('about', 'layouts/about.njk');
 
   // Syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);

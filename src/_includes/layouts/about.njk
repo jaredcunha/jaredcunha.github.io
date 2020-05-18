@@ -1,0 +1,16 @@
+{% extends "../templates/_template.njk" %}
+
+{% block main %}
+
+
+    <header class="banner banner--blog">
+      <div class="post">
+        <h1 class="banner__heading">About me</h1>
+      </div>
+    </header>
+
+    <div class="post">
+      {{ content | safe }}
+    </div>
+
+{% endblock %}
