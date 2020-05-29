@@ -35,6 +35,7 @@ First designer at [POLITICO](https://politico.com). Designed and built the main 
 
 ## Various speaking, interviews, and articles
 
+- [Monthly United States Web Design System Call - May 2020](https://digital.gov/event/2020/05/21/uswds-monthly-call-may-2020/) - Team members and I showcasing some new components we’ve contributed to the design system (button group, character count, and combo box), including updated guidance on using numeric fields and data visualizations.
 - [FedScoop: How designing federal websites for mobile may benefit the desktop user experience as well](https://www.fedscoop.com/mobile-web-design-benefits-desktop/) - In which we talk about how taking a mobile-first approach helps distill down what is most essential to the user.
 - [Kotecki on Tech: Human-centered Government](http://koteckiontech.libsyn.com/human-centered-government-us-digital-services-jared-cunha) - James Kotecki’s podcast focuses on technology, where we are and where we’re going. I enjoyed the opportunity to speak about the work we doing at the U.S. Digital Service.
 - [AIGA After hours](https://dc.aiga.org/event-internal/office-hours-u-s-digital-service/) - Participated in a panel discussion about what it’s like to be a designer in the federal government. This panel took place in the historic Eisenhower Executive Office Building inside the White House campus.
