@@ -15,9 +15,14 @@ This will be more than a redesign. I’ve been wanting to rearchitect the entire
 I will post updates here to document notable updates as I move forward.
 
 ---
+## June 1, 2020
+
+I’ve finally addressed the 404 on the [contact page](/contact). After testing around with the Netlify’s forms and the Zapier integration, I’ve settled for just 
+
+---
 ## May 13, 2020
 
-The landing page will feature my four most recent posts. I’m well aware that only two could even be considered “recent.” This is where I’m starting to think more about my CSS architecture. The list of posts on the homepage is a variant of what appears on the blog index. I’m still not 100% certain how this is all going to fit together yet and that is completely fine. I tend to do a lot of my design work inside the browser so the code, like the design, is very much a rough sketch what is to be.  But after stepping away and letting the dust settle—so to speak—how to apply fidelity, in both design and code, will materialize. I like where this is going. The aesthetic is sort of a throwback to the type of design I enjoyed doing much earlier in my career, with a mix of photography and paint textures. 
+The landing page will feature my four most recent posts. I’m well aware that only two could even be considered “recent.” This is where I’m starting to think more about my CSS architecture. The list of posts on the homepage is a variant of what appears on the blog index. I’m still not 100% certain how this is all going to fit together yet and that is completely fine. I tend to do a lot of my design work inside the browser so the code, like the design, is very much a rough sketch what is to be.  But after stepping away and letting the dust settle—so to speak—how to apply fidelity, in both design and code, will materialize. I like where this is going. The aesthetic is sort of a throwback to the type of design I enjoyed doing much earlier in my career, with a mix of photography and paint textures.
 
 ---
 ## May 12, 2020
