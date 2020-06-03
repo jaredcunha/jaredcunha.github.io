@@ -17,7 +17,7 @@ I will post updates here to document notable updates as I move forward.
 ---
 ## June 1, 2020
 
-I’ve finally addressed the 404 on the [contact page](/contact). After testing around with the Netlify’s forms and the Zapier integration, I’ve settled for just 
+I’ve finally addressed the 404 on the [contact page](/contact). After testing around with the Netlify’s forms and the Zapier integration, I’ve settled for just using plain old-fashioned email.
 
 ---
 ## May 13, 2020

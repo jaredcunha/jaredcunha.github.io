@@ -18,7 +18,7 @@ I am the director of product engineering at [&partners](https://andpartners.io).
 **2016-2019**
 
 Designer at [United States Digital Service](https://usds.gov) (USDS). Though I was a member of the design community of practice, I did my fair share of engineering work as well. Highlights include:
- 
+
 - [VA.gov design system](https://design.va.gov) - Product owner. I had built the documentation site working closely with other designers and engineers to ensure the guidance and principles were well-understood and helpful to achieving the goal of designing the best possible digital services to veterans.
 - [Data at the point of care](https://dpc.cms.gov/) - Front-end developer, UX design. This pilot program is a game-changer for healthcare providers and patients who often struggle to maintain a complete picture of their medical history.
 - [Certify](https://certify.sba.gov) - Designer, front-end developer. After 40 years and multiple failed attempts, we managed to get the Small Business Administration’s 8(a) Business Development Program off paper forms and into an online platform used by both small business and the business opportunity specialists receiving their applications. In conjunction with this work, I also put together a [design system](https://ussba.github.io/certify-design-system-documentation/) for the platform.
@@ -33,8 +33,9 @@ Senior product designer (2012-2015) and front-end engineer (2015-2016) for Livin
 
 First designer at [POLITICO](https://politico.com). Designed and built the main website along with applications for mobile and tablets. Designed live election results for 2008 and 2012 presidential elections, as well as the 2010 midterm elections.
 
-## Various speaking, interviews, and articles
+## Various speaking, interviews, and things in the press
 
+- [TEDx: A 360⁰ View of Patient History](https://www.ted.com/talks/amy_gleason_a_360_view_of_patient_history) - Amy Gleason talks about [Data at the Point of Care](http://dpc.cms.gov), one of the last projects I worked on while I was at USDS.
 - [Monthly United States Web Design System Call - May 2020](https://digital.gov/event/2020/05/21/uswds-monthly-call-may-2020/) - Team members and I showcasing some new components we’ve contributed to the design system (button group, character count, and combo box), including updated guidance on using numeric fields and data visualizations.
 - [FedScoop: How designing federal websites for mobile may benefit the desktop user experience as well](https://www.fedscoop.com/mobile-web-design-benefits-desktop/) - In which we talk about how taking a mobile-first approach helps distill down what is most essential to the user.
 - [Kotecki on Tech: Human-centered Government](http://koteckiontech.libsyn.com/human-centered-government-us-digital-services-jared-cunha) - James Kotecki’s podcast focuses on technology, where we are and where we’re going. I enjoyed the opportunity to speak about the work we doing at the U.S. Digital Service.
