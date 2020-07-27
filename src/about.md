@@ -35,6 +35,7 @@ First designer at [POLITICO](https://politico.com). Designed and built the main 
 
 ## Various speaking, interviews, and things in the press
 
+- [Monthly United States Web Design System Call - July 2020](https://digital.gov/event/2020/07/16/uswds-monthly-call-july-2020/) - Team members and I showcasing some new components we’ve contributed to the design system (date picker, file input, and tooltip).
 - [TEDx: A 360⁰ View of Patient History](https://www.ted.com/talks/amy_gleason_a_360_view_of_patient_history) - Amy Gleason talks about [Data at the Point of Care](http://dpc.cms.gov), one of the last projects I worked on while I was at USDS.
 - [Monthly United States Web Design System Call - May 2020](https://digital.gov/event/2020/05/21/uswds-monthly-call-may-2020/) - Team members and I showcasing some new components we’ve contributed to the design system (button group, character count, and combo box), including updated guidance on using numeric fields and data visualizations.
 - [FedScoop: How designing federal websites for mobile may benefit the desktop user experience as well](https://www.fedscoop.com/mobile-web-design-benefits-desktop/) - In which we talk about how taking a mobile-first approach helps distill down what is most essential to the user.
