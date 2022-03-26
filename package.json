@@ -34,7 +34,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "minimist": ">=1.2.3",
+    "minimist": ">=1.2.6",
     "include-media": "^1.4.9",
     "node-sass": "^4.13.1",
     "stylelint": "^13.2.0",
