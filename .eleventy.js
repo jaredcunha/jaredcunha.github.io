@@ -1,10 +1,22 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
+async function imageShortcode(src, alt, classNames) {
+
+  let classes = classNames ? `class="${classNames}"` : "";
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return `<img ${classes} src="https://ik.imagekit.io/jaredcunhadotcom/images/${src}" alt="${alt}" />`;
+}
+
 module.exports = function(eleventyConfig) {
 
   // Watch targets
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget("src/css");
+
+  //Images shortcodes
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addLiquidShortcode("image", imageShortcode);
+  eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
   // Pass throughs
   eleventyConfig.addPassthroughCopy("src/images");

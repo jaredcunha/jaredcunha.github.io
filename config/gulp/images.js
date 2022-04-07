@@ -20,4 +20,4 @@ gulp.task('vectors', function (done) {
 });
 
 
-gulp.task(task, gulp.parallel('rasters', 'vectors'));
+gulp.task(task, gulp.parallel('vectors'));

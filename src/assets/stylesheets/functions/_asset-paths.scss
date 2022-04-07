@@ -19,7 +19,8 @@ $asset-base-path: $base-path !default;
 /// @return {URL} - A `url()` function leading to the image
 /// @require {function} asset
 @function image($file) {
-  @return asset('images', $file);
+  //@return asset('images', $file);
+  @return url('https://ik.imagekit.io/jaredcunhadotcom/images/_ui' + $file);
 }
 
 /// Font asset helper

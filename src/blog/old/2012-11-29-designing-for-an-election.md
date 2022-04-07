@@ -34,7 +34,7 @@ excerpt: "The 2012 election was my third election working at POLITICO. I'd like 
 <p>Simply having the information on the page won’t necessarily cut it. It must be organized! There has to be a well-defined architecture, navigation has to be easy, and text must properly guide the user. This is where redundancy can do a little good. We’re tracking the Presidential race in every county in every state along with electoral votes, Senate races in 33 states, House races in 435 districts, Gubernatorial races in 11 states, ballot measures, seating shifts, historical comparisons, marking incumbents, highlighting battleground races, and the list goes on.</p>
 
 <figure class="narrow">
-<img src="/images/state-page.jpg" alt="state page" />
+ src="/images/state-page.jpg" alt="state page" />
 <figcaption>Screen shot of the Florida results page. <a href="http://www.politico.com/2012-election/results/president/florida/">Link</a></figcaption>
 </figure>
 
