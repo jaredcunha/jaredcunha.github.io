@@ -1,12 +1,11 @@
 ---
 tags: post
 layout: default
-title:  "The Waiting Game"
+title: "The Waiting Game"
 date: "2013-07-09T06:00-06:00"
 categories: UX
 excerpt: "Flight cancellations are bad. Without a human-centered approach to service design, airline companies exacerbate the situation."
 ---
-
 
 <p>Earlier this month as I was returning home from my honeymoon, I experienced the dreaded predicament that so many travelers eventually face: flight cancellation. I travel by air a few times a year and I’ve been handed every combination of delays, missed connections, luggage issues, and unhelpful customer service, but this was the first time that I had a cancelled flight. United Airlines worsened the situation by failing to provide basic recourse that I could manage on my own, which left my fellow passengers and me waiting for a substantial amount of time. Of course this is a <em>design</em> problem!</p>
 
@@ -25,7 +24,7 @@ excerpt: "Flight cancellations are bad. Without a human-centered approach to ser
 <p>Push notifications can get annoying if left unmanaged. But they can also be incredibly helpful. What if swiping the icon initiated the rebooking process?  What if it provided all the information that I had waited an hour and a half in line to get? Where to pick up luggage, why the flight was cancelled, and what the hotel options are; any additional information that might be useful. If the app performed those tasks, there would be no need to visit the service desk. For non-English speakers, the content can even be localized to remove language barriers between the traveler and the customer service agent. </p>
 
 <figure class="narrow">
-<img src="/images/airline-app.png" alt="App concept"/>
+<img src="https://images.jaredcunha.com/airline-app.png" alt="App concept"/>
 <figcaption>This would save passengers hours</figcaption>
 </figure>
 
@@ -38,7 +37,7 @@ excerpt: "Flight cancellations are bad. Without a human-centered approach to ser
 <p>The screen behind the desk is a prime location for messages. Call such and such number to rebook. Get your bags at baggage claim X. Pick up a hotel voucher coupon at the desk – on top of which there should be a stack. If, for whatever reason, that is an impossibility, a cardboard sign will suffice. At this point, most people should be able to help themselves booking new flights. For those who really need to speak with someone in person, the line to do so will be substantially shorter. </p>
 
 <figure class="narrow">
-<img src="/images/airline-monitor.png" alt="Airline monitors" />
+<img src="https://images.jaredcunha.com/airline-monitor.png" alt="Airline monitors" />
 <figcaption>Image on the left is all passengers had to read about the cancellation. The alternate image on the right could provide useful information.</figcaption>
 </figure>
 

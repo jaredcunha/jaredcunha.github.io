@@ -1,15 +1,14 @@
 ---
 tags: post
 layout: default
-title:  "The New POLITICO pro"
+title: "The New POLITICO pro"
 date: "2012-09-21T06:00-06:00"
 categories: work
 excerpt: "A lengthy post outlining the process of redesigning POLITICO from conception to completion."
 ---
 
-
 <figure class="full">
-<img src="/images/politicopro.jpg" alt="Screen shots of POLITICO Pro" />
+<img src="https://images.jaredcunha.com/politicopro.jpg" alt="Screen shots of POLITICO Pro" />
 </figure>
 
 <p class="intro">I’m very happy to announce the responsive redesign of <a href="http://politicopro.com">POLITICO Pro</a> - POLITICO.com’s premium service for policy news, launched Sept. 10, 2012.</p>
@@ -81,7 +80,7 @@ excerpt: "A lengthy post outlining the process of redesigning POLITICO from conc
 <p>I think my least favorite layout would be what you get while holding an iPad in portrait mode. That 300x250 ad at the top of the rail takes up too much space to allow the main content to stand out. It was important to me, and hopefully the reader, that stories would pleasant to read. I wanted the text to live by itself without getting muted by 10,000 items begging to be clicked. Through a class name on the <code>&lt;body&gt;</code> tag, I managed to change the layout in a way that makes reading a story appear as if you were reading the book. It’s really quite nice. </p>
 
 <figure class="narrow">
-<img src="/images/pro-ipad.jpg" alt="Story on iPad" />
+<img src="https://images.jaredcunha.com/pro-ipad.jpg" alt="Story on iPad" />
 <figcaption>Story viewed on an iPad in portrait mode</figcaption>
 </figure>
 
@@ -97,7 +96,7 @@ excerpt: "A lengthy post outlining the process of redesigning POLITICO from conc
 <p>Being in a company of around 200 people, we are fortunate to have a rather deep pool of devices to test: iPhones & iPads with all versions of iOS, Android phones and tablets, BlackBerries (Curve, Bold, Touch, etc.), Kindle (Fire, Touch, Keyboard), Windows, Mac, and a bunch of browsers. What we didn’t have, unfortunately, was a Windows Phone or video game system browser on hand (I'm curious to test those out when I get a chance). Our web producers spent close to two weeks publishing content, testing the limits of every element in every way. Using bugzilla, they logged anything and everything that appeared a little off. Of course, there were a few items that weren’t legitimate bugs, but they caught a lot of what we had missed. </p>
 
 <figure class="narrow">
-<img src="/images/kindle.jpg" alt="POLITICO Pro on Kindle"/>
+<img src="https://images.jaredcunha.com/kindle.jpg" alt="POLITICO Pro on Kindle"/>
 <figcaption>POLITICO Pro viewed in a Kindle Touch</figcaption>
 </figure>
 

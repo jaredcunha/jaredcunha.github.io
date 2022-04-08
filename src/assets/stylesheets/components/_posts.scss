@@ -40,4 +40,8 @@
     overflow: auto;
     word-wrap: break-word;
   }
+
+  > .fullbleed {
+    grid-column: 1 / 4;
+  }
 }

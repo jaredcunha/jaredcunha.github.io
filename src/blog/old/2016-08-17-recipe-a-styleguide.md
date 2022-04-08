@@ -1,14 +1,15 @@
 ---
 tags: post
 layout: default
-title:  "Recipe: A Styleguide"
+title: "Recipe: A Styleguide"
 date: "2016-08-17T06:00-06:00"
 categories: Development, Design
 excerpt: "Building a styleguide for Restaurants Plus"
 permalink: "/blog/2016/08/recipe-a-styleguide/index.html"
 ---
+
 <figure class="full">
-<img src="/images/recipe-front.png" alt="Screenshot of Recipe"/>
+<img src="https://images.jaredcunha.com/recipe-front.png" alt="Screenshot of Recipe"/>
 <figcaption>It's just a screenshot. The button doesn’t actually work.</figcaption>
 </figure>
 
@@ -25,7 +26,7 @@ User interfaces fluctuated as well. Buttons would have gradients and drop shadow
 Having a reference document became essential – an inventory of our patterns and components, how they are built and how they are used. We needed to do better job enforcing ourselves in how we present a consistent visual language to our consumers. That is why I started Recipe.
 
 <figure class="border">
-<img src="/images/recipe.png" alt="Screenshot of Recipe"/>
+<img src="https://images.jaredcunha.com/recipe.png" alt="Screenshot of Recipe"/>
 <figcaption>Typical page in Recipe</figcaption>
 </figure>
 
