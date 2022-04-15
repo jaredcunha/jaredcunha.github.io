@@ -3,8 +3,7 @@
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
-  src:
-    local(''),
+  src: local(''),
     font('playfair-display-v20-latin-regular.woff2') format('woff2'),
     font('playfair-display-v20-latin-regular.woff') format('woff');
 }
@@ -14,9 +13,7 @@
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
-  src:
-    local(''),
-    font('playfair-display-v20-latin-700.woff2') format('woff2'),
+  src: local(''), font('playfair-display-v20-latin-700.woff2') format('woff2'),
     font('playfair-display-v20-latin-700.woff') format('woff');
 }
 
@@ -25,9 +22,7 @@
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 900;
-  src:
-    local(''),
-    font('playfair-display-v20-latin-900.woff2') format('woff2'),
+  src: local(''), font('playfair-display-v20-latin-900.woff2') format('woff2'),
     font('playfair-display-v20-latin-900.woff') format('woff');
 }
 
@@ -36,9 +31,7 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src:
-    local('Raleway'),
-    local('Raleway-Regular'),
+  src: local('Raleway'), local('Raleway-Regular'),
     font('raleway-v14-latin-regular.woff2') format('woff2'),
     font('raleway-v14-latin-regular.woff') format('woff');
 }
@@ -48,9 +41,7 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  src:
-    local('Raleway Bold'),
-    local('Raleway-Bold'),
+  src: local('Raleway Bold'), local('Raleway-Bold'),
     font('raleway-v14-latin-700.woff2') format('woff2'),
     font('raleway-v14-latin-700.woff') format('woff');
 }

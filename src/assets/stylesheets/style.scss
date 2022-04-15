@@ -1,25 +1,36 @@
 // Node packages
-@import "../../../node_modules/include-media/dist/_include-media.scss";
+@import '~/node_modules/include-media/dist/_include-media.scss';
 
 // Variables
-@import "./settings/variables";
+@import './settings/variables';
 
 // Functions
-@import "./functions/**/*.scss";
+@import './functions/asset-paths.scss';
+@import './functions/spacing-units.scss';
 
 // Mixins
-@import "./mixins/**/*.scss";
+@import './mixins/flexbox.scss';
+@import './mixins/fluidtype.scss';
+@import './mixins/typography.scss';
 
 // Base styles
-@import "./base/reset";
-@import "./base/font-faces";
-@import "./base/base";
+@import './base/reset';
+@import './base/font-faces';
+@import './base/base';
 
 // Vendor styles
-@import "./vendor/prism";
+@import './vendor/prism';
 
 // Components
-@import "./components/**/*.scss";
+@import './components/article-list.scss';
+@import './components/banners.scss';
+@import './components/footer.scss';
+@import './components/hero.scss';
+@import './components/icons.scss';
+@import './components/nav.scss';
+@import './components/posts.scss';
+@import './components/redesign-banner.scss';
+@import './components/skipnav.scss';
 
 // Pages
-@import "./pages/**/*.scss";
+@import './pages/landing-page.scss';
