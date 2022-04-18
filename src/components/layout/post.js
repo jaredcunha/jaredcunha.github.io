@@ -1,13 +1,17 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import DefaultLayout from './default';
+import { formatDate } from '../../utils';
 
 const PostLayout = ({ children, pageContext }) => {
-  const { title, description } = pageContext.frontmatter;
+  const { title, description, date } = pageContext.frontmatter;
+
   return (
     <DefaultLayout title={title} description={description}>
-      {children}
-      <Link to="/">&larr; Back</Link>
+      <article class="post">
+        <h1>{title}</h1>
+        <p>{formatDate(date)}</p>
+        {children}
+      </article>
     </DefaultLayout>
   );
 };

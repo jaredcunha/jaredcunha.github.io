@@ -50,7 +50,7 @@ const DefaultLayout = ({
               Creative Commons Attribution-NonCommercial-ShareAlike 4.0
               International License
             </a>
-            <Link to="/blog/2020/02/27/i-am-not-tracking-you">No tracking</Link>
+            <Link to="/blog/i-am-not-tracking-you">No tracking</Link>
           </p>
         </div>
       </footer>

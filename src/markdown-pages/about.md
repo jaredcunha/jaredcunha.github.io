@@ -1,14 +1,9 @@
----
-layout: about
-body_classes:
-permalink: /about/
----
-
-I am the director of product engineering at [&partners](https://andpartners.io). I’ve worn a lot of hats over the course of my career, but I’ve always enjoyed the sweet spot between design and engineering. I am happy to call Washington, DC my home.
+I am the director of creative technology at [Coforma](https://coforma.io). I’ve worn a lot of hats over the course of my career, but I’ve always enjoyed the sweet spot between design and engineering. I am happy to call Washington, DC my home.
 
 **Pronouns:** He/Him
 
 **Social media:**
+
 - [Twitter](https://twitter.com/jaredcunha)
 - [Instagram](https://instagram.com/jaredcunha)
 - [LinkedIn](https://www.linkedin.com/in/jaredcunha/)
@@ -20,9 +15,13 @@ I am the director of product engineering at [&partners](https://andpartners.io).
 Designer at [United States Digital Service](https://usds.gov) (USDS). Though I was a member of the design community of practice, I did my fair share of engineering work as well. Highlights include:
 
 - [VA.gov design system](https://design.va.gov) - Product owner. I had built the documentation site working closely with other designers and engineers to ensure the guidance and principles were well-understood and helpful to achieving the goal of designing the best possible digital services to veterans.
+
 - [Data at the point of care](https://dpc.cms.gov/) - Front-end developer, UX design. This pilot program is a game-changer for healthcare providers and patients who often struggle to maintain a complete picture of their medical history.
+
 - [Certify](https://certify.sba.gov) - Designer, front-end developer. After 40 years and multiple failed attempts, we managed to get the Small Business Administration’s 8(a) Business Development Program off paper forms and into an online platform used by both small business and the business opportunity specialists receiving their applications. In conjunction with this work, I also put together a [design system](https://ussba.github.io/certify-design-system-documentation/) for the platform.
+
 - [USDS.gov](https://usds.gov) - Front-end developer.
+
 - [Multi-benefit enrollment application](https://usds.github.io/benefits-enrollment-prototype/) A template for benefits administrators to customize their enrollment programs, simplifying a complex application process and allowing users to apply to multiple benefits, such as Supplement Nutritional Assistance Program (SNAP) and Medicaid in a single application.
 
 **2012-2016**
