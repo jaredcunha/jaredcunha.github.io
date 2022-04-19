@@ -7,7 +7,7 @@ const PostLayout = ({ children, pageContext }) => {
 
   return (
     <DefaultLayout title={title} description={description}>
-      <article class="post">
+      <article className="post">
         <h1>{title}</h1>
         <p>{formatDate(date)}</p>
         {children}

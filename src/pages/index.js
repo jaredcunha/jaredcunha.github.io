@@ -58,7 +58,7 @@ const IndexPage = () => {
                 <p className="article-list__excerpt">
                   {post.frontmatter.excerpt}
                 </p>
-                <p class="article-list__date">
+                <p className="article-list__date">
                   Posted on {post.frontmatter.date}
                 </p>
               </li>
