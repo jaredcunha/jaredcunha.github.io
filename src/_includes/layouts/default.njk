@@ -1,9 +1,0 @@
-{% extends "../templates/_template.njk" %}
-
-{% block main %}
-  <article class="post">
-    <h1>{{ title }}</h1>
-    <p>{{ page.date.toDateString().split(' ').slice(1).join(' ') }}</p>
-    {{ content | safe }}
-  </article>
-{% endblock %}
