@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Seo from './seo';
 import '../../assets/stylesheets/style.scss';
+import Icon from '../ui/Icon';
+import Logo from '../../svg/logo.svg';
 
 const DefaultLayout = ({
   children,
@@ -32,8 +34,11 @@ const DefaultLayout = ({
         path={path}
         bodyClass={bodyClass}
       />
-
       <header>
+        <a href="/" class="nav__home-link" title="Home">
+          <Logo />
+        </a>
+        <Icon icon="bell" />
         <Link to="/">{meta.title}</Link>
         <nav>
           <Link to="/about">About</Link>

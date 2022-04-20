@@ -4,6 +4,7 @@
   "description": "Jared Cunha's blog",
   "main": "index.js",
   "scripts": {
+    "svg": "svg-sprite-generate -d ./src/svg/src -o ./static/sprite.svg",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -35,7 +36,8 @@
     "react-test-renderer": "^18.0.0",
     "stylelint": "^13.2.0",
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-scss": "^3.14.2"
+    "stylelint-scss": "^3.14.2",
+    "svg-sprite-generator": "^0.0.7"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
@@ -46,8 +48,10 @@
     "gatsby-plugin-page-creator": "^4.12.1",
     "gatsby-plugin-postcss": "^5.12.1",
     "gatsby-plugin-react-helmet-async": "^1.2.1",
+    "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-sass": "^5.12.1",
     "gatsby-plugin-sharp": "^4.12.1",
+    "gatsby-plugin-svg-sprite": "^2.0.1",
     "gatsby-remark-images": "^6.12.1",
     "gatsby-source-filesystem": "^4.12.1",
     "gatsby-transformer-remark": "^5.12.1",

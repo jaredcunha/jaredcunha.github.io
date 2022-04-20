@@ -47,6 +47,14 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /svg/,
+        },
+      },
+    },
     `gatsby-transformer-remark`,
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
