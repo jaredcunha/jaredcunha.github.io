@@ -25,11 +25,13 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
+    "axe-core": "^4.4.1",
     "babel-jest": "^27.5.1",
     "babel-preset-gatsby": "^2.12.1",
     "identity-obj-proxy": "^3.0.0",
     "include-media": "^1.4.9",
     "jest": "^27.5.1",
+    "jest-axe": "^6.0.0",
     "react-test-renderer": "^18.0.0",
     "stylelint": "^13.2.0",
     "stylelint-config-standard": "^20.0.0",
