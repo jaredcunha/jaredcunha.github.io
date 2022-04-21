@@ -1,0 +1,21 @@
+button,
+.button {
+  &:not([disabled]) {
+    &:focus {
+      //@include focus-outline(null, null, null, "0.25");
+      outline: 0.4rem solid $color-accent;
+      outline-offset: 0;
+    }
+  }
+}
+
+iframe,
+[href],
+[tabindex],
+[contentEditable='true'] {
+  &:focus {
+    //@include focus-outline;
+    outline: 0.4rem solid $color-accent;
+    outline-offset: 0;
+  }
+}

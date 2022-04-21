@@ -13,6 +13,9 @@
 @import './mixins/fluidtype.scss';
 @import './mixins/typography.scss';
 
+// Toolbox
+@import './toolbox/focus';
+
 // Base styles
 @import './base/reset';
 @import './base/font-faces';
