@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jaredcunha/jaredcunha.github.io#readme",
   "devDependencies": {
+    "@svgr/cli": "^6.2.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "axe-core": "^4.4.1",
