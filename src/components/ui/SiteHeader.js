@@ -6,9 +6,7 @@ import SiteLogo from '../../svg/logo.svg';
 import Icon from '../ui/Icon';
 import FocusTrap from 'focus-trap-react';
 
-const body = document.body;
 const navOpenClass = 'nav-open';
-console.log(body);
 
 const SiteHeader = () => {
   const openMenuButtonRef = useRef();
@@ -25,11 +23,11 @@ const SiteHeader = () => {
 
   useEffect(() => {
     if (menuVisible) {
-      body.classList.add(navOpenClass);
+      document.body.classList.add(navOpenClass);
     } else {
-      body.classList.remove(navOpenClass);
+      document.body.classList.remove(navOpenClass);
     }
-  });
+  }, [menuVisible]);
 
   return (
     <header>

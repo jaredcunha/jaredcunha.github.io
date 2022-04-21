@@ -1,3 +1,7 @@
+---
+title: about
+---
+
 I am the director of creative technology at [Coforma](https://coforma.io). I’ve worn a lot of hats over the course of my career, but I’ve always enjoyed the sweet spot between design and engineering. I am happy to call Washington, DC my home.
 
 **Pronouns:** He/Him

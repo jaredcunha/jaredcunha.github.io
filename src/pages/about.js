@@ -21,12 +21,10 @@ const AboutPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/about/" } }) {
+    allMarkdownRemark(filter: { frontmatter: { title: { eq: "about" } } }) {
       edges {
         node {
-          frontmatter {
-            title
-          }
+          id
           html
         }
       }

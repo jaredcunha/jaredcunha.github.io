@@ -21,12 +21,10 @@ const ContactPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/contact/" } }) {
+    allMarkdownRemark(filter: { frontmatter: { title: { eq: "contact" } } }) {
       edges {
         node {
-          frontmatter {
-            title
-          }
+          id
           html
         }
       }

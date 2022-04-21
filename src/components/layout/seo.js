@@ -26,7 +26,7 @@ const Seo = (props) => {
   const bodyClass = props.bodyClass || null;
 
   return (
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: 'en' }}>
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={url} />
