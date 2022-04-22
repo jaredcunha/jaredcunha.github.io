@@ -34,7 +34,7 @@
 }
 
 .nav__logo {
-  cursor: pointer
+  cursor: pointer;
 }
 
 .nav__btn {
@@ -71,7 +71,7 @@
 
 .nav__flyout--is-open {
   @include media('<nav') {
-    background-color: rgba($color-haze, .9);
+    background-color: rgba($color-haze, 0.9);
     display: block;
     height: 100vh;
     left: 0;
@@ -110,7 +110,7 @@
   color: $color-olive-dark;
   display: block;
   font-weight: $font-weight-bold;
-  padding: units(1)units(2);
+  padding: units(1) units(2);
   text-decoration: none;
   text-transform: uppercase;
 
