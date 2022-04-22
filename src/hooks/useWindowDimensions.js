@@ -1,6 +1,13 @@
 import { useState, useEffect } from 'react';
 
+const isBrowser = typeof window !== 'undefined';
+
+// We are returning 800 in case the build fails
+
 function getWindowDimensions() {
+  if (!isBrowser) {
+    return 800;
+  }
   const { innerWidth: width, innerHeight: height } = window;
   return {
     width,
@@ -14,6 +21,9 @@ export default function useWindowDimensions() {
   );
 
   useEffect(() => {
+    if (!isBrowser) {
+      return 800;
+    }
     function handleResize() {
       setWindowDimensions(getWindowDimensions());
     }
