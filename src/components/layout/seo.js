@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -36,6 +37,14 @@ const Seo = (props) => {
       {/* add facebook and twitter stuff */}
     </Helmet>
   );
+};
+
+Seo.propTypes = {
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  image: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  path: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  bodyClass: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 
 export default Seo;

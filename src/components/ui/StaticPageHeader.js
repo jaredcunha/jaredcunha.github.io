@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 
 const StaticPageHeader = ({ title }) => {
   return (
@@ -8,6 +9,10 @@ const StaticPageHeader = ({ title }) => {
       </div>
     </header>
   );
+};
+
+StaticPageHeader.propTypes = {
+  title: PropTypes.string.isRequired,
 };
 
 export default StaticPageHeader;

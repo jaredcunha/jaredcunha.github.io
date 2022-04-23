@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Seo from './seo';
 import '../../assets/stylesheets/style.scss';
@@ -39,6 +40,18 @@ const DefaultLayout = ({
       </footer>
     </>
   );
+};
+
+DefaultLayout.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+  title: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  path: PropTypes.string,
+  bodyClass: PropTypes.string,
 };
 
 export default DefaultLayout;
