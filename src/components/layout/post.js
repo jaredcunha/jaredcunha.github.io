@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import DefaultLayout from './default';
 import { formatDate } from '../../utils';
 
@@ -14,6 +15,14 @@ const PostLayout = ({ children, pageContext }) => {
       </article>
     </DefaultLayout>
   );
+};
+
+PostLayout.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+  pageContext: PropTypes.object,
 };
 
 export default PostLayout;

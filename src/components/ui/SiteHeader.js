@@ -93,6 +93,7 @@ const SiteHeader = () => {
                 <Icon icon="times" />
               </button>
             </div>
+            {/* eslint-disable-next-line jsx-a11y/no-redundant-roles */}
             <ul className="nav__list" role="list">
               <li className="nav__item">
                 <Link to="/about" className="nav__link">
