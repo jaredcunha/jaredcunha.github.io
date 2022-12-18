@@ -1,12 +1,12 @@
 // Node packages
 @import '~/node_modules/include-media/dist/_include-media.scss';
 
-// Variables
-@import './settings/variables';
-
 // Functions
-@import './functions/asset-paths.scss';
-@import './functions/spacing-units.scss';
+@import './core/functions/all.scss';
+
+// Site settings
+@import './settings/palette';
+@import './settings/variables';
 
 // Mixins
 @import './mixins/flexbox.scss';

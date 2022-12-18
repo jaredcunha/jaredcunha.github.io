@@ -2,10 +2,9 @@
 
 /*
 ===========================================
-Paths
+Breakpoints
 ===========================================
 */
-$base-path: '../../';
 
 $breakpoints: (
   'phone': 320px,
@@ -16,25 +15,6 @@ $breakpoints: (
   'desktop-lg': 1300px,
   'desktop-xl': 1500px,
 );
-
-/*
-===========================================
-Colors
-===========================================
-*/
-
-$color-base: rgba(0, 0, 0, 0.84);
-$color-base-muted: rgba(0, 0, 0, 0.55);
-
-$color-olive-dark: #3a4431;
-$color-olive-light: #aab6ad;
-$color-vino-light: #a58992;
-$color-white: #ffffff;
-$color-haze: #e1e1df;
-$color-link: #2a93ce;
-$color-link-hover: #0975b1;
-$color-accent: #9a2ace;
-$color-link-visited: #9a2ace;
 
 /*
 ===========================================

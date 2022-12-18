@@ -1,0 +1,185 @@
+/*
+===========================================
+Global color palette
+===========================================
+*/
+
+$color-base: rgba(0, 0, 0, 0.84);
+$color-base-muted: rgba(0, 0, 0, 0.55);
+
+$color-olive-dark: #3a4431;
+$color-olive-light: #aab6ad;
+$color-vino-light: #a58992;
+$color-white: #ffffff;
+$color-haze: #e1e1df;
+$color-link: #2a93ce;
+$color-link-hover: #0975b1;
+$color-accent: #9a2ace;
+$color-link-visited: #9a2ace;
+
+/// Color palettes
+$palettes: (
+  'blue': (
+    300: #e4f5ff,
+    400: #b2e3ff,
+    500: #8bd4fe,
+    600: #56b5eb,
+    700: #2a93ce,
+    800: #0975b1,
+    'warm': (
+      300: #e4e4ea,
+      400: #a5a6bc,
+      500: #7b7c93,
+      600: #575874,
+      700: #3b3c64,
+      800: #202143,
+    ),
+  ),
+  'gray': (
+    100: #f5f5f5,
+    200: #e0e0e0,
+    300: #c7c7c7,
+    400: #a4a4a4,
+    500: #777777,
+    600: #535353,
+    700: #383838,
+    800: #1b1b1b,
+  ),
+  'green': (
+    'warm': (
+      300: #d3d9d5,
+      400: #aab6ad,
+      500: #929d88,
+      600: #707b65,
+      700: #3a4431,
+      800: #1b2214,
+    ),
+  ),
+  'purple': (
+    300: #f6e3ff,
+    400: #e5c0f7,
+    500: #d093ec,
+    600: #b664dc,
+    700: #ad4dda,
+    800: #9a2ace,
+    'warm': (
+      300: #f4ecef,
+      400: #e0d1d6,
+      500: #cab3ba,
+      600: #a58992,
+      700: #755962,
+      800: #60404a,
+    ),
+  ),
+  'red': (
+    300: #ffcdca,
+    400: #ff9089,
+    500: #fd736a,
+    600: #f04c42,
+    700: #e2291d,
+    800: #bd0b00,
+  ),
+);
+
+/// Blue color palettes
+$blue-300: map-deep-get($palettes, 'blue', 300);
+$blue-400: map-deep-get($palettes, 'blue', 400);
+$blue-500: map-deep-get($palettes, 'blue', 500);
+$blue-600: map-deep-get($palettes, 'blue', 600);
+$blue-700: map-deep-get($palettes, 'blue', 700);
+$blue-800: map-deep-get($palettes, 'blue', 800);
+$blue-warm-300: map-deep-get($palettes, 'blue', 'warm', 300);
+$blue-warm-400: map-deep-get($palettes, 'blue', 'warm', 400);
+$blue-warm-500: map-deep-get($palettes, 'blue', 'warm', 500);
+$blue-warm-600: map-deep-get($palettes, 'blue', 'warm', 600);
+$blue-warm-700: map-deep-get($palettes, 'blue', 'warm', 700);
+$blue-warm-800: map-deep-get($palettes, 'blue', 'warm', 800);
+
+/// Gray color variables
+$gray-100: map-deep-get($palettes, 'gray', 100);
+$gray-200: map-deep-get($palettes, 'gray', 200);
+$gray-300: map-deep-get($palettes, 'gray', 300);
+$gray-400: map-deep-get($palettes, 'gray', 400);
+$gray-500: map-deep-get($palettes, 'gray', 500);
+$gray-600: map-deep-get($palettes, 'gray', 600);
+$gray-700: map-deep-get($palettes, 'gray', 700);
+$gray-800: map-deep-get($palettes, 'gray', 800);
+
+/// Green color variables
+$green-warm-300: map-deep-get($palettes, 'green', 'warm', 300);
+$green-warm-400: map-deep-get($palettes, 'green', 'warm', 400);
+$green-warm-500: map-deep-get($palettes, 'green', 'warm', 500);
+$green-warm-600: map-deep-get($palettes, 'green', 'warm', 600);
+$green-warm-700: map-deep-get($palettes, 'green', 'warm', 700);
+$green-warm-800: map-deep-get($palettes, 'green', 'warm', 800);
+
+/// Purple color palettes
+$purple-300: map-deep-get($palettes, 'purple', 300);
+$purple-400: map-deep-get($palettes, 'purple', 400);
+$purple-500: map-deep-get($palettes, 'purple', 500);
+$purple-600: map-deep-get($palettes, 'purple', 600);
+$purple-700: map-deep-get($palettes, 'purple', 700);
+$purple-800: map-deep-get($palettes, 'purple', 800);
+$purple-warm-300: map-deep-get($palettes, 'purple', 'warm', 300);
+$purple-warm-400: map-deep-get($palettes, 'purple', 'warm', 400);
+$purple-warm-500: map-deep-get($palettes, 'purple', 'warm', 500);
+$purple-warm-600: map-deep-get($palettes, 'purple', 'warm', 600);
+$purple-warm-700: map-deep-get($palettes, 'purple', 'warm', 700);
+$purple-warm-800: map-deep-get($palettes, 'purple', 'warm', 800);
+
+/// Red color palettes
+$red-300: map-deep-get($palettes, 'red', 300);
+$red-400: map-deep-get($palettes, 'red', 400);
+$red-500: map-deep-get($palettes, 'red', 500);
+$red-600: map-deep-get($palettes, 'red', 600);
+$red-700: map-deep-get($palettes, 'red', 700);
+$red-800: map-deep-get($palettes, 'red', 800);
+
+/// Colors map
+
+$colors: (
+  'blue-300': $blue-300,
+  'blue-400': $blue-400,
+  'blue-500': $blue-500,
+  'blue-600': $blue-600,
+  'blue-700': $blue-700,
+  'blue-800': $blue-800,
+  'blue-warm-300': $blue-warm-300,
+  'blue-warm-400': $blue-warm-400,
+  'blue-warm-500': $blue-warm-500,
+  'blue-warm-600': $blue-warm-600,
+  'blue-warm-700': $blue-warm-700,
+  'blue-warm-800': $blue-warm-800,
+  'gray-100': $gray-100,
+  'gray-200': $gray-200,
+  'gray-300': $gray-300,
+  'gray-400': $gray-400,
+  'gray-500': $gray-500,
+  'gray-600': $gray-600,
+  'gray-700': $gray-700,
+  'gray-800': $gray-800,
+  'green-warm-300': $green-warm-300,
+  'green-warm-400': $green-warm-400,
+  'green-warm-500': $green-warm-500,
+  'green-warm-700': $green-warm-600,
+  'green-warm-800': $green-warm-700,
+  'green-warm-900': $green-warm-800,
+  'purple-300': $purple-300,
+  'purple-400': $purple-400,
+  'purple-500': $purple-500,
+  'purple-600': $purple-600,
+  'purple-700': $purple-700,
+  'purple-800': $purple-800,
+  'purple-warm-300': $purple-warm-300,
+  'purple-warm-400': $purple-warm-400,
+  'purple-warm-500': $purple-warm-500,
+  'purple-warm-600': $purple-warm-600,
+  'purple-warm-700': $purple-warm-700,
+  'purple-warm-800': $purple-warm-800,
+  'red-300': $red-300,
+  'red-400': $red-400,
+  'red-500': $red-500,
+  'red-600': $red-600,
+  'red-700': $red-700,
+  'red-800': $red-800,
+);
