@@ -2,6 +2,7 @@
 /// should not include trailing slash
 /// @access public
 /// @type String
+$base-path: '../../';
 $asset-base-path: $base-path !default;
 
 /// Asset URL builder

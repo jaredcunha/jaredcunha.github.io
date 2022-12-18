@@ -6,7 +6,7 @@
   "scripts": {
     "svg": "svg-sprite-generate -d ./src/svg/src -o ./static/sprite.svg",
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

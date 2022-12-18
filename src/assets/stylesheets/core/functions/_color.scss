@@ -1,0 +1,21 @@
+/// Color function
+///
+/// @param {String} $color - colors variable
+///
+/// @example scss
+///   .foo {
+///       border: 1px solid color('red-3');
+///       color: color('gray-14');
+///   }
+///
+
+@function color($color) {
+  @if not map-has-key($colors, $color) {
+    @error '`#{$color}` is not a valid color token. '
+      + 'Valid color tokens: '
+      + '#{map-keys($colors)}';
+  }
+
+  $val: map-get($colors, $color);
+  @return $val;
+}
