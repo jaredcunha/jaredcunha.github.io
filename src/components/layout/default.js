@@ -31,10 +31,12 @@ const DefaultLayout = ({
           <p>
             Content created under{' '}
             <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-              Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-              International License
+              Creative Commons
+            </a>{' '}
+            | <Link to="/blog/i-am-not-tracking-you">No tracking</Link> |{' '}
+            <a href="https://mastodon.social/@jaredcunha" rel="me">
+              @jaredcunha on Mastodon
             </a>
-            <Link to="/blog/i-am-not-tracking-you">No tracking</Link>
           </p>
         </div>
       </footer>

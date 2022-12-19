@@ -1,62 +1,34 @@
 .landing-page {
-  background: image('/site-home-bg.jpg') no-repeat center top;
-  background-size: contain;
+  //background: image('/site-home-bg.jpg') no-repeat center bottom;
+  background-color: color('green-warm-100');
   border: units(1) solid white;
-  min-height: 120vh;
 
   @include media('landscape') {
-    background: image('/site-home-bg--landscape.jpg') no-repeat center top;
-    background-size: contain;
+    //background: image('/site-home-bg--landscape.jpg') no-repeat center bottom;
 
     @include media('>=tablet') {
       border-width: units(1.5);
     }
-
-    @include media('>=desktop') {
-      //min-height: 300vh;
-    }
   }
 
   @include media('portrait') {
-
     @include media('>=tablet') {
-      background-position: center -200px;
-      background-size: contain;
       border-width: units(1.5);
       //min-height: 300vh;
-    }
-  }
-
-}
-
-
-.recent-posts {
-  @include media('landscape') {
-    margin-top: 20vw;
-
-    @include media('>=desktop-lg') {
-      margin-top: 28vw;
-    }
-
-    @include media('>=desktop-xl') {
-      margin-top: 36vw;
-    }
-  }
-
-  @include media('portrait') {
-    margin-top: 40vw;
-
-    @include media('>=phone-lg') {
-      margin-top: 50vw;
-    }
-
-    @include media('>=tablet') {
-      margin-top: 50vw;
     }
   }
 }
 
 .landing__section-header {
-  @include font-sizes('h4');
-  text-align: center;
+  @include font-sizes('h5');
+  //border-top: 4px solid color('green-warm-500');
+  color: color('green-warm-700');
+  display: inline-block;
+  font-weight: 900;
+  padding-top: 0.5em;
+  padding-right: 2ch;
+
+  @include media('>=desktop-lg') {
+    margin-bottom: 0;
+  }
 }
