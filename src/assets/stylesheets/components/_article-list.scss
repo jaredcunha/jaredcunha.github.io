@@ -6,12 +6,21 @@
 
 .article-list__item {
   border-bottom: 1px solid $color-olive-light;
-  margin: units(5) 0;
+  margin: units(-5) 0 units(5);
   padding: units(5) 0;
+
+  @include media('>=desktop-lg') {
+    border-bottom: 0;
+    margin-top: units(1);
+    padding-top: 0;
+  }
 }
 
 .article-list__heading {
   margin: 0;
+  @include media('>=desktop-lg') {
+    @include font-sizes('h4');
+  }
 }
 
 .article-list__link,
@@ -27,6 +36,9 @@
 
 .article-list__excerpt {
   margin-bottom: 0;
+  @include media('>=desktop-lg') {
+    @include font-sizes('small');
+  }
 }
 
 .article-list__date {
@@ -44,5 +56,8 @@ Variants
 
   @include media('>=tablet') {
     grid-template-columns: 1fr 1fr;
+  }
+  @include media('>=desktop-lg') {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

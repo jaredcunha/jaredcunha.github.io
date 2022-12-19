@@ -47,6 +47,8 @@ $palettes: (
   ),
   'green': (
     'warm': (
+      100: #ededea,
+      200: #e9e7e6,
       300: #d3d9d5,
       400: #aab6ad,
       500: #929d88,
@@ -106,6 +108,8 @@ $gray-700: map-deep-get($palettes, 'gray', 700);
 $gray-800: map-deep-get($palettes, 'gray', 800);
 
 /// Green color variables
+$green-warm-100: map-deep-get($palettes, 'green', 'warm', 100);
+$green-warm-200: map-deep-get($palettes, 'green', 'warm', 200);
 $green-warm-300: map-deep-get($palettes, 'green', 'warm', 300);
 $green-warm-400: map-deep-get($palettes, 'green', 'warm', 400);
 $green-warm-500: map-deep-get($palettes, 'green', 'warm', 500);
@@ -158,6 +162,8 @@ $colors: (
   'gray-600': $gray-600,
   'gray-700': $gray-700,
   'gray-800': $gray-800,
+  'green-warm-100': $green-warm-100,
+  'green-warm-200': $green-warm-200,
   'green-warm-300': $green-warm-300,
   'green-warm-400': $green-warm-400,
   'green-warm-500': $green-warm-500,

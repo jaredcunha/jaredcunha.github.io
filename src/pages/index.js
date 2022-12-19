@@ -25,15 +25,7 @@ const IndexPage = () => {
   return (
     <>
       <DefaultLayout bodyClass="landing-page">
-        <div className="hero">
-          <h1 className="hero__heading">
-            <span className="hero__heading__tagline">Hello, I’m</span>
-            Jared Cunha
-          </h1>
-          <p className="hero__intro">
-            I’m a designer and engineer who loves working on ethical
-            technology&nbsp;projects.
-          </p>
+        <div className="hero site-wrap site-wrap--contain">
           <div className="hero__feature">
             <StaticImage
               src="https://images.jaredcunha.com/_ui/me.png"
@@ -43,6 +35,18 @@ const IndexPage = () => {
               width={400}
               height={400}
             />
+          </div>
+          <div>
+            <h1 className="hero__heading">
+              <span className="hero__heading__tagline">
+                Hello, I’m Jared Cunha
+              </span>
+              I make technology for the public good
+            </h1>
+            <p className="hero__intro">
+              I’m an accessibility-minded engineer and designer living in
+              Washington, DC
+            </p>
           </div>
         </div>
         <section className="recent-posts site-wrap site-wrap--contain">

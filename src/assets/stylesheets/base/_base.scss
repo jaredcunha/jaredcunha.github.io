@@ -78,8 +78,11 @@ a:visited {
 .site-wrap {
   margin: 0 auto;
   padding: 0 units(3);
+  @include media('>=tablet') {
+    padding: 0 units(5);
+  }
 }
 
 .site-wrap--contain {
-  max-width: 1200px;
+  max-width: 1600px;
 }
