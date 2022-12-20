@@ -44,7 +44,11 @@ const IndexPage = () => {
               I make technology for the public good
             </h1>
             <p className="hero__intro">
-              I’m an accessibility-minded engineer and designer living in
+              Senior Director of Creative Technology at{' '}
+              <strong>
+                <a href="https://coforma.io">Coforma</a>
+              </strong>{' '}
+              an accessibility-minded engineer and designer living in
               Washington, DC
             </p>
           </div>

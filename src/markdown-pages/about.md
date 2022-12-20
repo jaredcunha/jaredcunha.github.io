@@ -2,15 +2,9 @@
 title: about
 ---
 
-I am the director of creative technology at [Coforma](https://coforma.io). I’ve worn a lot of hats over the course of my career, but I’ve always enjoyed the sweet spot between design and engineering. I am happy to call Washington, DC my home.
+I am the senior director of creative technology at [Coforma](https://coforma.io). I’ve worn a lot of hats over the course of my career, but I’ve always enjoyed the sweet spot between design and engineering. I am happy to call Washington, DC my home.
 
 **Pronouns:** He/Him
-
-**Social media:**
-
-- [Twitter](https://twitter.com/jaredcunha)
-- [Instagram](https://instagram.com/jaredcunha)
-- [LinkedIn](https://www.linkedin.com/in/jaredcunha/)
 
 ## Career thus far
 
@@ -38,6 +32,7 @@ First designer at [POLITICO](https://politico.com). Designed and built the main 
 
 ## Various speaking, interviews, and things in the press
 
+- [Collaborating for Accessibility - September 2022](https://www.youtube.com/watch?v=S0tf7doKH-E&t=10s&ab_channel=HexagonUXDC) - A virtual talk I did for Hexagon UX’s DC Chapter.
 - [Monthly United States Web Design System Call - July 2020](https://digital.gov/event/2020/07/16/uswds-monthly-call-july-2020/) - Team members and I showcasing some new components we’ve contributed to the design system (date picker, file input, and tooltip).
 - [TEDx: A 360⁰ View of Patient History](https://www.ted.com/talks/amy_gleason_a_360_view_of_patient_history) - Amy Gleason talks about [Data at the Point of Care](http://dpc.cms.gov), one of the last projects I worked on while I was at USDS.
 - [Monthly United States Web Design System Call - May 2020](https://digital.gov/event/2020/05/21/uswds-monthly-call-may-2020/) - Team members and I showcasing some new components we’ve contributed to the design system (button group, character count, and combo box), including updated guidance on using numeric fields and data visualizations.

@@ -1,8 +1,13 @@
 .footer {
   margin-top: units(5);
-  text-align: center;
 
-  p {
+  @include media('>=tablet') {
+    margin-top: units(15);
+  }
+
+  h2,
+  p,
+  ul {
     @include font-sizes('small');
   }
 
@@ -13,5 +18,32 @@
 
   a:hover {
     color: $color-link-hover;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer__col {
+  flex: 1 1 auto;
+  @include media('>=tablet') {
+    flex: none;
+    margin-right: units(8);
+  }
+}
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: units(1);
+
+    @include media('>=tablet') {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: units(2);
+    }
   }
 }
