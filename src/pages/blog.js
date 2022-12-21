@@ -33,7 +33,7 @@ const BlogPage = () => {
               <li key={post.id} className="article-list__item">
                 <h2 className="article-list__heading">
                   <Link
-                    to={`/${post.fields.slug}`}
+                    to={`${post.fields.slug}`}
                     className="article-list__link"
                   >
                     {post.frontmatter.title}
