@@ -1,6 +1,6 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
-const postTemplate = path.resolve(`./src/templates/posts.jsx`);
+const postTemplate = path.resolve(`./src/templates/posts.js`);
 
 exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
   if (node.internal.type === 'Mdx') {
