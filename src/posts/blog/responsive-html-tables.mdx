@@ -7,71 +7,19 @@ categories: development
 excerpt: "Data tables are notoriously pesky elements to wrestle down into a narrow viewport. Here's another solution that I'm throwing into the mix."
 ---
 
-<p>
-  Data tables are notoriously pesky elements to wrestle down into a narrow
-  viewport. They can have a large number of columns or rows. Cells may contain
-  simple data or entire paragraphs. Let’s say for the sake of the article that
-  it’s all appropriate, or if anything, that such a table could possibly show up
-  on your website. How do we proceed? Well, that really depends.
-</p>
+Data tables are notoriously pesky elements to wrestle down into a narrow viewport. They can have a large number of columns or rows. Cells may contain simple data or entire it’s all appropriate, or if anything, that such a table could possibly show up on your website. How do we proceed? Well, that really depends.
 
-<p>
-  There are plenty of solutions already in the wild. Some are good, some are not
-  so good. Personally, I have an aversion to anything that would irretrievably
-  remove content from view or forgo the table element altogether. These options
-  either exhibit bad practices in responsive design or skirt the issue
-  entirely.{' '}
-</p>
+There are plenty of solutions already in the wild. Some are good, some are not so good. Personally, I have an aversion t remove content from view or forgo the table element altogether. These options either exhibit bad practices in responsive design or skirt the issue entirely.
 
-<p>
-  What makes tables more difficult than other elements in a responsive site is
-  that you need to maintain the relationship between the data and its respective
-  column and row headers — visually and in code. This means that you end up
-  sacrificing some of the flexibility that you have with other types of
-  elements. In particularly tall tables, it’s pretty easy to lose track of the
-  column headings.{' '}
-</p>
+What makes tables more difficult than other elements in a responsive site is that you need to maintain the relationship between the data and its respective column and row headers — visually and in code. This means that you end up sacrificing some of the flexibility that you have with other types of elements. In particularly tall tables, it’s pretty easy to lose track of the column headings.
 
-<p>
-  Depending on what type of site you have, you, the designer, might not be the
-  person responsible for producing content. And if a data table finds its way
-  into an article, it’s likely that you didn’t have much say over how many
-  columns or rows it contains. Hell, you’re probably not even aware it exists.
-  But whether or not it breaks, that’s going to fall upon you.
-</p>
+Depending on what type of site you have, you, the designer, might not be the person responsible for producing content. And if a data table finds its way into an article, it’s likely that you didn’t have much say over how many columns or rows it contains. Hell, you’re probably not even aware it exists. But whether or not it breaks, that’s going to fall upon you.
 
-<p>
-  Of all the proposed ideas for how to display a responsive data table, my
-  favorite is{' '}
-  <a href="http://css-tricks.com/responsive-data-tables/">
-    Chris Coyier’s example on CSS Tricks
-  </a>
-  . He has chosen to vertically orient the data into “card stacks.” What makes
-  this so appealing to me is that it allows for great column flexibility and
-  does not require the producer to manually enter class names for a javascript
-  function. It’s also much less harrowing if that producer possesses only a
-  working knowledge of HTML.{' '}
-</p>{' '}
+Of all the proposed ideas for how to display a responsive data table, my favorite is [Chris Coyier’s example on CSS Tricks](http://css-tricks.com/responsive-data-tables/). He has chosen to vertically orient the data into “card stacks.” What makes this so appealing to me is that it allows for great column flexibility and does not require the producer to manually enter class names for a javascript function. It’s also much less harrowing if that producer possesses only a working knowledge of HTML.
 
-<p>
-  There was one aspect of Chris’s approach that I felt could be improved upon,
-  however: using <code>:nth-of-type</code> selectors to create pseudo elements.
-  Browser compatibility aside, having to replicate table headers into embedded
-  CSS leaves a lot of room for human error. I’ve written a quick script which
-  takes the headings inside the <code>&lt;thead&gt;</code> and recreates them as
-  labels, replicating down for each table row.{' '}
-</p>
+There was one aspect of Chris’s approach that I felt could be improved upon, however: using `<code>`:nth-of-type`</code>` selectors to create pseudo elements. Browser compatibility aside, having to replicate table headers into embedded CSS leaves a lot of room for human error. I’ve written a quick script which takes the headings inside the `&lt;thead&gt;` and recreates them as labels, replicating down for each table row.
 
-[gist id=3804292]
-
-<p>
-  So for the table below, the web producer only needs properly formatted HTML
-  with a <code>&lt;thead&gt;</code> and a <code>&lt;tbody&gt;</code>. Even
-  though mine is hooked with a class name (for my own purposes), it isn’t
-  required. For CSS and all other information, please refer back to the original{' '}
-  <a href="http://css-tricks.com/responsive-data-tables/">post</a> on CSS
-  Tricks.
-</p>
+So for the table below, the web producer only needs properly formatted HTML with a `&lt;thead&gt;` and a `&lt;tbody&gt;`. Even though mine is hooked with a class name (for my own purposes), it isn’t required. For CSS and all other information, please refer back to the original [post](http://css-tricks.com/responsive-data-tables/) on CSS Tricks.
 
 <table class="vert-collapse">
   <thead>
@@ -152,7 +100,4 @@ excerpt: "Data tables are notoriously pesky elements to wrestle down into a narr
   </tbody>
 </table>
 
-<p>
-  Keep in mind that tables tend to vary. This might be a bit much for a small
-  table, but inadequate for a complex table with colspans or rowspans.{' '}
-</p>
+Keep in mind that tables tend to vary. This might be a bit much for a small table, but inadequate for a complex table with colspans or rowspans.
