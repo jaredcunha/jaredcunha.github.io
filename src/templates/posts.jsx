@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import DefaultLayout from '../components/layout/default';
+import PropTypes from 'prop-types';
+import DefaultLayout from './default';
 import { MDXProvider } from '@mdx-js/react';
 import { Link } from 'gatsby';
 import { formatDate } from '../utils';
@@ -29,5 +30,17 @@ export const query = graphql`
     }
   }
 `;
+
+PageTemplate.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+  data: PropTypes.object,
+  date: PropTypes.string,
+  description: PropTypes.string,
+  pageContext: PropTypes.object,
+  title: PropTypes.string,
+};
 
 export default PageTemplate;

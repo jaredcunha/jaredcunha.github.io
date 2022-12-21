@@ -1,7 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import DefaultLayout from '../components/layout/default';
+import DefaultLayout from '../templates/default';
 import StaticPageHeader from '../components/ui/StaticPageHeader';
 
 const md = (data) => {

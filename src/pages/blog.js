@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
-import DefaultLayout from '../components/layout/default';
+import DefaultLayout from '../templates/default';
 import StaticPageHeader from '../components/ui/StaticPageHeader';
 
 const BlogPage = () => {

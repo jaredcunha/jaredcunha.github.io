@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import DefaultLayout from '../components/layout/default';
+import DefaultLayout from '../templates/default';
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
