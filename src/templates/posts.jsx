@@ -8,9 +8,13 @@ import { formatDate } from '../utils';
 
 const shortcodes = { Link }; // Provide common components here
 
-const PageTemplate = ({ data, children, description, title, date }) => {
+const PageTemplate = ({ data, children }) => {
   return (
-    <DefaultLayout title={title} description={description} data={date}>
+    <DefaultLayout
+      title={data.mdx.frontmatter.title}
+      description={data.mdx.frontmatter.excerpt}
+      date={data.mdx.frontmatter.date}
+    >
       <article className="post">
         <h1>{data.mdx.frontmatter.title}</h1>
         <p>{formatDate(data.mdx.frontmatter.date)}</p>
@@ -26,6 +30,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        excerpt
       }
     }
   }
@@ -37,8 +42,6 @@ PageTemplate.propTypes = {
     PropTypes.node,
   ]),
   data: PropTypes.object,
-  date: PropTypes.string,
-  description: PropTypes.string,
   pageContext: PropTypes.object,
   title: PropTypes.string,
 };
