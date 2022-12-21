@@ -24,12 +24,6 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-page-creator',
-      options: {
-        path: `${__dirname}/src/posts`,
-      },
-    },
     'gatsby-remark-images',
     {
       resolve: 'gatsby-plugin-mdx',
@@ -42,9 +36,6 @@ module.exports = {
             },
           },
         ],
-        defaultLayouts: {
-          posts: require.resolve('./src/components/layout/post.js'),
-        },
       },
     },
     {

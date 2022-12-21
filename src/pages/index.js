@@ -1,15 +1,17 @@
 import * as React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import DefaultLayout from '../components/layout/default';
+import DefaultLayout from '../templates/default';
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query GetBlogPosts {
-      allMdx(limit: 4, sort: { order: DESC, fields: frontmatter___date }) {
+      allMdx(limit: 4, sort: { frontmatter: { date: DESC } }) {
         nodes {
           id
-          slug
+          fields {
+            slug
+          }
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
@@ -59,7 +61,7 @@ const IndexPage = () => {
             {posts.map((post) => (
               <li className="article-list__item" key={post.id}>
                 <h3 className="article-list__heading">
-                  <Link to={post.slug} className="article-list__link">
+                  <Link to={post.fields.slug} className="article-list__link">
                     {post.frontmatter.title}
                   </Link>
                 </h3>

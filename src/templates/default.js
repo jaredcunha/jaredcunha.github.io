@@ -2,8 +2,8 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Seo from './seo';
-import '../../assets/stylesheets/style.scss';
-import SiteHeader from '../ui/SiteHeader';
+import '../assets/stylesheets/style.scss';
+import SiteHeader from '../components/ui/SiteHeader';
 
 const DefaultLayout = ({
   children,
