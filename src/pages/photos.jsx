@@ -3,17 +3,18 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import DefaultLayout from '../templates/default';
 import StaticPageHeader from '../components/ui/StaticPageHeader';
 
-const BlogPage = () => {
+const PhotosPage = () => {
   const data = useStaticQuery(graphql`
-    query BlogPostsQuery {
-      allMdx(sort: { frontmatter: { date: DESC } }) {
+    query PhotoPostsQuery {
+      allMdx(
+        filter: { frontmatter: { type: { eq: "photo" } } }
+        sort: { frontmatter: { date: DESC } }
+      ) {
         nodes {
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             excerpt
             title
-          }
-          fields {
             slug
           }
           id
@@ -25,15 +26,15 @@ const BlogPage = () => {
   const posts = data.allMdx.nodes;
   return (
     <>
-      <DefaultLayout title="Blog">
-        <StaticPageHeader title="Blog" />
+      <DefaultLayout title="Photos">
+        <StaticPageHeader title="Photos" />
         <div className="post">
           <ul className="article-list">
             {posts.map((post) => (
               <li key={post.id} className="article-list__item">
                 <h2 className="article-list__heading">
                   <Link
-                    to={`${post.fields.slug}`}
+                    to={`${post.frontmatter.slug}`}
                     className="article-list__link"
                   >
                     {post.frontmatter.title}
@@ -54,4 +55,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default PhotosPage;

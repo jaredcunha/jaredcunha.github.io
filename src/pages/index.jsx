@@ -4,25 +4,27 @@ import { StaticImage } from 'gatsby-plugin-image';
 import DefaultLayout from '../templates/default';
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
+  const blogData = useStaticQuery(graphql`
     query GetBlogPosts {
-      allMdx(limit: 4, sort: { frontmatter: { date: DESC } }) {
+      allMdx(
+        filter: { frontmatter: { type: { eq: "blog" } } }
+        sort: { frontmatter: { date: DESC } }
+        limit: 4
+      ) {
         nodes {
           id
-          fields {
-            slug
-          }
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
             excerpt
+            slug
           }
         }
       }
     }
   `);
 
-  const posts = data.allMdx.nodes;
+  const posts = blogData.allMdx.nodes;
 
   return (
     <>
@@ -61,7 +63,10 @@ const IndexPage = () => {
             {posts.map((post) => (
               <li className="article-list__item" key={post.id}>
                 <h3 className="article-list__heading">
-                  <Link to={post.fields.slug} className="article-list__link">
+                  <Link
+                    to={`/blog/${post.frontmatter.slug}`}
+                    className="article-list__link"
+                  >
                     {post.frontmatter.title}
                   </Link>
                 </h3>

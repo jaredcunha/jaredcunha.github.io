@@ -1,14 +1,13 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import * as React from 'react';
+import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import DefaultLayout from './default';
+import DefaultLayout from '../../templates/default';
+import { formatDate } from '../../utils';
 import { MDXProvider } from '@mdx-js/react';
-import { Link } from 'gatsby';
-import { formatDate } from '../utils';
 
 const shortcodes = { Link }; // Provide common components here
 
-const PageTemplate = ({ data, children }) => {
+const BlogPostTemplate = ({ data, children }) => {
   return (
     <DefaultLayout
       title={data.mdx.frontmatter.title}
@@ -26,17 +25,19 @@ const PageTemplate = ({ data, children }) => {
 
 export const query = graphql`
   query ($id: String!) {
-    mdx(id: { eq: $id }) {
+    mdx(id: { eq: $id }, frontmatter: { type: { eq: "photo" } }) {
       frontmatter {
         title
         date
         excerpt
+        slug
       }
+      body
     }
   }
 `;
 
-PageTemplate.propTypes = {
+BlogPostTemplate.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -46,4 +47,4 @@ PageTemplate.propTypes = {
   title: PropTypes.string,
 };
 
-export default PageTemplate;
+export default BlogPostTemplate;
