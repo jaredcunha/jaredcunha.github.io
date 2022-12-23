@@ -25,7 +25,7 @@ const BlogPostTemplate = ({ data, children }) => {
 
 export const query = graphql`
   query ($id: String!) {
-    mdx(id: { eq: $id }, frontmatter: { type: { eq: "blog" } }) {
+    mdx(id: { eq: $id }) {
       frontmatter {
         title
         date
