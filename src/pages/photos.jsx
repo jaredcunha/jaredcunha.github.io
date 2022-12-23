@@ -7,7 +7,7 @@ const PhotosPage = () => {
   const data = useStaticQuery(graphql`
     query PhotoPostsQuery {
       allMdx(
-        filter: { frontmatter: { type: { eq: "photo" } } }
+        filter: { frontmatter: { type: { eq: "photos" } } }
         sort: { frontmatter: { date: DESC } }
       ) {
         nodes {
