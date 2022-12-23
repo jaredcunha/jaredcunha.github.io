@@ -7,7 +7,7 @@ import { MDXProvider } from '@mdx-js/react';
 
 const shortcodes = { Link }; // Provide common components here
 
-const BlogPostTemplate = ({ data, children }) => {
+const PageTemplate = ({ data, children }) => {
   return (
     <DefaultLayout
       title={data.mdx.frontmatter.title}
@@ -37,7 +37,7 @@ export const query = graphql`
   }
 `;
 
-BlogPostTemplate.propTypes = {
+PageTemplate.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -47,4 +47,4 @@ BlogPostTemplate.propTypes = {
   title: PropTypes.string,
 };
 
-export default BlogPostTemplate;
+export default PageTemplate;
