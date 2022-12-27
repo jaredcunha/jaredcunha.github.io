@@ -10,18 +10,19 @@ module.exports = {
     'gatsby-plugin-react-helmet-async',
     `gatsby-plugin-sass`,
     `gatsby-plugin-postcss`,
+
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'pages',
-        path: `${__dirname}/src/pages`,
+        name: 'blog',
+        path: `${__dirname}/src/content/blog`,
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'posts',
-        path: `${__dirname}/src/posts`,
+        name: 'photos',
+        path: `${__dirname}/src/content/photos`,
       },
     },
     'gatsby-remark-images',
@@ -46,13 +47,7 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/markdown-pages`,
-        name: `markdown-pages`,
-      },
-    },
+
     `gatsby-transformer-remark`,
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',

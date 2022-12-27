@@ -1,10 +1,9 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import * as React from 'react';
+import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import DefaultLayout from './default';
+import DefaultLayout from '../../templates/default';
+import { formatDate } from '../../utils';
 import { MDXProvider } from '@mdx-js/react';
-import { Link } from 'gatsby';
-import { formatDate } from '../utils';
 
 const shortcodes = { Link }; // Provide common components here
 
@@ -31,7 +30,9 @@ export const query = graphql`
         title
         date
         excerpt
+        slug
       }
+      body
     }
   }
 `;
