@@ -2,20 +2,20 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-const Image = ({ src, alt }) => {
-  console.log(src);
+const Image = ({ src, alt, className, caption }) => {
   return (
-    <>
-      <p>Begin Image</p>
+    <figure className={className}>
       <GatsbyImage image={getImage(src)} alt={alt} />
-      <p>End Image</p>
-    </>
+      {caption ? <figcaption>{caption}</figcaption> : null}
+    </figure>
   );
 };
 
 Image.propTypes = {
-  src: PropTypes.object,
-  alt: PropTypes.string,
+  alt: PropTypes.string.isRequired,
+  caption: PropTypes.string,
+  className: PropTypes.string,
+  src: PropTypes.object.isRequired,
 };
 
 export default Image;
