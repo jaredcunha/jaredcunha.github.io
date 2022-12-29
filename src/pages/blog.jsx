@@ -2,6 +2,7 @@ import * as React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import DefaultLayout from '../templates/default';
 import StaticPageHeader from '../components/ui/StaticPageHeader';
+import { formatDate } from '../utils';
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -12,7 +13,7 @@ const BlogPage = () => {
       ) {
         nodes {
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date
             excerpt
             title
             slug
@@ -44,7 +45,7 @@ const BlogPage = () => {
                   {post.frontmatter.excerpt}
                 </p>
                 <p className="article-list__date">
-                  Posted on {post.frontmatter.date}
+                  Posted on {formatDate(post.frontmatter.date)}
                 </p>
               </li>
             ))}

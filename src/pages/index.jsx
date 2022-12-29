@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import DefaultLayout from '../templates/default';
+import { formatDate } from '../utils';
 
 const IndexPage = () => {
   const blogData = useStaticQuery(graphql`
@@ -15,7 +16,7 @@ const IndexPage = () => {
           id
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date
             excerpt
             slug
           }
@@ -74,7 +75,7 @@ const IndexPage = () => {
                   {post.frontmatter.excerpt}
                 </p>
                 <p className="article-list__date">
-                  Posted on {post.frontmatter.date}
+                  Posted on {formatDate(post.frontmatter.date)}
                 </p>
               </li>
             ))}
