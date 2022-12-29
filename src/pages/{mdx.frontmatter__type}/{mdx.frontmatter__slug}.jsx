@@ -4,10 +4,15 @@ import PropTypes from 'prop-types';
 import DefaultLayout from '../../templates/default';
 import { formatDate } from '../../utils';
 import { MDXProvider } from '@mdx-js/react';
-
-const shortcodes = { Link }; // Provide common components here
+import Image from '../../components/ui/Image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const PageTemplate = ({ data, children }) => {
+  const shortcodes = { Link, Image }; // Provide common components here
+  const coverImage = data.mdx.embeddedImagesRemote
+    ? data.mdx.embeddedImagesRemote[0]
+    : null;
+  console.log(coverImage);
   return (
     <DefaultLayout
       title={data.mdx.frontmatter.title}
@@ -17,6 +22,7 @@ const PageTemplate = ({ data, children }) => {
       <article className="post">
         <h1>{data.mdx.frontmatter.title}</h1>
         <p>{formatDate(data.mdx.frontmatter.date)}</p>
+        {coverImage ? <GatsbyImage image={getImage(coverImage)} /> : null}
         <MDXProvider components={shortcodes}>{children}</MDXProvider>
       </article>
     </DefaultLayout>
@@ -26,6 +32,11 @@ const PageTemplate = ({ data, children }) => {
 export const query = graphql`
   query ($id: String!) {
     mdx(id: { eq: $id }) {
+      embeddedImagesRemote {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
       frontmatter {
         title
         date
