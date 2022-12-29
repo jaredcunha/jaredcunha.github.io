@@ -9,20 +9,23 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const PageTemplate = ({ data, children }) => {
   const shortcodes = { Link, Image }; // Provide common components here
-  const coverImage = data.mdx.embeddedImagesRemote
-    ? data.mdx.embeddedImagesRemote[0]
-    : null;
-  console.log(coverImage);
+  const coverImage = data.mdx.coverImage ? data.mdx.coverImage[0] : null;
+
+  const coverImageAltText = data.mdx.frontmatter.coverImageAltText
+    ? data.mdx.frontmatter.coverImageAltText[0]
+    : '';
   return (
     <DefaultLayout
       title={data.mdx.frontmatter.title}
       description={data.mdx.frontmatter.excerpt}
       date={data.mdx.frontmatter.date}
     >
+      {coverImage ? (
+        <GatsbyImage image={getImage(coverImage)} alt={coverImageAltText} />
+      ) : null}
       <article className="post">
         <h1>{data.mdx.frontmatter.title}</h1>
         <p>{formatDate(data.mdx.frontmatter.date)}</p>
-        {coverImage ? <GatsbyImage image={getImage(coverImage)} /> : null}
         <MDXProvider components={shortcodes}>{children}</MDXProvider>
       </article>
     </DefaultLayout>
@@ -32,6 +35,11 @@ const PageTemplate = ({ data, children }) => {
 export const query = graphql`
   query ($id: String!) {
     mdx(id: { eq: $id }) {
+      coverImage {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
       embeddedImagesRemote {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
@@ -42,6 +50,7 @@ export const query = graphql`
         date
         excerpt
         slug
+        coverImageAltText
       }
       body
     }

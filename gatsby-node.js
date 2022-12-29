@@ -6,7 +6,8 @@ exports.createSchemaCustomization = ({ actions }) => {
   createTypes(`
    type Mdx implements Node {
      frontmatter: frontmatter
-     embeddedImagesRemote: [File] @link(from: "fields.embeddedImagesRemote")  
+     embeddedImagesRemote: [File] @link(from: "fields.embeddedImagesRemote")
+     coverImage: [File] @link(from: "fields.coverImage")  
    }
 
    type frontmatter @dontInfer {
@@ -15,7 +16,9 @@ exports.createSchemaCustomization = ({ actions }) => {
      date: String
      slug: String
      type: String
+     coverImageAltText: [String]
      embeddedImagesRemote: [String]
+     coverImage: [String]
    }
  `);
 };
@@ -27,6 +30,7 @@ exports.onCreateNode = async ({
   cache,
   store,
 }) => {
+  // Embedded images
   if (
     node.internal.type === 'Mdx' &&
     node.frontmatter &&
@@ -53,6 +57,39 @@ exports.onCreateNode = async ({
         node,
         name: 'embeddedImagesRemote',
         value: embeddedImagesRemote.map((image) => {
+          return image.id;
+        }),
+      });
+    }
+  }
+
+  // CoverImages
+  if (
+    node.internal.type === 'Mdx' &&
+    node.frontmatter &&
+    node.frontmatter.coverImage
+  ) {
+    let coverImage = await Promise.all(
+      node.frontmatter.coverImage.map((url) => {
+        try {
+          return createRemoteFileNode({
+            url,
+            parentNodeId: node.id,
+            createNode,
+            createNodeId,
+            cache,
+            store,
+          });
+        } catch (error) {
+          console.error(error);
+        }
+      })
+    );
+    if (coverImage) {
+      createNodeField({
+        node,
+        name: 'coverImage',
+        value: coverImage.map((image) => {
           return image.id;
         }),
       });
