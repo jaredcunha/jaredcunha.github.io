@@ -9,6 +9,7 @@
   > ul,
   > ol,
   > blockquote,
+  > div,
   > h1,
   > h2,
   > h3,
@@ -44,5 +45,14 @@
 
   > .fullbleed {
     grid-column: 1 / 4;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  > p div,
+  li div:has(code[class*='language-']) {
+    display: inline;
   }
 }

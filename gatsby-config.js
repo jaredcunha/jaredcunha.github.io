@@ -36,6 +36,12 @@ module.exports = {
               maxWidth: 1800,
             },
           },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              noInlineHighlight: false,
+            },
+          },
         ],
       },
     },
@@ -48,9 +54,9 @@ module.exports = {
       },
     },
 
-    `gatsby-transformer-remark`,
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    `gatsby-transformer-remark`,
   ],
 };

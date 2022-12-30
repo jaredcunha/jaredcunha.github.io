@@ -17,14 +17,19 @@ Let’s take a look at various ways to go about addressing these concerns.
 
 ## ARIA Roles
 
-Using the [ARIA <code>dialog</code> role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role) informs screen readers that the content within is separate from the rest of the content on the page, in much the way we try to accomplish with a _layered_ presentation. When we open a modal window, its content becomes isolated and we can easily scan it to determine its function. This is visual design honoring intention. A screen reader would have to read the content line by line before any determination about using the modal can be made. Even after that, it could be ambiguous. Luckily, this can be addressed.
+Using `role="dialog"` informs screen readers that the content within is separate from the rest of the content on the page, in much the way we try to accomplish with a _layered_ presentation. When we open a modal window, its content becomes isolated and we can easily scan it to determine its function. This is visual design honoring intention. A screen reader would have to read the content line by line before any determination about using the modal can be made. Even after that, it could be ambiguous. Luckily, this can be addressed.
 
-In the modal’s root, we can use [`aria-labelledby`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute) and [`aria-describedby`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-describedby_attribute) attributes with values that correspond to an id of elements within it. Think of it as a way to describe an element in speaking terms using a name and a description.
+In the modal’s root, we can use `aria-labelledby` and `aria-describedby` attributes with values that correspond to an id of elements within it. Think of it as a way to describe an element in speaking terms using a name and a description.
 
-```
-<div class="modal" role="dialog" aria-labelledby="modal-labelledby" aria-describedby="modal-selection-describedby">
-    <h2 id="modal-selection-labelledby">The Great Modal</h2>
-    <p id="modal-selection-describedby">This modal will do great things.</p>
+```html
+<div
+  class="modal"
+  role="dialog"
+  aria-labelledby="modal-labelledby"
+  aria-describedby="modal-selection-describedby"
+>
+  <h2 id="modal-selection-labelledby">The Great Modal</h2>
+  <p id="modal-selection-describedby">This modal will do great things.</p>
 </div>
 ```
 
@@ -38,8 +43,14 @@ One thing to remember is that your modal window’s trigger may not be anywhere 
 
 When we instantiate a modal window as JavaScript loads successfully, we can assign a tabindex of -1 to each modal window element so that when it is opened, we can programmatically set its `:focus` so the user may interact with that content immediately.
 
-```
-<div class="modal" role="dialog" aria-labelledby="modal-labelledby" aria-describedby="modal-selection-describedby" tabindex="-1">
+```html
+<div
+  class="modal"
+  role="dialog"
+  aria-labelledby="modal-labelledby"
+  aria-describedby="modal-selection-describedby"
+  tabindex="-1"
+></div>
 ```
 
 ## Class Dismissed
@@ -50,13 +61,13 @@ Modal windows should always be a round trip. After closing a modal, we should po
 
 On way of capturing the clicked element in the opening function
 
-```
+```js
 this.clickedElement = event.currentTarget;
 ```
 
 Then in the close function, we return `:focus` to the original trigger
 
-```
+```js
 this.clickedElement.focus();
 ```
 
