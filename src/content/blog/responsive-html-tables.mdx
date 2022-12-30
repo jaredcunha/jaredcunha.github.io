@@ -17,9 +17,9 @@ Depending on what type of site you have, you, the designer, might not be the per
 
 Of all the proposed ideas for how to display a responsive data table, my favorite is [Chris Coyier’s example on CSS Tricks](http://css-tricks.com/responsive-data-tables/). He has chosen to vertically orient the data into “card stacks.” What makes this so appealing to me is that it allows for great column flexibility and does not require the producer to manually enter class names for a javascript function. It’s also much less harrowing if that producer possesses only a working knowledge of HTML.
 
-There was one aspect of Chris’s approach that I felt could be improved upon, however: using `<code>`:nth-of-type`</code>` selectors to create pseudo elements. Browser compatibility aside, having to replicate table headers into embedded CSS leaves a lot of room for human error. I’ve written a quick script which takes the headings inside the `&lt;thead&gt;` and recreates them as labels, replicating down for each table row.
+There was one aspect of Chris’s approach that I felt could be improved upon, however: using `:nth-of-type` selectors to create pseudo elements. Browser compatibility aside, having to replicate table headers into embedded CSS leaves a lot of room for human error. I’ve written a quick script which takes the headings inside the `<thead>` and recreates them as labels, replicating down for each table row.
 
-So for the table below, the web producer only needs properly formatted HTML with a `&lt;thead&gt;` and a `&lt;tbody&gt;`. Even though mine is hooked with a class name (for my own purposes), it isn’t required. For CSS and all other information, please refer back to the original [post](http://css-tricks.com/responsive-data-tables/) on CSS Tricks.
+So for the table below, the web producer only needs properly formatted HTML with a `<thead>` and a `<tbody>`. Even though mine is hooked with a class name (for my own purposes), it isn’t required. For CSS and all other information, please refer back to the original [post](http://css-tricks.com/responsive-data-tables/) on CSS Tricks.
 
 <table class="vert-collapse">
   <thead>
