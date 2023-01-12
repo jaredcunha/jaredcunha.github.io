@@ -8,11 +8,12 @@ slug: 'closing-out-2022'
 embeddedImagesRemote:
   - https://ik.imagekit.io/jaredcunhadotcom/pico/pico-lava-homes-sunset-1.jpg
   - https://ik.imagekit.io/jaredcunhadotcom/pico/pico-volcano-1.jpg
-someImage: ../../images/foo.jpg
+someImage:
+  - ../../images/foo.jpg
 ---
 
 <Image
-  src={props.data.mdx.frontmatter.someImage}
+  src={props.data.mdx.frontmatter.someImage[0]}
   alt="View from Lava Homes hotel with a guest house in the foreground, and in the background, the island of São João."
   className="wide"
   caption="Typical guest house at the Lava Homes hotel complex."
