@@ -9,10 +9,11 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const PageTemplate = ({ data, children }) => {
   const shortcodes = { Link, Image }; // Provide common components here
-  const coverImage = data.mdx.coverImage ? data.mdx.coverImage[0] : null;
-
+  const coverImage = data.mdx.frontmatter.coverImage
+    ? data.mdx.frontmatter.coverImage.childrenImageSharp[0]
+    : null;
   const coverImageAltText = data.mdx.frontmatter.coverImageAltText
-    ? data.mdx.frontmatter.coverImageAltText[0]
+    ? data.mdx.frontmatter.coverImageAltText
     : '';
   return (
     <DefaultLayout
@@ -21,7 +22,9 @@ const PageTemplate = ({ data, children }) => {
       date={data.mdx.frontmatter.date}
     >
       {coverImage ? (
-        <GatsbyImage image={getImage(coverImage)} alt={coverImageAltText} />
+        <>
+          <GatsbyImage image={getImage(coverImage)} alt={coverImageAltText} />
+        </>
       ) : null}
       <article className="post">
         <h1>{data.mdx.frontmatter.title}</h1>
@@ -35,11 +38,6 @@ const PageTemplate = ({ data, children }) => {
 export const query = graphql`
   query ($id: String!) {
     mdx(id: { eq: $id }) {
-      coverImage {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
       embeddedImagesRemote {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
@@ -54,6 +52,11 @@ export const query = graphql`
         postImages {
           childImageSharp {
             gatsbyImageData
+          }
+        }
+        coverImage {
+          childrenImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
