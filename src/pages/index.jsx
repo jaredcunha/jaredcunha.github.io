@@ -33,7 +33,7 @@ const IndexPage = () => {
         <div className="hero site-wrap site-wrap--contain">
           <div className="hero__feature">
             <StaticImage
-              src="https://images.jaredcunha.com/_ui/me.png"
+              src="https://ik.imagekit.io/jaredcunhadotcom/_ui/me.png"
               alt=""
               className="hero__img"
               placeholder="none"
