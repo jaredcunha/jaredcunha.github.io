@@ -51,6 +51,11 @@ export const query = graphql`
         excerpt
         slug
         coverImageAltText
+        someImage {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
       body
     }

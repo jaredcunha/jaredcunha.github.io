@@ -7,7 +7,7 @@ exports.createSchemaCustomization = ({ actions }) => {
    type Mdx implements Node {
      frontmatter: frontmatter
      embeddedImagesRemote: [File] @link(from: "fields.embeddedImagesRemote")
-     coverImage: [File] @link(from: "fields.coverImage")  
+     coverImage: [File] @link(from: "fields.coverImage")
    }
 
    type frontmatter @dontInfer {
@@ -19,6 +19,7 @@ exports.createSchemaCustomization = ({ actions }) => {
      coverImageAltText: [String]
      embeddedImagesRemote: [String]
      coverImage: [String]
+     someImage: File @fileByRelativePath
    }
  `);
 };
