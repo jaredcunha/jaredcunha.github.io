@@ -19,7 +19,7 @@ exports.createSchemaCustomization = ({ actions }) => {
      coverImageAltText: [String]
      embeddedImagesRemote: [String]
      coverImage: [String]
-     someImage: [File] @fileByRelativePath
+     postImages: [File] @fileByRelativePath
    }
  `);
 };

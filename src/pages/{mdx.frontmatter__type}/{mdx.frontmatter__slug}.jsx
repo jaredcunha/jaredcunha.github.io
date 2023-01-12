@@ -51,7 +51,7 @@ export const query = graphql`
         excerpt
         slug
         coverImageAltText
-        someImage {
+        postImages {
           childImageSharp {
             gatsbyImageData
           }

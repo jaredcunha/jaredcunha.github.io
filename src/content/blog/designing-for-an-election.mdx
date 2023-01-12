@@ -5,6 +5,11 @@ date: '2012-11-29'
 categories: work
 excerpt: "The 2012 election was my third election working at POLITICO. I'd like to describe some of the process that goes into creating our election material."
 slug: 'designing-for-an-election'
+postImages:
+  - ../../images/0a2577c2289411e2a73522000a1faf50_7.jpg
+  - ../../images/hp-results.jpg
+  - ../../images/state-page.jpg
+  - ../../images/big-map.jpg
 ---
 
 <p>
@@ -31,16 +36,13 @@ slug: 'designing-for-an-election'
   a hugely successful night.
 </p>
 
-<figure class="narrow">
-  <img
-    src="https://ik.imagekit.io/jaredcunhadotcom/0a2577c2289411e2a73522000a1faf50_7.jpg"
-    alt="Our traffic spike"
-  />
-  <figcaption>
-    This was our traffic today as of 11:30 PM. The bar directly to the left of
-    it was our previous all-time record.
-  </figcaption>
-</figure>
+<Image
+  src={props.data.mdx.frontmatter.postImages[0]}
+  alt="Our traffic spike"
+  caption="This was our traffic today as of 11:30 PM. The bar directly to the left of
+    it was our previous all-time record."
+/>
+
 <p>
   Take everyone’s favorite metric, the pageview: The day before, we set our
   all-time record at 8.1M, smashing our previous record by about 1M pageviews.
@@ -69,13 +71,11 @@ slug: 'designing-for-an-election'
   <a href="https://dev.twitter.com/docs/intents">web intents</a>.{' '}
 </p>
 
-<figure class="narrow">
-  <img
-    src="https://ik.imagekit.io/jaredcunhadotcom/hp-results.jpg"
-    alt="homepage"
-  />
-  <figcaption>Tweet results directly from the homepage.</figcaption>
-</figure>
+<Image
+  src={props.data.mdx.frontmatter.postImages[1]}
+  alt="Homepage"
+  caption="Tweet results directly from the homepage."
+/>
 
 <p>
   In addition to publishing results on our website,{' '}
@@ -117,18 +117,11 @@ slug: 'designing-for-an-election'
   races, and the list goes on.
 </p>
 
-<figure class="narrow">
-  <img
-    src="https://ik.imagekit.io/jaredcunhadotcom/state-page.jpg"
-    alt="state page"
-  />
-  <figcaption>
-    Screen shot of the Florida results page.{' '}
-    <a href="http://www.politico.com/2012-election/results/president/florida/">
-      Link
-    </a>
-  </figcaption>
-</figure>
+<Image
+  src={props.data.mdx.frontmatter.postImages[2]}
+  alt="State page"
+  caption="Florida results page."
+/>
 
 <p>
   2012 was the first year in which we were able to free ourselves from Flash.
@@ -153,15 +146,11 @@ slug: 'designing-for-an-election'
   and be able to dig around from there.
 </p>
 
-<figure class="narrow">
-  <img
-    src="https://ik.imagekit.io/jaredcunhadotcom/big-map.jpg"
-    alt="The Big Map"
-  />
-  <figcaption>
-    The big map. <a href="http://www.politico.com/2012-election/map/">Link</a>
-  </figcaption>
-</figure>
+<Image
+  src={props.data.mdx.frontmatter.postImages[3]}
+  alt="The big map"
+  caption="The big map."
+/>
 
 <p>
   Overall, we were very proud of what we done. We had a talented team of people

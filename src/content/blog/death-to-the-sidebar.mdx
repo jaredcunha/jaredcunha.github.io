@@ -5,6 +5,12 @@ date: '2012-12-27'
 categories: design
 excerpt: "The sidebar is a distracting bucket of useless bric-a-brac. Let's explore ways to not use it."
 slug: 'death-to-the-sidebar'
+postImages:
+  - ../../images/politico.jpg
+  - ../../images/Screen-Shot-2012-12-27-at-4.22.44-PM.png
+  - ../../images/Screen-Shot-2012-12-27-at-4.23.19-PM.png
+  - ../../images/mashable.png
+  - ../../images/
 ---
 
 <p>
@@ -44,16 +50,12 @@ slug: 'death-to-the-sidebar'
   creates a visual distraction from the content.
 </p>
 
-<figure>
-  <img
-    src="https://ik.imagekit.io/jaredcunhadotcom/politico.jpg"
-    alt="POLITICO"
-  />
-  <figcaption>
-    Throwing myself under the bus here. I am calling attention to things I
-    always wanted to fix, but wasn't unable to.
-  </figcaption>
-</figure>
+<Image
+  src={props.data.mdx.frontmatter.postImages[0]}
+  alt="Screenshot of POLITICO"
+  caption="Throwing myself under the bus here. I am calling attention to things I
+    always wanted to fix, but wasn’t unable to."
+/>
 
 <p>
   So what’s the remedy? First, ask yourself this question: do these widgets add
@@ -75,12 +77,11 @@ slug: 'death-to-the-sidebar'
 
 <p>Let’s look at some examples.</p>
 
-<figure>
-  <img
-    src="https://ik.imagekit.io/jaredcunhadotcom/Screen-Shot-2012-12-27-at-4.22.44-PM.png"
-    alt="Monocle"
-  />
-</figure>
+<Image
+  src={props.data.mdx.frontmatter.postImages[1]}
+  alt="Screenshot of Monocle"
+  caption="Monocle"
+/>
 
 <p>
   <a href="http://monocle.com/">Monocole</a> uses content modules of equal
@@ -93,12 +94,11 @@ slug: 'death-to-the-sidebar'
   down to mobile.{' '}
 </p>
 
-<figure>
-  <img
-    src="https://ik.imagekit.io/jaredcunhadotcom/Screen-Shot-2012-12-27-at-4.23.19-PM.png"
-    alt="Boston Globe"
-  />
-</figure>
+<Image
+  src={props.data.mdx.frontmatter.postImages[2]}
+  alt="Screenshot of Boston Globe homepage"
+  caption="Boston Globe"
+/>
 
 <p>
   The <a href="http://bostonglobe.com">Boston Globe</a> was the first major news
@@ -112,12 +112,11 @@ slug: 'death-to-the-sidebar'
   helps keep content prioritization for mobile.{' '}
 </p>
 
-<figure>
-  <img
-    src="https://ik.imagekit.io/jaredcunhadotcom/mashable.png"
-    alt="Mashable"
-  />
-</figure>
+<Image
+  src={props.data.mdx.frontmatter.postImages[3]}
+  alt="Screenshot of Mashable"
+  caption="Mashable"
+/>
 
 <p>
   <a href="http://mashable.com">Mashable</a> has done something quite remarkable

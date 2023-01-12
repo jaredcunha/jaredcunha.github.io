@@ -5,19 +5,10 @@ date: '2023-01-02'
 categories: Personal
 excerpt: 'Reflecting on the last year, the good, the bad, and the journey forward.'
 slug: 'closing-out-2022'
-embeddedImagesRemote:
-  - https://ik.imagekit.io/jaredcunhadotcom/pico/pico-lava-homes-sunset-1.jpg
-  - https://ik.imagekit.io/jaredcunhadotcom/pico/pico-volcano-1.jpg
-someImage:
-  - ../../images/foo.jpg
+postImages:
+  - ../../images/pico/pico-lava-homes-sunset-1.jpg
+  - ../../images/pico/pico-volcano-1.jpg
 ---
-
-<Image
-  src={props.data.mdx.frontmatter.someImage[0]}
-  alt="View from Lava Homes hotel with a guest house in the foreground, and in the background, the island of São João."
-  className="wide"
-  caption="Typical guest house at the Lava Homes hotel complex."
-/>
 
 Looking back on all that happened over the last year, or any year really, it can be a challenge to say definitively if it was a good year or a bad one. Most years tend to be mixed bag.
 
@@ -60,7 +51,7 @@ While we 2022 had some horrific tragedy, there was lot that was good too. I got 
 For the first time since 2019, I got to put a new stamp in my passport. This, it was the Azores, and specifically, [Pico Island](https://en.wikipedia.org/wiki/Pico_Island). The Azores are a spectacularly beautiful archipelago in the middle of the Atlantic Ocean, an autonomous region of Portugal, with Pico being the second-largest by size but one of the smallest in terms of population. There isn't a single stop light on the island.
 
 <Image
-  src={props.data.mdx.embeddedImagesRemote[0]}
+  src={props.data.mdx.frontmatter.postImages[0]}
   alt="View from Lava Homes hotel with a guest house in the foreground, and in the background, the island of São João."
   className="wide"
   caption="Typical guest house at the Lava Homes hotel complex."
@@ -71,7 +62,7 @@ Pico’s draw is its slower pace. There’s plenty to do—if you want—or you 
 The trip had given such large piece of what I’ve missed during the earlier years of the pandemic. I miss encountering unfamiliar places, cultures, architecture, and foods. Part of it, too, was just getting out of the U.S. for a bit. Life here has been stressful as hell over the last few years, so it was nice to escape the deluge of information and take time to reset.
 
 <Image
-  src={props.data.mdx.embeddedImagesRemote[1]}
+  src={props.data.mdx.frontmatter.postImages[1]}
   alt="Stacks of volcanic rocks with Mount Pico emerging from the clouds in the background."
   caption='Mount Pico, the volcano for which the island is named. Grapevines are grown in the plots between walls made of volcanic rocks, known as "currais."'
 />
