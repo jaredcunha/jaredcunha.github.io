@@ -11,6 +11,12 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-postcss`,
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/svg/logo.svg',
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
