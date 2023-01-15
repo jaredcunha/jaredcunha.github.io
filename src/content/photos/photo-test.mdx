@@ -5,6 +5,9 @@ date: '2022-07-09'
 categories: UX
 excerpt: 'Flight cancellations are bad. Without a human-centered approach to service design, airline companies exacerbate the situation.'
 slug: 'photo-test'
+postImages:
+  - ../../images/airline-app.png
+  - ../../images/airline-monitor.png
 ---
 
 <p>
@@ -85,10 +88,7 @@ slug: 'photo-test'
   language barriers between the traveler and the customer service agent.{' '}
 </p>
 
-<figure class="narrow">
-  <img src="https://images.jaredcunha.com/airline-app.png" alt="App concept" />
-  <figcaption>This would save passengers hours</figcaption>
-</figure>
+<Image src={props.data.mdx.frontmatter.postImages[0]} alt="App concept" />
 
 <p>
   At one point, the service desk announced that they’d assist people more
@@ -134,22 +134,18 @@ slug: 'photo-test'
   will be substantially shorter.{' '}
 </p>
 
-<figure class="narrow">
-  <img
-    src="https://images.jaredcunha.com/airline-monitor.png"
-    alt="Airline monitors"
-  />
-  <figcaption>
-    Image on the left is all passengers had to read about the cancellation. The
-    alternate image on the right could provide useful information.
-  </figcaption>
-</figure>
+<Image
+  src={props.data.mdx.frontmatter.postImages[1]}
+  alt="Airline monitors"
+  caption="Image on the left is all passengers had to read about the cancellation. The
+    alternate image on the right could provide useful information."
+/>
 
 <h3>Messaging and Context</h3>
 
 <p>
   A person’s mental state might be worth consideration when sending certain
-  types of email. When I received the confirmation of my rebooked flight, there
+  types of email. When I received the confirmation of my re-booked flight, there
   was a charge noted at the bottom. I wasn’t sure what it was for. The customer
   service rep. didn’t mention any charges, or that there wouldn’t be any new
   charges. I was stressed, I was tired, the email was wordy, and I failed to

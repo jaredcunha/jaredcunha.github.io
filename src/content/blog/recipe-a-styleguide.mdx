@@ -5,13 +5,13 @@ date: '2016-08-17'
 categories: Development, Design
 excerpt: 'Building a styleguide for Restaurants Plus'
 slug: 'recipe-a-styleguide'
-embeddedImagesRemote:
-  - https://images.jaredcunha.com/recipe-front.png
-  - https://images.jaredcunha.com/recipe.png
+postImages:
+  - ../../images/recipe-front.png
+  - ../../images/recipe.png
 ---
 
 <Image
-  src={props.data.mdx.embeddedImagesRemote[0]}
+  src={props.data.mdx.frontmatter.postImages[0]}
   alt="screenshot of Recipe hero image"
   className="wide"
   caption="It's just a screenshot. The button doesn’t actually work."
@@ -30,7 +30,7 @@ User interfaces fluctuated as well. Buttons would have gradients and drop shadow
 Having a reference document became essential – an inventory of our patterns and components, how they are built and how they are used. We needed to do better job enforcing ourselves in how we present a consistent visual language to our consumers. That is why I started Recipe.
 
 <Image
-  src={props.data.mdx.embeddedImagesRemote[1]}
+  src={props.data.mdx.frontmatter.postImages[1]}
   alt="screenshot of Recipe documentation page"
   className="border"
   caption="Typical page in Recipe"

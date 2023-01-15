@@ -10,7 +10,13 @@ module.exports = {
     'gatsby-plugin-react-helmet-async',
     `gatsby-plugin-sass`,
     `gatsby-plugin-postcss`,
-
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

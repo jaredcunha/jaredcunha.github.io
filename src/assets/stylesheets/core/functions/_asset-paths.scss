@@ -21,7 +21,7 @@ $asset-base-path: $base-path !default;
 /// @require {function} asset
 @function image($file) {
   //@return asset('images', $file);
-  @return url('https://images.jaredcunha.com/_ui' + $file);
+  @return url($asset-base-path + '/images/_ui/' + $file);
 }
 
 /// Font asset helper

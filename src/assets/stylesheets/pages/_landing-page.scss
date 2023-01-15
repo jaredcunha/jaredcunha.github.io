@@ -1,11 +1,8 @@
 .landing-page {
-  //background: image('/site-home-bg.jpg') no-repeat center bottom;
   background-color: color('green-warm-100');
   border: units(1) solid white;
 
   @include media('landscape') {
-    //background: image('/site-home-bg--landscape.jpg') no-repeat center bottom;
-
     @include media('>=tablet') {
       border-width: units(1.5);
     }
@@ -14,14 +11,12 @@
   @include media('portrait') {
     @include media('>=tablet') {
       border-width: units(1.5);
-      //min-height: 300vh;
     }
   }
 }
 
 .landing__section-header {
   @include font-sizes('h5');
-  //border-top: 4px solid color('green-warm-500');
   color: color('green-warm-700');
   display: inline-block;
   font-weight: 900;
