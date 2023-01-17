@@ -106,6 +106,11 @@ const SiteHeader = () => {
                 </Link>
               </li>
               <li className="nav__item">
+                <Link to="/photos" className="nav__link">
+                  Photos
+                </Link>
+              </li>
+              <li className="nav__item">
                 <Link to="/contact" className="nav__link">
                   Contact
                 </Link>

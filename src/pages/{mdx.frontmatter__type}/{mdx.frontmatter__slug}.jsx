@@ -6,9 +6,10 @@ import { formatDate } from '../../utils';
 import { MDXProvider } from '@mdx-js/react';
 import Image from '../../components/ui/Image';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { PhotoGrid, PhotoGridItem } from '../../components/ui/PhotoGrid';
 
 const PageTemplate = ({ data, children }) => {
-  const shortcodes = { Link, Image }; // Provide common components here
+  const shortcodes = { Link, Image, PhotoGrid, PhotoGridItem }; // Provide common components here
   const coverImage = data.mdx.frontmatter.coverImage
     ? data.mdx.frontmatter.coverImage.childrenImageSharp[0]
     : null;
@@ -28,7 +29,9 @@ const PageTemplate = ({ data, children }) => {
       ) : null}
       <article className="post">
         <h1>{data.mdx.frontmatter.title}</h1>
-        <p>{formatDate(data.mdx.frontmatter.date)}</p>
+        <p className="post__date">
+          Posted on {formatDate(data.mdx.frontmatter.date)}
+        </p>
         <MDXProvider components={shortcodes}>{children}</MDXProvider>
       </article>
     </DefaultLayout>
@@ -56,7 +59,11 @@ export const query = graphql`
         }
         coverImage {
           childrenImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              aspectRatio: 4
+              transformOptions: { cropFocus: CENTER }
+            )
           }
         }
       }
