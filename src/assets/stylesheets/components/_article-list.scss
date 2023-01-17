@@ -23,6 +23,11 @@
   }
 }
 
+.article-list__photo-link {
+  display: block;
+  margin-bottom: units(2);
+}
+
 .article-list__link,
 .article-list__link:visited {
   color: $color-base;

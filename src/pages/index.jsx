@@ -3,11 +3,12 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import DefaultLayout from '../templates/default';
 import { formatDate } from '../utils';
+import Image from '../components/ui/Image';
 
 const IndexPage = () => {
   const blogData = useStaticQuery(graphql`
-    query GetBlogPosts {
-      allMdx(
+    query {
+      post: allMdx(
         filter: { frontmatter: { type: { eq: "blog" } } }
         sort: { frontmatter: { date: DESC } }
         limit: 4
@@ -22,10 +23,35 @@ const IndexPage = () => {
           }
         }
       }
+      photo: allMdx(
+        filter: { frontmatter: { type: { eq: "photos" } } }
+        sort: { frontmatter: { date: DESC } }
+        limit: 4
+      ) {
+        nodes {
+          id
+          frontmatter {
+            title
+            date
+            excerpt
+            slug
+            coverImage {
+              childrenImageSharp {
+                gatsbyImageData(
+                  layout: FULL_WIDTH
+                  aspectRatio: 4
+                  transformOptions: { cropFocus: CENTER }
+                )
+              }
+            }
+          }
+        }
+      }
     }
   `);
 
-  const posts = blogData.allMdx.nodes;
+  const posts = blogData.post.nodes;
+  const photos = blogData.photo.nodes;
 
   return (
     <>
@@ -66,6 +92,40 @@ const IndexPage = () => {
                 <h3 className="article-list__heading">
                   <Link
                     to={`/blog/${post.frontmatter.slug}`}
+                    className="article-list__link"
+                  >
+                    {post.frontmatter.title}
+                  </Link>
+                </h3>
+                <p className="article-list__excerpt">
+                  {post.frontmatter.excerpt}
+                </p>
+                <p className="article-list__date">
+                  Posted on {formatDate(post.frontmatter.date)}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+        <section className="recent-posts site-wrap site-wrap--contain">
+          <h2 className="landing__section-header">Recent photography posts</h2>
+          <ul className="article-list article-list--grid">
+            {photos.map((post) => (
+              <li className="article-list__item" key={post.id}>
+                <Link
+                  to={`/photos/${post.frontmatter.slug}`}
+                  tabIndex="-1"
+                  aria-hidden="true"
+                  className="article-list__photo-link"
+                >
+                  <Image
+                    src={post.frontmatter.coverImage.childrenImageSharp[0]}
+                    alt=""
+                  ></Image>
+                </Link>
+                <h3 className="article-list__heading">
+                  <Link
+                    to={`/photos/${post.frontmatter.slug}`}
                     className="article-list__link"
                   >
                     {post.frontmatter.title}
