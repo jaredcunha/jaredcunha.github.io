@@ -65,7 +65,74 @@ module.exports = {
         },
       },
     },
-
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+          site {
+              siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl
+              }
+          }
+          }
+      `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map((edge) => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url:
+                    site.siteMetadata.siteUrl +
+                    '/' +
+                    edge.node.frontmatter.type +
+                    '/' +
+                    edge.node.frontmatter.slug,
+                  guid:
+                    site.siteMetadata.siteUrl +
+                    '/' +
+                    edge.node.frontmatter.type +
+                    '/' +
+                    edge.node.frontmatter.slug,
+                });
+              });
+            },
+            query: `
+              {
+              allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+              ) {
+                  edges {
+                  node {
+                      excerpt
+                      body
+                      frontmatter {
+                        title
+                        date
+                        slug
+                        type
+                      }
+                  }
+                  }
+              }
+              }
+          `,
+            output: '/rss.xml',
+            title: 'Jared Cunha',
+            // optional configuration to insert feed reference in pages:
+            // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // current page satisfied this regular expression;
+            // if not provided or `undefined`, all pages will have feed reference inserted
+            match: '^/blog/',
+          },
+        ],
+      },
+    },
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',

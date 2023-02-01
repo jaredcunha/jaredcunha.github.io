@@ -65,6 +65,9 @@ const DefaultLayout = ({
             <nav aria-label="Site info">
               <ul className="footer__nav-list">
                 <li>
+                  <Link to="/rss.xml">Feed</Link>
+                </li>
+                <li>
                   <Link to="/blog/i-am-not-tracking-you">No tracking</Link>
                 </li>
                 <li>
