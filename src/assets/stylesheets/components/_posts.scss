@@ -93,10 +93,6 @@
     gap: var(--photo-gap);
     grid-column: wide-start/wide-end;
     grid-template-columns: repeat(12, 1fr [photo-col-start]);
-  }
-
-  .photo-grid__row {
-    overflow: hidden;
 
     img {
       width: 100%;
@@ -115,6 +111,10 @@
     }
   }
 
+  .photo-grid__row {
+    overflow: hidden;
+  }
+
   .photo-grid__item--cols-3 {
     grid-column: auto / span 3;
   }
@@ -126,8 +126,23 @@
     }
   }
 
+  .photo-grid__item--cols-5 {
+    grid-column: auto / span 5;
+  }
+
   .photo-grid__item--cols-6 {
     grid-column: auto / span 6;
+  }
+
+  .photo-grid__item--cols-7 {
+    grid-column: auto / span 7;
+  }
+
+  .photo-grid__item--cols-8 {
+    grid-column: auto / span 12;
+    @include media('>=tablet') {
+      grid-column: auto / span 8;
+    }
   }
 
   .photo-grid__item--cols-9 {
