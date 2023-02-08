@@ -4,7 +4,8 @@ module.exports = {
     title: 'Jared Cunha',
     description:
       'Jared Cunha is a front-end developer and designer based in Washington, DC',
-    image: '',
+    image: 'share-card-generic.png',
+    twitterUserName: 'jaredcunha',
   },
   plugins: [
     'gatsby-plugin-react-helmet-async',
