@@ -39,7 +39,7 @@ const IndexPage = () => {
               childrenImageSharp {
                 gatsbyImageData(
                   layout: FULL_WIDTH
-                  aspectRatio: 4
+                  aspectRatio: 2
                   transformOptions: { cropFocus: CENTER }
                 )
               }
