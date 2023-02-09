@@ -41,11 +41,6 @@ const PageTemplate = ({ data, children }) => {
 export const query = graphql`
   query ($id: String!) {
     mdx(id: { eq: $id }) {
-      embeddedImagesRemote {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
       frontmatter {
         title
         date
