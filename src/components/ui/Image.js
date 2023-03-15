@@ -6,7 +6,7 @@ const Image = ({ src, alt, className, caption }) => {
   return (
     <figure className={className}>
       <GatsbyImage image={getImage(src)} alt={alt} />
-      {caption ? <figcaption>{caption}</figcaption> : null}
+      <figcaption>{caption}</figcaption>
     </figure>
   );
 };
