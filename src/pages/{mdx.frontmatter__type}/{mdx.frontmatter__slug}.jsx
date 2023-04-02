@@ -58,6 +58,7 @@ export const query = graphql`
               layout: FULL_WIDTH
               aspectRatio: 2.75
               transformOptions: { cropFocus: CENTER }
+              quality: 100
             )
           }
         }
