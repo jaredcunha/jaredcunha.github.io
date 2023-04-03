@@ -62,6 +62,11 @@ Variants
   @include media('>=tablet') {
     grid-template-columns: 1fr 1fr;
   }
+
+}
+
+.article-list--grid:not(.article-list--grid-wide) {
+
   @include media('>=desktop-lg') {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

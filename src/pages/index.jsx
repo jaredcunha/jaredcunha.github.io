@@ -109,7 +109,7 @@ const IndexPage = () => {
         </section>
         <section className="recent-posts site-wrap site-wrap--contain">
           <h2 className="landing__section-header">Recent photography posts</h2>
-          <ul className="article-list article-list--grid">
+          <ul className="article-list article-list--grid article-list--grid-wide">
             {photos.map((post) => (
               <li className="article-list__item" key={post.id}>
                 <Link
