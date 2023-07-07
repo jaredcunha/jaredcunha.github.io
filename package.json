@@ -42,7 +42,7 @@
     "jest": "^27.5.1",
     "jest-axe": "^6.0.0",
     "react-test-renderer": "^18.0.0",
-    "stylelint": "^13.2.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.14.2",
     "svg-sprite-generator": "^0.0.7"
