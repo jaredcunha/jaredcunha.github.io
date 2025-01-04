@@ -20,4 +20,4 @@ $ npm run build
 $ npm run serve
 ```
 
-And that's it!
+And that's it!!!
