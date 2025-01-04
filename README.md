@@ -19,3 +19,5 @@ Requries python `3.7` and node `16.4.2`.
 $ npm run build
 $ npm run serve
 ```
+
+And that's it!
