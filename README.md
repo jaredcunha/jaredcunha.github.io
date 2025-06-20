@@ -1,5 +1,7 @@
 # jaredcunha.com
 
+**⚠️ This repo is no longer maintained - please see the new repo: https://github.com/jaredcunha/jaredcunha.com**
+
 This is my personal, built with [Gatsby](https://www.gatsbyjs.com/).
 
 ## Installation
